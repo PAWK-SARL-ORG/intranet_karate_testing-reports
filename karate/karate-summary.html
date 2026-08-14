@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_summary",{distinct_id:"9ecd4d4d-b90e-4223-9bbf-90b092db9591",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Karate Summary Report</title>
+  </head>
+  <body><div id="pawk-report-nav" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#1f2937;color:#f9fafb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;padding:8px 16px;display:flex;gap:16px;align-items:center;box-shadow:0 1px 4px rgba(0,0,0,.35);">
+  <span style="font-weight:600;">PAWK Karate Reports</span>
+  <a href="../index.html" style="color:#93c5fd;text-decoration:none;">&#8962; Home</a>
+  <a href="../allure/index.html" style="color:#93c5fd;text-decoration:none;">Allure Report</a>
+  <a href="karate-summary.html" style="color:#93c5fd;text-decoration:none;">Karate Report</a>
+</div>
+<div style="height:44px;"></div>
+
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">14</div>
+      <div id="nav-fail" class="bg-danger">39</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Features</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-08-14 11:32:01 AM</div>
+  </div>
+</div>
+
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
+        </div>
+        <table class="features-table table table-sm">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.auth.PAWK-101.html">zenity/ofintra/features/auth/PAWK-101.feature</a>
+              </td>
+              <td>PAWK-101 — Se connecter avec succès</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2166</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.auth.PAWK-102.html">zenity/ofintra/features/auth/PAWK-102.feature</a>
+              </td>
+              <td>PAWK-102 — Connexion échouée après 5 tentatives infructueuses</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2867</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.auth.PAWK-103.html">zenity/ofintra/features/auth/PAWK-103.feature</a>
+              </td>
+              <td>PAWK-103 — Connexion avec un compte désactivé ou archivé</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">456</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.auth.PAWK-105.html">zenity/ofintra/features/auth/PAWK-105.feature</a>
+              </td>
+              <td>PAWK-105 — Connexion échouée</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">1350</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.auth.PAWK-110.html">zenity/ofintra/features/auth/PAWK-110.feature</a>
+              </td>
+              <td>PAWK-110 — Déconnexion manuelle réussie</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1120</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.auth.PAWK-113.html">zenity/ofintra/features/auth/PAWK-113.feature</a>
+              </td>
+              <td>PAWK-113 — Tentative d&#39;accès après déconnexion</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1556</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-409.html">zenity/ofintra/features/leaves/PAWK-409.feature</a>
+              </td>
+              <td>PAWK-409 — Affichage des champs du formulaire de soumission</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">461</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-410.html">zenity/ofintra/features/leaves/PAWK-410.feature</a>
+              </td>
+              <td>PAWK-410 — Vérification des types de congé disponibles</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">3</td>
+              <td class="num">1371</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-411.html">zenity/ofintra/features/leaves/PAWK-411.feature</a>
+              </td>
+              <td>PAWK-411 — Soumission valide d&#39;un congé payé</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">450</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-412.html">zenity/ofintra/features/leaves/PAWK-412.feature</a>
+              </td>
+              <td>PAWK-412 — Date de fin antérieure à la date de début</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">450</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-413.html">zenity/ofintra/features/leaves/PAWK-413.feature</a>
+              </td>
+              <td>PAWK-413 — Motif obligatoire pour congé exceptionnel</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">897</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-414.html">zenity/ofintra/features/leaves/PAWK-414.feature</a>
+              </td>
+              <td>PAWK-414 — Dépassement du solde disponible</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">454</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-415.html">zenity/ofintra/features/leaves/PAWK-415.feature</a>
+              </td>
+              <td>PAWK-415 — Type de congé épuisé non sélectionnable</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">921</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-416.html">zenity/ofintra/features/leaves/PAWK-416.feature</a>
+              </td>
+              <td>PAWK-416 — Afficher les détails d&#39;une demande de congé</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1023</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-417.html">zenity/ofintra/features/leaves/PAWK-417.feature</a>
+              </td>
+              <td>PAWK-417 — Validation d&#39;une demande en attente</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">455</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-418.html">zenity/ofintra/features/leaves/PAWK-418.feature</a>
+              </td>
+              <td>PAWK-418 — Refus d&#39;une demande en attente</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">909</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-422.html">zenity/ofintra/features/leaves/PAWK-422.feature</a>
+              </td>
+              <td>PAWK-422 — Alerte si solde congé exceptionnel épuisé</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">894</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-426.html">zenity/ofintra/features/leaves/PAWK-426.feature</a>
+              </td>
+              <td>PAWK-426 — Vérifier les sections affichées pour les demandes de congés</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">992</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-427.html">zenity/ofintra/features/leaves/PAWK-427.feature</a>
+              </td>
+              <td>PAWK-427 — Vérifier l&#39;apparition des détails d&#39;une demande de congés</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">451</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-430.html">zenity/ofintra/features/leaves/PAWK-430.feature</a>
+              </td>
+              <td>PAWK-430 — Apparition de l&#39;option commentaire lors de validation ou refus</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1004</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-432.html">zenity/ofintra/features/leaves/PAWK-432.feature</a>
+              </td>
+              <td>PAWK-432 — Mise à jour du solde après validation</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">985</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-457.html">zenity/ofintra/features/leaves/PAWK-457.feature</a>
+              </td>
+              <td>PAWK-457 — Accès à l&#39;interface de création de congé par un administrateur</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">1991</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-458.html">zenity/ofintra/features/leaves/PAWK-458.feature</a>
+              </td>
+              <td>PAWK-458 — Vérification des champs requis du formulaire de création admin</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">1961</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-466.html">zenity/ofintra/features/leaves/PAWK-466.feature</a>
+              </td>
+              <td>PAWK-466 — Création sans motif acceptée pour congé non exceptionnel</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">986</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-467.html">zenity/ofintra/features/leaves/PAWK-467.feature</a>
+              </td>
+              <td>PAWK-467 — Message d&#39;erreur si champ obligatoire absent</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">4169</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-468.html">zenity/ofintra/features/leaves/PAWK-468.feature</a>
+              </td>
+              <td>PAWK-468 — Le congé créé par l&#39;admin apparaît immédiatement dans l&#39;historique</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">981</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-470.html">zenity/ofintra/features/leaves/PAWK-470.feature</a>
+              </td>
+              <td>PAWK-470 — Impossible de créer un congé sur une période déjà validée</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">982</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-471.html">zenity/ofintra/features/leaves/PAWK-471.feature</a>
+              </td>
+              <td>PAWK-471 — Création sur une période sans chevauchement</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">980</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.leaves.PAWK-472.html">zenity/ofintra/features/leaves/PAWK-472.feature</a>
+              </td>
+              <td>PAWK-472 — Suppression / annulation d&#39;une demande de congé</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">2</td>
+              <td class="num">896</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-120.html">zenity/ofintra/features/users/PAWK-120.feature</a>
+              </td>
+              <td>PAWK-120 — Création d&#39;un utilisateur collaborateur avec succès</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2166</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-121.html">zenity/ofintra/features/users/PAWK-121.feature</a>
+              </td>
+              <td>PAWK-121 — Création d&#39;un utilisateur manager (par un administrateur)</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">2002</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-122.html">zenity/ofintra/features/users/PAWK-122.feature</a>
+              </td>
+              <td>PAWK-122 — Restriction du choix des rôles pour un manager</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">472</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-126.html">zenity/ofintra/features/users/PAWK-126.feature</a>
+              </td>
+              <td>PAWK-126 — Journalisation de la création d&#39;un utilisateur</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2449</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-130.html">zenity/ofintra/features/users/PAWK-130.feature</a>
+              </td>
+              <td>PAWK-130 — Création d&#39;un administrateur avec succès</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1120</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-134.html">zenity/ofintra/features/users/PAWK-134.feature</a>
+              </td>
+              <td>PAWK-134 — Affichage des comptes désactivés dans une liste dédiée</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">984</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-135.html">zenity/ofintra/features/users/PAWK-135.feature</a>
+              </td>
+              <td>PAWK-135 — Réactivation d&#39;un compte utilisateur</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">995</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-138.html">zenity/ofintra/features/users/PAWK-138.feature</a>
+              </td>
+              <td>PAWK-138 — Connexion après réactivation</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">992</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-142.html">zenity/ofintra/features/users/PAWK-142.feature</a>
+              </td>
+              <td>PAWK-142 — Un utilisateur désactivé ne peut plus se connecter</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">994</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-149.html">zenity/ofintra/features/users/PAWK-149.feature</a>
+              </td>
+              <td>PAWK-149 — Validation des critères de sécurité du mot de passe</td>
+              <td class="num">0</td>
+              <td class="num">5</td>
+              <td class="num">5</td>
+              <td class="num">2249</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-152.html">zenity/ofintra/features/users/PAWK-152.feature</a>
+              </td>
+              <td>PAWK-152 — Échec de création si un champ obligatoire est manquant</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">976</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-165.html">zenity/ofintra/features/users/PAWK-165.feature</a>
+              </td>
+              <td>PAWK-165 — Un administrateur modifie le rôle d&#39;un utilisateur</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1472</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-172.html">zenity/ofintra/features/users/PAWK-172.feature</a>
+              </td>
+              <td>PAWK-172 — Un manager n&#39;a accès qu&#39;à la liste des collaborateurs</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">442</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-176.html">zenity/ofintra/features/users/PAWK-176.feature</a>
+              </td>
+              <td>PAWK-176 — Réinitialisation du mot de passe réussie</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1899</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-185.html">zenity/ofintra/features/users/PAWK-185.feature</a>
+              </td>
+              <td>PAWK-185 — Un utilisateur archivé ne peut plus se connecter</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">1425</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-186.html">zenity/ofintra/features/users/PAWK-186.feature</a>
+              </td>
+              <td>PAWK-186 — Consultation des données d&#39;un utilisateur archivé</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1125</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-187.html">zenity/ofintra/features/users/PAWK-187.feature</a>
+              </td>
+              <td>PAWK-187 — Un utilisateur archivé n&#39;apparaît plus dans la liste active</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">2096</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-188.html">zenity/ofintra/features/users/PAWK-188.feature</a>
+              </td>
+              <td>PAWK-188 — Seul l&#39;administrateur peut archiver un utilisateur</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">3</td>
+              <td class="num">2956</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-189.html">zenity/ofintra/features/users/PAWK-189.feature</a>
+              </td>
+              <td>PAWK-189 - Un manager ne peut pas archiver un collaborateur</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">1</td>
+              <td class="num">988</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-190.html">zenity/ofintra/features/users/PAWK-190.feature</a>
+              </td>
+              <td>PAWK-190 — Un utilisateur archivé peut être réactivé ultérieurement</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">3297</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-191.html">zenity/ofintra/features/users/PAWK-191.feature</a>
+              </td>
+              <td>PAWK-191 — Affichage de la liste des utilisateurs archivés</td>
+              <td class="num">1</td>
+              <td class="num">0</td>
+              <td class="num">1</td>
+              <td class="num">987</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-215.html">zenity/ofintra/features/users/PAWK-215.feature</a>
+              </td>
+              <td>PAWK-215 — Réinitialisation du mot de passe avec succès</td>
+              <td class="num">3</td>
+              <td class="num">2</td>
+              <td class="num">5</td>
+              <td class="num">13938</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-216.html">zenity/ofintra/features/users/PAWK-216.feature</a>
+              </td>
+              <td>PAWK-216 — Échec de réinitialisation du mot de passe</td>
+              <td class="num">0</td>
+              <td class="num">7</td>
+              <td class="num">7</td>
+              <td class="num">6854</td>
+            </tr>
+            <tr class="failed">
+              <td>
+                <a href="zenity.ofintra.features.users.PAWK-258.html">zenity/ofintra/features/users/PAWK-258.feature</a>
+              </td>
+              <td>PAWK-258 — Rechercher un utilisateur</td>
+              <td class="num">0</td>
+              <td class="num">13</td>
+              <td class="num">13</td>
+              <td class="num">12679</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+
