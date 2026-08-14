@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"0e875fee-3b0c-443d-b69c-1c5889b4bcd3",karate_version:"1.4.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"d6c2bf75-3a27-4950-a82a-25b98e1a0d87",karate_version:"1.4.1",karate_meta:null});
   }
 });
 </script>
@@ -45,8 +45,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -56,12 +56,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-08-14 01:31:49 PM</div>
+    <div>2026-08-14 02:25:42 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:14]"><span>[1:14]</span> <span>PAWK-432 - Le solde annuel diminue après approbation</span></a>
           </div>
         </div>
@@ -87,8 +87,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>3333</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>1290</span>
             </div>
           </div>
           <div class="step-row">
@@ -120,34 +120,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:31:46.578 karate.env system property was: null 
-13:31:46.579 ✓ Loaded: BASE_URL 
-13:31:46.579 ✓ Loaded: ADMIN_EMAIL 
-13:31:46.579 ✓ Loaded: ADMIN_PASSWORD 
-13:31:46.579 ✓ Loaded: ADMIN_ID 
-13:31:46.579 ✓ Loaded: MANAGER_EMAIL 
-13:31:46.579 ✓ Loaded: MANAGER_PASSWORD 
-13:31:46.579 ✓ Loaded: MANAGER_ID 
-13:31:46.580 ✓ Loaded: COLLAB_EMAIL 
-13:31:46.580 ✓ Loaded: COLLAB_PASSWORD 
-13:31:46.580 ✓ Loaded: COLLAB_ID 
-13:31:46.580 ✓ Loaded: BLOCKED_EMAIL 
-13:31:46.580 ✓ Loaded: BLOCKED_PASSWORD 
-13:31:46.580 ✓ Loaded: BLOCKED_ID 
-13:31:46.580 ✓ Loaded: ARCHIVED_EMAIL 
-13:31:46.580 ✓ Loaded: ARCHIVED_PASSWORD 
-13:31:46.580 ✓ Loaded: ARCHIVED_ID 
-13:31:46.580 ✓ Loaded: EXPIRED_JWT_TOKEN 
-13:31:46.580 ✓ .env file loaded successfully 
-13:31:46.580 ========== Configuration Loaded ========== 
-13:31:46.580 Base URL:          https://api-rec.intranet-pawk.com 
-13:31:46.580 Admin Email:       admin@zenity.com 
-13:31:46.581 Manager Email:     manager@zenity.com 
-13:31:46.581 Collab Email:      collab@zenity.com 
-13:31:46.581 Blocked Email:     collab.bloque@zenity.com 
-13:31:46.581 Archived Email:    collab.archive@zenity.com 
-13:31:46.581 Expired Token:     NOT SET 
-13:31:46.581 ========================================== 
+  <div class="preformatted" data-parent="0.4">14:25:41.290 karate.env system property was: null 
+14:25:41.291 ✓ Loaded: BASE_URL 
+14:25:41.292 ✓ Loaded: ADMIN_EMAIL 
+14:25:41.292 ✓ Loaded: ADMIN_PASSWORD 
+14:25:41.292 ✓ Loaded: ADMIN_ID 
+14:25:41.292 ✓ Loaded: MANAGER_EMAIL 
+14:25:41.292 ✓ Loaded: MANAGER_PASSWORD 
+14:25:41.292 ✓ Loaded: MANAGER_ID 
+14:25:41.292 ✓ Loaded: COLLAB_EMAIL 
+14:25:41.292 ✓ Loaded: COLLAB_PASSWORD 
+14:25:41.292 ✓ Loaded: COLLAB_ID 
+14:25:41.292 ✓ Loaded: BLOCKED_EMAIL 
+14:25:41.294 ✓ Loaded: BLOCKED_PASSWORD 
+14:25:41.294 ✓ Loaded: BLOCKED_ID 
+14:25:41.294 ✓ Loaded: ARCHIVED_EMAIL 
+14:25:41.294 ✓ Loaded: ARCHIVED_PASSWORD 
+14:25:41.295 ✓ Loaded: ARCHIVED_ID 
+14:25:41.295 ✓ Loaded: EXPIRED_JWT_TOKEN 
+14:25:41.295 ✓ .env file loaded successfully 
+14:25:41.295 ========== Configuration Loaded ========== 
+14:25:41.295 Base URL:          https://api-rec.intranet-pawk.com 
+14:25:41.295 Admin Email:       admin@zenity.com 
+14:25:41.295 Manager Email:     manager@zenity.com 
+14:25:41.295 Collab Email:      collab@zenity.com 
+14:25:41.295 Blocked Email:     collab.bloque@zenity.com 
+14:25:41.295 Archived Email:    collab.archive@zenity.com 
+14:25:41.296 Expired Token:     NOT SET 
+14:25:41.296 ========================================== 
 </div>   
 
   
@@ -167,7 +167,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def admin       = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(adminEmail)&#39;,  password: &#39;#(adminPassword)&#39;  }</span>
       </div>
     </div>
-    <div class="time-cell passed">533</div>
+    <div class="time-cell passed">373</div>
   </div>
 
    
@@ -186,7 +186,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">529</div>
+      <div class="time-cell passed">365</div>
     </div>
     <div>
       <div><div>
@@ -286,7 +286,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">527</div>
+    <div class="time-cell passed">363</div>
   </div>
 
    
@@ -295,7 +295,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.8">13:31:46.586 request:
+  <div class="preformatted" data-parent="0.5.0.call.0.8">14:25:41.307 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 54
@@ -305,10 +305,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
 
-13:31:47.113 response time in milliseconds: 526
+14:25:41.669 response time in milliseconds: 361
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 13:31:47 GMT
+1 &lt; Date: Fri, 14 Aug 2026 14:25:41 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -322,7 +322,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijc2YWUzM2FkLTc3YzgtNDdkNi05YmQ2LWUzZDNkZDNlZDIyNSIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg2NzE1MjA3fQ.HnfTRw9hD71o0xVFKLAuXifIvpMJ_Oo_n-k3VCn4j6c&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiNmQxZjMxYjgtZTUwYy00ZTAwLWEyYjMtYWQ4MGU2NjQ4ZjBmIiwiaWF0IjoxNzg2NzE0MzA3LCJleHAiOjE3ODczMTkxMDd9.7Vwnb3DljY8uwzAHU2Zm6fq8Rxjpe9cA5fmZXCJ4uTk&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T13:31:47.029534459&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:&quot;&quot;,&quot;emergencyContactPhone2&quot;:&quot;&quot;,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:&quot;00000&quot;}},&quot;timestamp&quot;:&quot;2026-08-14T13:31:47.034696604&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjhmMjE2NGZlLTBhY2EtNDU0NS1iYTkwLWU2YzM0NjM3ZTVkOCIsImlhdCI6MTc4NjcxNzU0MSwiZXhwIjoxNzg2NzE4NDQxfQ.ueYDqYEMFapTzISD-QIAOaUQlF4U5gi3WmqaSQCTdz8&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiYWU3Y2IwMWQtMGIzMS00YTZlLWFkNGUtZjNlNmVkYTQ4YzI4IiwiaWF0IjoxNzg2NzE3NTQxLCJleHAiOjE3ODczMjIzNDF9.wpPVe_b1M3SfFj9yg4vp52KQcZ572f0LvvqFJMXggcE&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:25:41.61411963&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-14T14:25:41.621583119&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -488,7 +488,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def collab      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;, password: &#39;#(collabPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">528</div>
+    <div class="time-cell passed">353</div>
   </div>
 
    
@@ -507,7 +507,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">523</div>
+      <div class="time-cell passed">349</div>
     </div>
     <div>
       <div><div>
@@ -607,7 +607,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">522</div>
+    <div class="time-cell passed">347</div>
   </div>
 
    
@@ -616,7 +616,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.8">13:31:47.120 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.8">14:25:41.677 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 56
@@ -626,10 +626,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-13:31:47.641 response time in milliseconds: 520
+14:25:42.023 response time in milliseconds: 345
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 13:31:47 GMT
+1 &lt; Date: Fri, 14 Aug 2026 14:25:41 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -643,7 +643,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjNiMDY4N2NiLTIyNjItNDJmYy1iZGNlLWUwNmE1OWRlNDgzNyIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg2NzE1MjA3fQ.DRyt_0lqbeIh5yyLC3jtm3uSn2s7O6JDDqRDji5_p_0&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjU3MTlmYjU2LWM0MjEtNDkwNS1hOTlmLTEzNGFkNDEyMDcyMCIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg3MzE5MTA3fQ.CJBI-VVIynktTxAYlqv-7h0vN8SIXwHd26T0A_Z1dYg&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T13:31:47.558612158&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:&quot;1ZZERR&quot;,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:&quot;Chez Moi&quot;}},&quot;timestamp&quot;:&quot;2026-08-14T13:31:47.562853728&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjhjMDkxYWRkLTJhOWQtNDNkNC1iODgyLWUxYWE2YTViNjk5MSIsImlhdCI6MTc4NjcxNzU0MSwiZXhwIjoxNzg2NzE4NDQxfQ.cBDT6OSImQzo2sGIMgKtf-ayh5X_dOmWAQOFlxA_we0&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjQ1OTllNmZiLThmM2QtNDYyZC1hNjEzLTU2N2I5MjFjM2QwNSIsImlhdCI6MTc4NjcxNzU0MSwiZXhwIjoxNzg3MzIyMzQxfQ.sx7yPsc4bbBpP-zkv77dF6Rtb0oQXH-lm41c5Ov1_PA&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:25:41.971279963&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-14T14:25:41.977196341&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -893,7 +893,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def smallStart  = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -921,7 +921,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def smallEnd    = java.time.LocalDate.now().plusDays(baseDay + 1).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1005,7 +1005,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">445</div>
+    <div class="time-cell passed">277</div>
   </div>
 
    
@@ -1014,19 +1014,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.17">13:31:47.646 request:
+  <div class="preformatted" data-parent="0.17">14:25:42.028 request:
 1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/my-balance
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjNiMDY4N2NiLTIyNjItNDJmYy1iZGNlLWUwNmE1OWRlNDgzNyIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg2NzE1MjA3fQ.DRyt_0lqbeIh5yyLC3jtm3uSn2s7O6JDDqRDji5_p_0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjhjMDkxYWRkLTJhOWQtNDNkNC1iODgyLWUxYWE2YTViNjk5MSIsImlhdCI6MTc4NjcxNzU0MSwiZXhwIjoxNzg2NzE4NDQxfQ.cBDT6OSImQzo2sGIMgKtf-ayh5X_dOmWAQOFlxA_we0
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-13:31:48.090 response time in milliseconds: 444
+14:25:42.304 response time in milliseconds: 275
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 13:31:48 GMT
+1 &lt; Date: Fri, 14 Aug 2026 14:25:42 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1040,7 +1040,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;annualBalance&quot;:7.0,&quot;exceptionalBalance&quot;:10.0,&quot;lastResetDate&quot;:&quot;2026-08-14&quot;}
+{&quot;annualBalance&quot;:8.0,&quot;exceptionalBalance&quot;:10.0,&quot;lastResetDate&quot;:&quot;2026-08-14&quot;}
 
 </div>   
 
@@ -1089,7 +1089,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def balanceBefore = response.annualBalance</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1229,7 +1229,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">459</div>
+    <div class="time-cell passed">278</div>
   </div>
 
    
@@ -1238,21 +1238,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.25">13:31:48.093 request:
+  <div class="preformatted" data-parent="0.25">14:25:42.306 request:
 2 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjNiMDY4N2NiLTIyNjItNDJmYy1iZGNlLWUwNmE1OWRlNDgzNyIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg2NzE1MjA3fQ.DRyt_0lqbeIh5yyLC3jtm3uSn2s7O6JDDqRDji5_p_0
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjhjMDkxYWRkLTJhOWQtNDNkNC1iODgyLWUxYWE2YTViNjk5MSIsImlhdCI6MTc4NjcxNzU0MSwiZXhwIjoxNzg2NzE4NDQxfQ.cBDT6OSImQzo2sGIMgKtf-ayh5X_dOmWAQOFlxA_we0
 2 &gt; Content-Type: application/json; charset=UTF-8
 2 &gt; Content-Length: 69
 2 &gt; Host: api-rec.intranet-pawk.com
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 2 &gt; Accept-Encoding: gzip,deflate
-{&quot;type&quot;:&quot;PAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2029-11-02&quot;,&quot;endDate&quot;:&quot;2029-11-03&quot;}
+{&quot;type&quot;:&quot;PAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2030-10-12&quot;,&quot;endDate&quot;:&quot;2030-10-13&quot;}
 
-13:31:48.551 response time in milliseconds: 457
-2 &lt; 201
+14:25:42.583 response time in milliseconds: 277
+2 &lt; 400
 2 &lt; Server: openresty
-2 &lt; Date: Fri, 14 Aug 2026 13:31:48 GMT
+2 &lt; Date: Fri, 14 Aug 2026 14:25:42 GMT
 2 &lt; Content-Type: application/json
 2 &lt; Transfer-Encoding: chunked
 2 &lt; Connection: keep-alive
@@ -1265,8 +1265,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 2 &lt; Pragma: no-cache
 2 &lt; Expires: 0
 2 &lt; X-Frame-Options: DENY
-2 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:26,&quot;userId&quot;:3,&quot;type&quot;:&quot;PAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2029-11-02&quot;,&quot;endDate&quot;:&quot;2029-11-03&quot;,&quot;durationInDays&quot;:1,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-08-14T13:31:48.463740393&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Leave range contains no working days (weekends only).&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T14:25:42.535907442&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_NO_WORKING_DAYS&quot;}
 
 </div>   
 
@@ -1281,13 +1280,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref failed">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">5</div>
   </div>
 
    
@@ -1296,7 +1295,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.26">14:25:42.589 classpath:zenity/ofintra/features/leaves/PAWK-432.feature:26
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 277, url: https://api-rec.intranet-pawk.com/api/v1/leaves, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Leave range contains no working days (weekends only).&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T14:25:42.535907442&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_NO_WORKING_DAYS&quot;}
+classpath:zenity/ofintra/features/leaves/PAWK-432.feature:26
+</div>   
 
   
 
@@ -1309,13 +1313,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.27">
-      <div class="step-ref passed">27</div>
+      <div class="step-ref skipped">27</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def leaveId  = response.id</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1337,13 +1341,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.28">
-      <div class="step-ref passed">28</div>
+      <div class="step-ref skipped">28</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def duration = response.durationInDays</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1365,13 +1369,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.30">
-      <div class="step-ref passed">30</div>
+      <div class="step-ref skipped">30</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/&#39; + leaveId + &#39;/approve&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1393,13 +1397,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.31">
-      <div class="step-ref passed">31</div>
+      <div class="step-ref skipped">31</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + adminToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1421,13 +1425,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.32">
-      <div class="step-ref passed">32</div>
+      <div class="step-ref skipped">32</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">462</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1436,33 +1440,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.32">13:31:48.553 request:
-3 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/leaves/26/approve
-3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijc2YWUzM2FkLTc3YzgtNDdkNi05YmQ2LWUzZDNkZDNlZDIyNSIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg2NzE1MjA3fQ.HnfTRw9hD71o0xVFKLAuXifIvpMJ_Oo_n-k3VCn4j6c
-3 &gt; Host: api-rec.intranet-pawk.com
-3 &gt; Connection: Keep-Alive
-3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-3 &gt; Accept-Encoding: gzip,deflate
-
-
-13:31:49.014 response time in milliseconds: 461
-3 &lt; 204
-3 &lt; Server: openresty
-3 &lt; Date: Fri, 14 Aug 2026 13:31:48 GMT
-3 &lt; Connection: keep-alive
-3 &lt; Vary: Origin
-3 &lt; Vary: Access-Control-Request-Method
-3 &lt; Vary: Access-Control-Request-Headers
-3 &lt; X-Content-Type-Options: nosniff
-3 &lt; X-XSS-Protection: 0
-3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-3 &lt; Pragma: no-cache
-3 &lt; Expires: 0
-3 &lt; X-Frame-Options: DENY
-3 &lt; X-Served-By: api-rec.intranet-pawk.com
-
-
-</div>   
+     
 
   
 
@@ -1475,13 +1453,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.33">
-      <div class="step-ref passed">33</div>
+      <div class="step-ref skipped">33</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 204</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1503,13 +1481,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+      <div class="step-ref skipped">35</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/my-balance&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1531,13 +1509,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
+      <div class="step-ref skipped">36</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1559,13 +1537,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
+      <div class="step-ref skipped">37</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">449</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1574,35 +1552,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.37">13:31:49.016 request:
-4 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/my-balance
-4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjNiMDY4N2NiLTIyNjItNDJmYy1iZGNlLWUwNmE1OWRlNDgzNyIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg2NzE1MjA3fQ.DRyt_0lqbeIh5yyLC3jtm3uSn2s7O6JDDqRDji5_p_0
-4 &gt; Host: api-rec.intranet-pawk.com
-4 &gt; Connection: Keep-Alive
-4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-4 &gt; Accept-Encoding: gzip,deflate
-
-
-13:31:49.463 response time in milliseconds: 446
-4 &lt; 200
-4 &lt; Server: openresty
-4 &lt; Date: Fri, 14 Aug 2026 13:31:49 GMT
-4 &lt; Content-Type: application/json
-4 &lt; Transfer-Encoding: chunked
-4 &lt; Connection: keep-alive
-4 &lt; Vary: Origin
-4 &lt; Vary: Access-Control-Request-Method
-4 &lt; Vary: Access-Control-Request-Headers
-4 &lt; X-Content-Type-Options: nosniff
-4 &lt; X-XSS-Protection: 0
-4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-4 &lt; Pragma: no-cache
-4 &lt; Expires: 0
-4 &lt; X-Frame-Options: DENY
-4 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;annualBalance&quot;:6.0,&quot;exceptionalBalance&quot;:10.0,&quot;lastResetDate&quot;:&quot;2026-08-14&quot;}
-
-</div>   
+     
 
   
 
@@ -1615,13 +1565,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.38">
-      <div class="step-ref passed">38</div>
+      <div class="step-ref skipped">38</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1643,13 +1593,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.39">
-      <div class="step-ref passed">39</div>
+      <div class="step-ref skipped">39</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def balanceAfter = response.annualBalance</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1671,13 +1621,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.40">
-      <div class="step-ref passed">40</div>
+      <div class="step-ref skipped">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert balanceAfter &lt;= balanceBefore - duration</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1706,13 +1656,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.43">
-      <div class="step-ref passed">43</div>
+      <div class="step-ref skipped">43</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/&#39; + leaveId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1734,13 +1684,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.44">
-      <div class="step-ref passed">44</div>
+      <div class="step-ref skipped">44</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1762,13 +1712,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.45">
-      <div class="step-ref passed">45</div>
+      <div class="step-ref skipped">45</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">446</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1777,34 +1727,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.45">13:31:49.469 request:
-5 &gt; DELETE https://api-rec.intranet-pawk.com/api/v1/leaves/26
-5 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjNiMDY4N2NiLTIyNjItNDJmYy1iZGNlLWUwNmE1OWRlNDgzNyIsImlhdCI6MTc4NjcxNDMwNywiZXhwIjoxNzg2NzE1MjA3fQ.DRyt_0lqbeIh5yyLC3jtm3uSn2s7O6JDDqRDji5_p_0
-5 &gt; Host: api-rec.intranet-pawk.com
-5 &gt; Connection: Keep-Alive
-5 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-5 &gt; Accept-Encoding: gzip,deflate
-
-
-13:31:49.914 response time in milliseconds: 445
-5 &lt; 400
-5 &lt; Server: openresty
-5 &lt; Date: Fri, 14 Aug 2026 13:31:49 GMT
-5 &lt; Content-Type: application/json
-5 &lt; Transfer-Encoding: chunked
-5 &lt; Connection: keep-alive
-5 &lt; Vary: Origin
-5 &lt; Vary: Access-Control-Request-Method
-5 &lt; Vary: Access-Control-Request-Headers
-5 &lt; X-Content-Type-Options: nosniff
-5 &lt; X-XSS-Protection: 0
-5 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-5 &lt; Pragma: no-cache
-5 &lt; Expires: 0
-5 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Only PENDING requests can be cancelled.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T13:31:49.837378524&quot;,&quot;path&quot;:&quot;/api/v1/leaves/26&quot;,&quot;errorCode&quot;:&quot;LEAVE_NOT_PENDING&quot;}
-
-</div>   
+     
 
   
 

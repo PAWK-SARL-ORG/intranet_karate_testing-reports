@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>14 Aug 2026, 13:33</td>
+      <td>14 Aug 2026, 14:27</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-258</td>
+          <td      class="passed"    >185</td>
+          <td      class="failed"    >3</td>
           <td >0</td>
           <td >0</td>
-          <td     class="skipped"   >160</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">160</td>
+          <td class="total">188</td>
 
-          <td >0</td>
-          <td  class="failed"    >13</td>
+          <td  class="passed"    >10</td>
+          <td  class="failed"    >3</td>
           <td class="total">13</td>
 
-          <td class="duration" data-value="0">0.000</td>
+          <td class="duration" data-value="9051614069">9.051</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.275</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Recherche simple par email</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,12 +218,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Rechercher un utilisateur par email</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -277,7 +277,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param searchText = collabEmail</span>
 
@@ -304,7 +304,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -331,7 +331,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 20</span>
 
@@ -358,11 +358,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.272</span>
 
 </div>
 
@@ -374,6 +374,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>14:26:59.055 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?searchText=collab%40zenity.com&amp;size=20&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdkNmViNzFiLTE4N2ItNGQ0OS1iNWE5LTVmNmQ5MWFkOWMyOSIsImlhdCI6MTc4NjcxNzYxOCwiZXhwIjoxNzg2NzE4NTE4fQ.IM0kSM1cJ4XaLp3EiU9WPqPjiQPWbdS9f2uDqUuoF0Q
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:26:59.326 response time in milliseconds: 271
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:26:59 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:56.407402&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:1,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:1,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:26:59.281082494&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -385,7 +423,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -412,7 +450,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -440,7 +478,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: L'utilisateur est trouv&eacute;</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -467,7 +505,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert results.length &gt; 0</span>
 
@@ -494,11 +532,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def found = results.some(function(u) { return u.email === collabEmail; })</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -521,7 +559,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert found == true</span>
 
@@ -570,12 +608,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.712</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Recherche par nom (firstName)</span>
 
@@ -586,16 +624,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -605,12 +643,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># Create a test user with a specific first name</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def createCollabData = read('data/request/create-collaborator.json')</span>
 
@@ -637,7 +675,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def uniqueEmail =</span>
 
@@ -655,10 +693,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
+      <div id="msg-6" class="collapse collapsable-details">
         <pre>function(prefix) {
   return prefix + '.' + java.lang.System.currentTimeMillis() + '@zenity.com';
 }</pre>
@@ -676,7 +714,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def payload = karate.merge(createCollabData, { email: uniqueEmail('search'), firstName: 'UniqueName' })</span>
 
@@ -703,9 +741,36 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def registerCollab = call read('classpath:zenity/ofintra/features/users/helpers/register-helper.feature') {data: '#(payload)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">1.221</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/features/users/helpers/register-helper.feature</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -730,7 +795,317 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path '/api/v1/auth/register'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request data</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.216</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>14:27:00.097 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/register
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjQwYzhiNTFmLTJkMDQtNGI3Mi04MmFkLTcyZTRkYzg5MGViZCIsImlhdCI6MTc4NjcxNzYxOSwiZXhwIjoxNzg2NzE4NTE5fQ.zcD4DfvfNoMP7wwaR-37mFR5c3rjudTroVRRuleRb9g
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 307
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lastName&quot;:&quot;Dupont&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;roleId&quot;:3,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;firstName&quot;:&quot;UniqueName&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;email&quot;:&quot;search.1786717620092@zenity.com&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;}
+
+14:27:01.312 response time in milliseconds: 1215
+1 &lt; 201
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User registered successfully. Please check your email for activation instructions.&quot;,&quot;data&quot;:{&quot;id&quot;:13,&quot;email&quot;:&quot;search.1786717620092@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:null,&quot;roleType&quot;:null,&quot;firstName&quot;:&quot;UniqueName&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;UDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-08-14T14:27:01.26528193&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def id            = response.data.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def email         = response.data.email</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def status        = response.data.status</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def roleName      = response.data.roleName</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match registerCollab.response.success == true</span>
 
@@ -758,7 +1133,7 @@ $(document).ready(function() {
           <div class="comment indention"># When: Rechercher par firstName</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -785,7 +1160,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -812,7 +1187,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param searchText = 'UniqueName'</span>
 
@@ -839,7 +1214,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -866,7 +1241,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 20</span>
 
@@ -893,11 +1268,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.270</span>
 
 </div>
 
@@ -909,6 +1284,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>14:27:01.315 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?searchText=UniqueName&amp;size=20&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjQwYzhiNTFmLTJkMDQtNGI3Mi04MmFkLTcyZTRkYzg5MGViZCIsImlhdCI6MTc4NjcxNzYxOSwiZXhwIjoxNzg2NzE4NTE5fQ.zcD4DfvfNoMP7wwaR-37mFR5c3rjudTroVRRuleRb9g
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:01.585 response time in milliseconds: 270
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:01 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:13,&quot;email&quot;:&quot;search.1786717620092@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;UniqueName&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;UDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:1,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:1,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:01.53973962&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -920,7 +1333,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -947,7 +1360,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -975,7 +1388,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: L'utilisateur est trouv&eacute;</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -1002,7 +1415,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def found = results.some(function(u) { return u.firstName === 'UniqueName'; })</span>
 
@@ -1029,7 +1442,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert found == true</span>
 
@@ -1078,10 +1491,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.816</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-6">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1094,14 +1507,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-6" class="collapse collapsable-details  in ">
+  <div id="element-9" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-7">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1113,15 +1526,42 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-7" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention"># Trigramme est g&eacute;n&eacute;r&eacute; automatiquement &agrave; partir du pr&eacute;nom et nom</div>
           <div class="comment indention"># Get an existing user and search by their trigramme</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def getUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(collabId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">0.275</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/get-user-by-id.feature</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1146,7 +1586,180 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.272</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>14:27:02.317 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/3
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjIxY2ZiYmQxLTVkYjktNDQ1NC05NDhiLTM5MDkwZDc1MGU1NyIsImlhdCI6MTc4NjcxNzYyMSwiZXhwIjoxNzg2NzE4NTIxfQ.mHz6M1O_TbQEZW1R8fBxGgXH0lSChbAVgjRRIH9z6fk
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:02.588 response time in milliseconds: 271
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:56.407402&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-08-14T14:27:02.54090996&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def userTrigramme = getUser.response.data.trigramme</span>
 
@@ -1174,7 +1787,7 @@ $(document).ready(function() {
           <div class="comment indention"># When: Rechercher par trigramme</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -1201,7 +1814,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -1228,7 +1841,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param searchText = userTrigramme</span>
 
@@ -1255,7 +1868,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -1282,7 +1895,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 20</span>
 
@@ -1309,11 +1922,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.267</span>
 
 </div>
 
@@ -1325,6 +1938,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>14:27:02.590 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?searchText=SBE&amp;size=20&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjIxY2ZiYmQxLTVkYjktNDQ1NC05NDhiLTM5MDkwZDc1MGU1NyIsImlhdCI6MTc4NjcxNzYyMSwiZXhwIjoxNzg2NzE4NTIxfQ.mHz6M1O_TbQEZW1R8fBxGgXH0lSChbAVgjRRIH9z6fk
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:02.857 response time in milliseconds: 266
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[],&quot;empty&quot;:true,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:0,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:0,&quot;totalPages&quot;:0},&quot;timestamp&quot;:&quot;2026-08-14T14:27:02.811996979&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1336,7 +1987,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1363,7 +2014,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -1391,7 +2042,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: L'utilisateur est trouv&eacute;</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -1418,7 +2069,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def found = results.some(function(u) { return u.trigramme === userTrigramme; })</span>
 
@@ -1445,7 +2096,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">assert found == true</span>
 
@@ -1458,9 +2109,35 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-13">
+          <a>did</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details  in ">
+        <pre>did not evaluate to 'true': found == true
+classpath:zenity/ofintra/features/users/PAWK-258.feature:77</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>14:27:02.858 classpath:zenity/ofintra/features/users/PAWK-258.feature:77
+* assert found == true
+did not evaluate to 'true': found == true
+classpath:zenity/ofintra/features/users/PAWK-258.feature:77
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1494,12 +2171,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.276</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-8">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-15">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Filtrer par r&ocirc;le (COLLABORATOR)</span>
 
@@ -1510,16 +2187,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-8" class="collapse collapsable-details  in ">
+  <div id="element-15" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-9">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-16">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1529,12 +2206,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-9" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-16" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Filtrer par r&ocirc;le COLLABORATOR</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -1561,7 +2238,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -1588,7 +2265,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param role = 'COLLABORATOR'</span>
 
@@ -1615,7 +2292,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -1642,7 +2319,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 100</span>
 
@@ -1669,11 +2346,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.274</span>
 
 </div>
 
@@ -1685,6 +2362,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>14:27:03.597 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?role=COLLABORATOR&amp;size=100&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImE0M2QzY2VmLWFhOGItNGVmNy1hY2M4LTZlNTU4ZDM1NDY1YSIsImlhdCI6MTc4NjcxNzYyMywiZXhwIjoxNzg2NzE4NTIzfQ.M02mkw-EYXO1hiZu0YlQe3TpO-R9rx0Y4EuVJVmC9ZQ
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:03.871 response time in milliseconds: 273
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:13,&quot;email&quot;:&quot;search.1786717620092@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;UniqueName&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;UDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:11,&quot;email&quot;:&quot;testcollab.1786717604509@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD3&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:8,&quot;email&quot;:&quot;collab.1786717565951@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD1&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:6,&quot;email&quot;:&quot;collab.1786717560137@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:56.407402&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:4,&quot;email&quot;:&quot;collab.bloque@zenity.com&quot;,&quot;status&quot;:&quot;BLOCKED&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:15.55751&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Lucas&quot;,&quot;lastName&quot;:&quot;Dubois&quot;,&quot;trigramme&quot;:&quot;LDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000004&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2023-03-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1994-05-08&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:5,&quot;email&quot;:&quot;collab.archive@zenity.com&quot;,&quot;status&quot;:&quot;ARCHIVED&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Marie&quot;,&quot;lastName&quot;:&quot;Lefebvre&quot;,&quot;trigramme&quot;:&quot;MLE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000005&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-02-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-09-12&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:7,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:100,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:100,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:7,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:03.823367539&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1696,7 +2411,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -1723,7 +2438,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -1751,7 +2466,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les collaborateurs sont retourn&eacute;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -1778,7 +2493,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert results.length &gt; 0</span>
 
@@ -1805,7 +2520,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def allCollaborators = results.every(function(u) { return u.roleType === 'COLLABORATOR'; })</span>
 
@@ -1832,7 +2547,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert allCollaborators == true</span>
 
@@ -1881,12 +2596,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.278</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-10">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-18">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Filtrer par r&ocirc;le (MANAGER)</span>
 
@@ -1897,16 +2612,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-10" class="collapse collapsable-details  in ">
+  <div id="element-18" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-11">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-19">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1916,12 +2631,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-11" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-19" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Filtrer par r&ocirc;le MANAGER</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -1948,7 +2663,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -1975,7 +2690,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param role = 'MANAGER'</span>
 
@@ -2002,7 +2717,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -2029,7 +2744,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 100</span>
 
@@ -2056,11 +2771,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.277</span>
 
 </div>
 
@@ -2072,6 +2787,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>14:27:04.599 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?role=MANAGER&amp;size=100&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjM4ZTRiZjQ2LTY0NDMtNGU2Yy1iMzNmLTliNGVhYTIzYTBmNyIsImlhdCI6MTc4NjcxNzYyNCwiZXhwIjoxNzg2NzE4NTI0fQ.n1PghnPBWC94XVf5qc4J0EyduM1JZy_icce-KrNvYFk
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:04.876 response time in milliseconds: 276
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:04 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:12,&quot;email&quot;:&quot;manager.1786717611101@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;SM1&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+237622334455&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2023-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-08-15&quot;,&quot;emergencyContactName&quot;:&quot;Pierre Martin&quot;,&quot;emergencyContactPhone&quot;:&quot;+237699887766&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:10,&quot;email&quot;:&quot;testmanager.1786717599557@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD2&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:7,&quot;email&quot;:&quot;manager.1786717563361@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;SMA&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+237622334455&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2023-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-08-15&quot;,&quot;emergencyContactName&quot;:&quot;Pierre Martin&quot;,&quot;emergencyContactPhone&quot;:&quot;+237699887766&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:27:04.543484&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:4,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:100,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:100,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:4,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:04.828638256&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2083,7 +2836,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2110,7 +2863,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -2138,7 +2891,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les managers sont retourn&eacute;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -2165,7 +2918,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert results.length &gt; 0</span>
 
@@ -2192,7 +2945,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def allManagers = results.every(function(u) { return u.roleType === 'MANAGER'; })</span>
 
@@ -2219,7 +2972,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert allManagers == true</span>
 
@@ -2268,12 +3021,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.280</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Filtrer par r&ocirc;le (ADMINISTRATOR)</span>
 
@@ -2284,16 +3037,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-12" class="collapse collapsable-details  in ">
+  <div id="element-21" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2303,12 +3056,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Filtrer par r&ocirc;le ADMINISTRATOR</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -2335,7 +3088,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -2362,7 +3115,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param role = 'ADMINISTRATOR'</span>
 
@@ -2389,7 +3142,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -2416,7 +3169,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 100</span>
 
@@ -2443,11 +3196,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.279</span>
 
 </div>
 
@@ -2459,6 +3212,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>14:27:05.592 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?role=ADMINISTRATOR&amp;size=100&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImY4NDA0ZjEyLTM3OWUtNDUzZi1hMDQwLWNhMzFiN2ZkODViNSIsImlhdCI6MTc4NjcxNzYyNSwiZXhwIjoxNzg2NzE4NTI1fQ.3ZAU7p0B5GocPLIRCA_S9F2XZs7zfYOn1R3zih6j-IQ
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:05.871 response time in milliseconds: 278
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:05 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:9,&quot;email&quot;:&quot;admin.1786717568171@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Alexandre&quot;,&quot;lastName&quot;:&quot;Dubois&quot;,&quot;trigramme&quot;:&quot;ADU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237633445566&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2022-03-10&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1980-12-05&quot;,&quot;emergencyContactName&quot;:&quot;Claire Dubois&quot;,&quot;emergencyContactPhone&quot;:&quot;+237677889900&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:27:05.184503&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:2,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:100,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:100,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:2,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:05.822753879&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2470,7 +3261,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2497,7 +3288,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -2525,7 +3316,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les administrateurs sont retourn&eacute;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -2552,7 +3343,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert results.length &gt; 0</span>
 
@@ -2579,7 +3370,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def allAdmins = results.every(function(u) { return u.roleType === 'ADMINISTRATOR'; })</span>
 
@@ -2606,7 +3397,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert allAdmins == true</span>
 
@@ -2655,12 +3446,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.277</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-14">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-24">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Filtrer par statut (ACTIVE)</span>
 
@@ -2671,16 +3462,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-14" class="collapse collapsable-details  in ">
+  <div id="element-24" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-15">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-25">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -2690,12 +3481,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-15" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-25" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Filtrer par statut ACTIVE</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -2722,7 +3513,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -2749,7 +3540,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param status = 'ACTIVE'</span>
 
@@ -2776,7 +3567,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -2803,7 +3594,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 100</span>
 
@@ -2830,11 +3621,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.276</span>
 
 </div>
 
@@ -2846,6 +3637,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>14:27:06.590 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?size=100&amp;page=0&amp;status=ACTIVE
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImU4NDJmYzNjLWVhYzAtNDYwMS05OTkwLWJjY2QwMjkxZmNjZCIsImlhdCI6MTc4NjcxNzYyNiwiZXhwIjoxNzg2NzE4NTI2fQ.8bC3CnPLLinOLJbcusefbTJhsxwB92dq9ypGvTfEnC4
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:06.866 response time in milliseconds: 275
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:06 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:13,&quot;email&quot;:&quot;search.1786717620092@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;UniqueName&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;UDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:12,&quot;email&quot;:&quot;manager.1786717611101@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;SM1&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+237622334455&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2023-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-08-15&quot;,&quot;emergencyContactName&quot;:&quot;Pierre Martin&quot;,&quot;emergencyContactPhone&quot;:&quot;+237699887766&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:11,&quot;email&quot;:&quot;testcollab.1786717604509@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD3&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:10,&quot;email&quot;:&quot;testmanager.1786717599557@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD2&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:9,&quot;email&quot;:&quot;admin.1786717568171@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Alexandre&quot;,&quot;lastName&quot;:&quot;Dubois&quot;,&quot;trigramme&quot;:&quot;ADU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237633445566&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2022-03-10&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1980-12-05&quot;,&quot;emergencyContactName&quot;:&quot;Claire Dubois&quot;,&quot;emergencyContactPhone&quot;:&quot;+237677889900&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:8,&quot;email&quot;:&quot;collab.1786717565951@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD1&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:7,&quot;email&quot;:&quot;manager.1786717563361@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;SMA&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+237622334455&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2023-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-08-15&quot;,&quot;emergencyContactName&quot;:&quot;Pierre Martin&quot;,&quot;emergencyContactPhone&quot;:&quot;+237699887766&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:6,&quot;email&quot;:&quot;collab.1786717560137@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:27:06.181771&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:56.407402&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:27:06.535717&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:11,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:100,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:100,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:11,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:06.814742824&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -2857,7 +3686,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -2884,7 +3713,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -2912,7 +3741,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les utilisateurs actifs sont retourn&eacute;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -2939,7 +3768,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert results.length &gt; 0</span>
 
@@ -2966,7 +3795,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def allActive = results.every(function(u) { return u.status === 'ACTIVE'; })</span>
 
@@ -2993,7 +3822,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert allActive == true</span>
 
@@ -3042,10 +3871,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.297</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-27">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -3058,14 +3887,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-16" class="collapse collapsable-details  in ">
+  <div id="element-27" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-28">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -3077,12 +3906,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-28" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention"># When: Filtrer par statut BLOCKED</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -3109,7 +3938,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -3136,7 +3965,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param status = 'BLOCKED'</span>
 
@@ -3163,7 +3992,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -3190,7 +4019,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 100</span>
 
@@ -3217,11 +4046,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.275</span>
 
 </div>
 
@@ -3233,6 +4062,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>14:27:07.593 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?size=100&amp;page=0&amp;status=BLOCKED
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImZlMDJjMzFiLWQwMjQtNGNkMi04OWI0LTU5NjVlYmEwMzUzMSIsImlhdCI6MTc4NjcxNzYyNywiZXhwIjoxNzg2NzE4NTI3fQ.k4I2MgOrRXWzfWQ_tWAEPJNmeh8re2xgUy6X89YaGE8
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:07.868 response time in milliseconds: 274
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:07 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:4,&quot;email&quot;:&quot;collab.bloque@zenity.com&quot;,&quot;status&quot;:&quot;BLOCKED&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:15.55751&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Lucas&quot;,&quot;lastName&quot;:&quot;Dubois&quot;,&quot;trigramme&quot;:&quot;LDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000004&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2023-03-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1994-05-08&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:1,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:100,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:100,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:1,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:07.820718574&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3244,7 +4111,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3271,7 +4138,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -3299,7 +4166,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les utilisateurs bloqu&eacute;s sont retourn&eacute;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -3326,11 +4193,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.021</span>
 
 </div>
 
@@ -3339,9 +4206,71 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-30">
+          <a>js</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found allBlocked
+if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }
+                              ^
+Unnamed:1:102 Expected eof but found }
+if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }
+                                                                                                      ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:378)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+classpath:zenity/ofintra/features/users/PAWK-258.feature:165</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>14:27:07.890 classpath:zenity/ofintra/features/users/PAWK-258.feature:165
+* if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }
+js failed:
+&gt;&gt;&gt;&gt;
+01: if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found allBlocked
+if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }
+                              ^
+Unnamed:1:102 Expected eof but found }
+if (results.length &gt; 0) { def allBlocked = results.every(function(u) { return u.status === 'BLOCKED'; }); assert allBlocked == true; }
+                                                                                                      ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:378)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+classpath:zenity/ofintra/features/users/PAWK-258.feature:165
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3375,10 +4304,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.276</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-18">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-32">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -3391,14 +4320,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-18" class="collapse collapsable-details  in ">
+  <div id="element-32" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-19">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-33">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -3410,12 +4339,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-19" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-33" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention"># When: Filtrer par statut ARCHIVED</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -3442,7 +4371,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -3469,7 +4398,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param status = 'ARCHIVED'</span>
 
@@ -3496,7 +4425,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -3523,7 +4452,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 100</span>
 
@@ -3550,11 +4479,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.274</span>
 
 </div>
 
@@ -3566,6 +4495,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-34">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-34" class="collapse collapsable-details">
+        <pre>14:27:08.705 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?size=100&amp;page=0&amp;status=ARCHIVED
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijg1MTFmNjM1LWE1OTAtNGEyYy05ZGE4LTY3MWM1YTE3NzJjMiIsImlhdCI6MTc4NjcxNzYyOCwiZXhwIjoxNzg2NzE4NTI4fQ.ET5GuO2BLgPJWE3Mm-IEiQ622qLmI_cuhN0AT77GL5I
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:08.979 response time in milliseconds: 273
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:08 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:5,&quot;email&quot;:&quot;collab.archive@zenity.com&quot;,&quot;status&quot;:&quot;ARCHIVED&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Marie&quot;,&quot;lastName&quot;:&quot;Lefebvre&quot;,&quot;trigramme&quot;:&quot;MLE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000005&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-02-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-09-12&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:1,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:100,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:100,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:1,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:08.931092141&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3577,7 +4544,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -3604,7 +4571,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -3632,7 +4599,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les utilisateurs archiv&eacute;s sont retourn&eacute;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -3659,11 +4626,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -3672,9 +4639,71 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-35">
+          <a>js</a>
+      </div>
+      <div id="msg-35" class="collapse collapsable-details  in ">
+        <pre>js failed:
+&gt;&gt;&gt;&gt;
+01: if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found allArchived
+if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }
+                              ^
+Unnamed:1:104 Expected eof but found }
+if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }
+                                                                                                        ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:378)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+classpath:zenity/ofintra/features/users/PAWK-258.feature:181</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-36">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-36" class="collapse collapsable-details">
+        <pre>14:27:08.981 classpath:zenity/ofintra/features/users/PAWK-258.feature:181
+* if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }
+js failed:
+&gt;&gt;&gt;&gt;
+01: if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }
+&lt;&lt;&lt;&lt;
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:1:30 Expected ; but found allArchived
+if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }
+                              ^
+Unnamed:1:104 Expected eof but found }
+if (results.length &gt; 0) { def allArchived = results.every(function(u) { return u.status === 'ARCHIVED'; }); assert allArchived == true; }
+                                                                                                        ^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.ScenarioActions.evalIf(ScenarioActions.java:378)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+- java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+
+classpath:zenity/ofintra/features/users/PAWK-258.feature:181
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -3708,12 +4737,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">2.731</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-20">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-37">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Recherche combin&eacute;e (searchText + r&ocirc;le)</span>
 
@@ -3724,16 +4753,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-20" class="collapse collapsable-details  in ">
+  <div id="element-37" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-21">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-38">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -3743,12 +4772,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-21" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-38" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># Create a test user with a unique name and specific role</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def createCollabData = read('data/request/create-collaborator.json')</span>
 
@@ -3775,7 +4804,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def uniqueEmail =</span>
 
@@ -3793,10 +4822,10 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-39">
           <a>Doc string</a>
       </div>
-      <div id="msg-22" class="collapse collapsable-details">
+      <div id="msg-39" class="collapse collapsable-details">
         <pre>function(prefix) {
   return prefix + '.' + java.lang.System.currentTimeMillis() + '@zenity.com';
 }</pre>
@@ -3814,9 +4843,63 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def payload = karate.merge(createCollabData, { email: uniqueEmail('combined'), firstName: 'CombinedTest' })</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def registerCollab = call read('classpath:zenity/ofintra/features/users/helpers/register-helper.feature') {data: '#(payload)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">1.224</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/features/users/helpers/register-helper.feature</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3841,9 +4924,292 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">def registerCollab = call read('classpath:zenity/ofintra/features/users/helpers/register-helper.feature') {data: '#(payload)', token: '#(adminToken)'}</span>
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">path '/api/v1/auth/register'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request data</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.220</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-40">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-40" class="collapse collapsable-details">
+        <pre>14:27:09.693 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/register
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImM0OGNkM2M5LTQ1ZmYtNDgwNi05Zjk0LTVmNDk3NWQxMWE3ZSIsImlhdCI6MTc4NjcxNzYyOSwiZXhwIjoxNzg2NzE4NTI5fQ.IJP4g04TM6MWz6SeHkkDmtZNN3tecYqolLxMyKbuG1o
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 311
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lastName&quot;:&quot;Dupont&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;roleId&quot;:3,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;firstName&quot;:&quot;CombinedTest&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;email&quot;:&quot;combined.1786717629689@zenity.com&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;}
+
+14:27:10.913 response time in milliseconds: 1220
+1 &lt; 201
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:10 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User registered successfully. Please check your email for activation instructions.&quot;,&quot;data&quot;:{&quot;id&quot;:14,&quot;email&quot;:&quot;combined.1786717629689@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:null,&quot;roleType&quot;:null,&quot;firstName&quot;:&quot;CombinedTest&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;CDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-08-14T14:27:10.867524149&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def id            = response.data.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def email         = response.data.email</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def status        = response.data.status</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def roleName      = response.data.roleName</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -3869,7 +5235,7 @@ $(document).ready(function() {
           <div class="comment indention"># When: Rechercher avec searchText ET r&ocirc;le</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -3896,7 +5262,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -3923,7 +5289,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param searchText = 'CombinedTest'</span>
 
@@ -3950,7 +5316,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param role = 'COLLABORATOR'</span>
 
@@ -3977,7 +5343,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -4004,7 +5370,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 20</span>
 
@@ -4031,11 +5397,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.278</span>
 
 </div>
 
@@ -4047,6 +5413,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-41">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-41" class="collapse collapsable-details">
+        <pre>14:27:10.916 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?searchText=CombinedTest&amp;role=COLLABORATOR&amp;size=20&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImM0OGNkM2M5LTQ1ZmYtNDgwNi05Zjk0LTVmNDk3NWQxMWE3ZSIsImlhdCI6MTc4NjcxNzYyOSwiZXhwIjoxNzg2NzE4NTI5fQ.IJP4g04TM6MWz6SeHkkDmtZNN3tecYqolLxMyKbuG1o
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:11.193 response time in milliseconds: 277
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:11 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:14,&quot;email&quot;:&quot;combined.1786717629689@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;CombinedTest&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;CDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:1,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:1,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:11.145871135&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -4058,7 +5462,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -4085,7 +5489,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -4113,7 +5517,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les collaborateurs avec ce texte sont retourn&eacute;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -4140,11 +5544,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def filtered = results.filter(function(u) { return u.firstName.includes('CombinedTest'); })</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -4167,7 +5571,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert filtered.length &gt; 0</span>
 
@@ -4216,12 +5620,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.277</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-23">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-42">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Pagination fonctionne correctement</span>
 
@@ -4232,16 +5636,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-23" class="collapse collapsable-details  in ">
+  <div id="element-42" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-24">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-43">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -4251,12 +5655,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-24" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-43" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Demander la premi&egrave;re page</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -4283,7 +5687,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -4310,7 +5714,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -4337,7 +5741,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 5</span>
 
@@ -4364,11 +5768,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.275</span>
 
 </div>
 
@@ -4380,6 +5784,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-44">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-44" class="collapse collapsable-details">
+        <pre>14:27:11.910 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?size=5&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImNmNWMxNGIwLTEyMGUtNDJlMi04MjY1LWViMzcxOTMxYmUyMiIsImlhdCI6MTc4NjcxNzYzMSwiZXhwIjoxNzg2NzE4NTMxfQ.vx69x8M-I1k9cppdX-qg2lN_z-tmci4B5qKA06F375k
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:12.184 response time in milliseconds: 274
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:14,&quot;email&quot;:&quot;combined.1786717629689@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;CombinedTest&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;CDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:13,&quot;email&quot;:&quot;search.1786717620092@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;UniqueName&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;UDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:12,&quot;email&quot;:&quot;manager.1786717611101@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;SM1&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+237622334455&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2023-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-08-15&quot;,&quot;emergencyContactName&quot;:&quot;Pierre Martin&quot;,&quot;emergencyContactPhone&quot;:&quot;+237699887766&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:11,&quot;email&quot;:&quot;testcollab.1786717604509@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD3&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:10,&quot;email&quot;:&quot;testmanager.1786717599557@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD2&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:false,&quot;number&quot;:0,&quot;numberOfElements&quot;:5,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:5,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:5,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:14,&quot;totalPages&quot;:3},&quot;timestamp&quot;:&quot;2026-08-14T14:27:12.137227726&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -4391,7 +5833,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -4418,7 +5860,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -4446,7 +5888,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Les m&eacute;tadonn&eacute;es de pagination sont pr&eacute;sentes</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def pageData = response.data</span>
 
@@ -4473,7 +5915,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match pageData.totalElements == '#number'</span>
 
@@ -4500,7 +5942,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match pageData.totalPages == '#number'</span>
 
@@ -4527,7 +5969,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match pageData.number == '#number'</span>
 
@@ -4554,7 +5996,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match pageData.size == '#number'</span>
 
@@ -4581,7 +6023,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match pageData.content == '#[] #object'</span>
 
@@ -4631,12 +6073,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.273</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-25">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-45">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Manager ne peut voir que les collaborateurs en recherche</span>
 
@@ -4647,16 +6089,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-25" class="collapse collapsable-details  in ">
+  <div id="element-45" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-26">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-46">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -4666,12 +6108,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-26" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-46" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Un manager fait une recherche</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -4698,7 +6140,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + managerToken</span>
 
@@ -4725,7 +6167,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -4752,7 +6194,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 100</span>
 
@@ -4779,11 +6221,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.272</span>
 
 </div>
 
@@ -4795,6 +6237,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-47">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-47" class="collapse collapsable-details">
+        <pre>14:27:12.910 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?size=100&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiNmE5ZTY0YWYtMTZlYi00NGUwLWE0NjUtMDM2YmNmNjY0MDA3IiwiaWF0IjoxNzg2NzE3NjMyLCJleHAiOjE3ODY3MTg1MzJ9.ToTrnsfqjqFoWgjG_eZMdZ1Wm6DhJdCzk_5oCsHTTSo
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:13.181 response time in milliseconds: 271
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:13 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[{&quot;id&quot;:14,&quot;email&quot;:&quot;combined.1786717629689@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;CombinedTest&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;CDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:13,&quot;email&quot;:&quot;search.1786717620092@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;UniqueName&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;UDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:11,&quot;email&quot;:&quot;testcollab.1786717604509@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD3&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:8,&quot;email&quot;:&quot;collab.1786717565951@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JD1&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:6,&quot;email&quot;:&quot;collab.1786717560137@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:56.407402&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:4,&quot;email&quot;:&quot;collab.bloque@zenity.com&quot;,&quot;status&quot;:&quot;BLOCKED&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T14:26:15.55751&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Lucas&quot;,&quot;lastName&quot;:&quot;Dubois&quot;,&quot;trigramme&quot;:&quot;LDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000004&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2023-03-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1994-05-08&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},{&quot;id&quot;:5,&quot;email&quot;:&quot;collab.archive@zenity.com&quot;,&quot;status&quot;:&quot;ARCHIVED&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Marie&quot;,&quot;lastName&quot;:&quot;Lefebvre&quot;,&quot;trigramme&quot;:&quot;MLE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000005&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-02-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-09-12&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:8,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:100,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:100,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:8,&quot;totalPages&quot;:1},&quot;timestamp&quot;:&quot;2026-08-14T14:27:13.134449549&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -4806,7 +6286,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -4833,7 +6313,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -4861,7 +6341,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Seuls les collaborateurs sont visibles</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -4888,7 +6368,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def hasAdmin = results.some(function(u) { return u.roleType === 'ADMINISTRATOR'; })</span>
 
@@ -4915,7 +6395,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def hasManager = results.some(function(u) { return u.roleType === 'MANAGER'; })</span>
 
@@ -4942,7 +6422,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert hasAdmin == false</span>
 
@@ -4969,7 +6449,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert hasManager == false</span>
 
@@ -5018,12 +6498,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.277</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-27">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-48">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-258 - Recherche sans r&eacute;sultat</span>
 
@@ -5034,16 +6514,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-27" class="collapse collapsable-details  in ">
+  <div id="element-48" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-28">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-49">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -5053,12 +6533,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-28" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-49" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># When: Rechercher avec un texte qui n'existe pas</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/users'</span>
 
@@ -5085,7 +6565,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -5112,7 +6592,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param searchText = 'ThisUserDoesNotExist12345'</span>
 
@@ -5139,7 +6619,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param page = 0</span>
 
@@ -5166,7 +6646,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">param size = 20</span>
 
@@ -5193,11 +6673,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.276</span>
 
 </div>
 
@@ -5209,6 +6689,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-50">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-50" class="collapse collapsable-details">
+        <pre>14:27:13.896 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users?searchText=ThisUserDoesNotExist12345&amp;size=20&amp;page=0
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjI3ZGRiNjU5LTAyMDQtNGQ1Ny05ZDYyLTg3YmU5NTdlNzRlMSIsImlhdCI6MTc4NjcxNzYzMywiZXhwIjoxNzg2NzE4NTMzfQ.DzhrHpw-VB8oD_qUJXt3RaYqE4rnxZzO7Z3EoAL3AUc
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+14:27:14.171 response time in milliseconds: 275
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 14:27:14 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Users retrieved successfully&quot;,&quot;data&quot;:{&quot;content&quot;:[],&quot;empty&quot;:true,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:0,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:0,&quot;totalPages&quot;:0},&quot;timestamp&quot;:&quot;2026-08-14T14:27:14.124211228&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -5220,7 +6738,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -5247,7 +6765,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -5275,7 +6793,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Aucun r&eacute;sultat n'est retourn&eacute;</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def results = response.data.content</span>
 
@@ -5302,7 +6820,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert results.length == 0</span>
 

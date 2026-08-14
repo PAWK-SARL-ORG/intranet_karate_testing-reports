@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>14 Aug 2026, 13:33</td>
+      <td>14 Aug 2026, 14:27</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="2836707799">2.836</td>
+          <td class="duration" data-value="5552134800">5.552</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -183,7 +183,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.836</span>
+  <span class="lead-duration duration">5.552</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -226,7 +226,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def payload = karate.merge(createCollabData, { email: uniqueEmail('collab') })</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.022</span>
 
 </div>
 
@@ -253,7 +253,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def registerCollab = call read('classpath:zenity/ofintra/features/users/helpers/register-helper.feature') {data: '#(payload)', token: '#(adminToken)'}</span>
 
-  <span class="lead-duration duration">1.412</span>
+  <span class="lead-duration duration">2.768</span>
 
 </div>
 
@@ -415,7 +415,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.402</span>
+  <span class="lead-duration duration">2.759</span>
 
 </div>
 
@@ -433,21 +433,21 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>13:32:16.510 request:
+        <pre>14:26:00.169 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/register
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImUxNTYzNGFjLWE2NWYtNGJhNi05Yjk5LTBlNzhmNGMyZTI2NSIsImlhdCI6MTc4NjcxNDMzNiwiZXhwIjoxNzg2NzE1MjM2fQ.TpKrH4Pmu8bKjSg_Bt_9KCFAIPVVYd7OrjZPFck_MjU
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjJlZDFhNGYzLWNjYzctNDQzZi1hZjIzLTFmZmNmNWNjMmMxMiIsImlhdCI6MTc4NjcxNzU2MCwiZXhwIjoxNzg2NzE4NDYwfQ.zbrYBVIMdbSuGe_k7JDGUi_oGaGm0-bRkuWeIspn-Sw
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 301
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;lastName&quot;:&quot;Dupont&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;roleId&quot;:3,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;email&quot;:&quot;collab.1786714336481@zenity.com&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;}
+{&quot;lastName&quot;:&quot;Dupont&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;roleId&quot;:3,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;firstName&quot;:&quot;Jean&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;email&quot;:&quot;collab.1786717560137@zenity.com&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;}
 
-13:32:17.911 response time in milliseconds: 1401
+14:26:02.926 response time in milliseconds: 2757
 1 &lt; 201
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 13:32:17 GMT
+1 &lt; Date: Fri, 14 Aug 2026 14:26:02 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -461,7 +461,7 @@ $(document).ready(function() {
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;User registered successfully. Please check your email for activation instructions.&quot;,&quot;data&quot;:{&quot;id&quot;:7,&quot;email&quot;:&quot;collab.1786714336481@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:null,&quot;roleType&quot;:null,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-08-14T13:32:17.833522178&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User registered successfully. Please check your email for activation instructions.&quot;,&quot;data&quot;:{&quot;id&quot;:6,&quot;email&quot;:&quot;collab.1786717560137@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:null,&quot;roleType&quot;:null,&quot;firstName&quot;:&quot;Jean&quot;,&quot;lastName&quot;:&quot;Dupont&quot;,&quot;trigramme&quot;:&quot;JDU&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;startDate&quot;:&quot;2024-01-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-05-20&quot;,&quot;emergencyContactName&quot;:&quot;Marie Dupont&quot;,&quot;emergencyContactPhone&quot;:&quot;+237698765432&quot;,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-08-14T14:26:02.880523775&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </pre>
       </div>
