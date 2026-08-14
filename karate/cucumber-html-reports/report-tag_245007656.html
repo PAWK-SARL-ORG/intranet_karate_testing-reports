@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>14 Aug 2026, 11:32</td>
+      <td>14 Aug 2026, 13:33</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-122</td>
+          <td      class="passed"    >7</td>
           <td >0</td>
           <td >0</td>
-          <td     class="skipped"   >7</td>
           <td >0</td>
           <td >0</td>
           <td class="total">7</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="0">0.000</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="447960891">0.447</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.447</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-122 - Restriction du choix des r&ocirc;les pour un manager</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,15 +218,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def payload = karate.merge(createAdminData, { email: uniqueEmail('admin') })</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/auth/register'</span>
 
@@ -276,7 +276,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + managerToken</span>
 
@@ -303,7 +303,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">request payload</span>
 
@@ -330,11 +330,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.445</span>
 
 </div>
 
@@ -346,6 +346,45 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:32:20.512 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/register
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMzdlYmM3MDItNDI4Ni00Yzg4LTkxYzQtNDYyZTVmYWExNzU5IiwiaWF0IjoxNzg2NzE0MzQwLCJleHAiOjE3ODY3MTUyNDB9.S6MQ_G1G5swKfcE8jYuG7y2cnbSzEuobdB3rVwQyAN0
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 306
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lastName&quot;:&quot;Dubois&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;emergencyContactName&quot;:&quot;Claire Dubois&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;roleId&quot;:1,&quot;birthDate&quot;:&quot;1980-12-05&quot;,&quot;firstName&quot;:&quot;Alexandre&quot;,&quot;emergencyContactPhone&quot;:&quot;+237677889900&quot;,&quot;phoneNumber&quot;:&quot;+237633445566&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;email&quot;:&quot;admin.1786714340510@zenity.com&quot;,&quot;startDate&quot;:&quot;2022-03-10&quot;}
+
+13:32:20.957 response time in milliseconds: 445
+1 &lt; 400
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 13:32:20 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Managers cannot create Administrator accounts&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T13:32:20.879959364&quot;,&quot;path&quot;:&quot;/api/v1/auth/register&quot;,&quot;errorCode&quot;:&quot;BUSINESS_ERROR&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -357,7 +396,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
 
@@ -384,7 +423,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == false</span>
 

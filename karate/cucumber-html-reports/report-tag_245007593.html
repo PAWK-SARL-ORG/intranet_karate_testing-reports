@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>14 Aug 2026, 11:32</td>
+      <td>14 Aug 2026, 13:33</td>
     </tr>
   </tbody>
 </table>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td >0</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="4140206921">4.140</td>
+          <td class="duration" data-value="2990943155">2.990</td>
           <td class="passed">Passed</td>
         </tr>
         </tbody>
@@ -182,7 +182,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.140</span>
+  <span class="lead-duration duration">2.990</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -226,7 +226,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def validLogin = call read('classpath:zenity/ofintra/common/login-helper.feature') {email: '#(validEmail)', password: '#(validPassword)'}</span>
 
-  <span class="lead-duration duration">2.161</span>
+  <span class="lead-duration duration">1.572</span>
 
 </div>
 
@@ -280,7 +280,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; Given</span>
   <span class="name">url baseUrl</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -334,7 +334,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">request { email: '#(email)', password: '#(password)' }</span>
 
-  <span class="lead-duration duration">0.003</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -361,7 +361,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">1.945</span>
+  <span class="lead-duration duration">1.361</span>
 
 </div>
 
@@ -379,20 +379,20 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>11:30:14.087 request:
-1 &gt; POST https://api-int.intranet-pawk.com/api/v1/auth/login
+        <pre>13:30:56.638 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 54
-1 &gt; Host: api-int.intranet-pawk.com
+1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
 
-11:30:15.354 response time in milliseconds: 1263
+13:30:57.633 response time in milliseconds: 989
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 11:30:15 GMT
+1 &lt; Date: Fri, 14 Aug 2026 13:30:57 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -405,8 +405,8 @@ $(document).ready(function() {
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-int.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImY2NTRkZjhkLWUwNjAtNGI4Yi05NzcyLTNjY2FjODQ5NmFlZSIsImlhdCI6MTc4NjcwNzAxNSwiZXhwIjoxNzg2NzA3OTE1fQ.l09d28kx6OeQJLS9qyJCJ2OYXAKMhoPWYd5a6TClzag&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiMTI0OWZiNjItOTA2OC00ZTM4LWE5NWYtMGQ0NGNhZWJjZDk1IiwiaWF0IjoxNzg2NzA3MDE1LCJleHAiOjE3ODczMTE4MTV9.X2vJyder28y47566nMGVd1L6d1kSHmUkSiDf5hyNPLE&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T11:30:15.249788224&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:null,&quot;nationalId&quot;:null,&quot;startDate&quot;:null,&quot;contractType&quot;:null,&quot;birthDate&quot;:null,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:&quot;&quot;,&quot;locationMapUrl&quot;:&quot;https://bucket.example.com/profiles/1/map_1774063482087.jpg&quot;,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-14T11:30:15.268210176&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjlhM2ZkNGNkLTYzYzctNDYyMC05YzkyLWZhZWNiYjg0M2VmOSIsImlhdCI6MTc4NjcxNDI1NywiZXhwIjoxNzg2NzE1MTU3fQ.AMDgYsVP6habmw3FkWqdZBN3l0O_BoiJf0EqmlKsd4o&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiNzVlM2NmMzYtZTE0OC00NTQ2LWE3NzgtNWI5ODAxNjhjMTY4IiwiaWF0IjoxNzg2NzE0MjU3LCJleHAiOjE3ODczMTkwNTd9.GiPItFqWnZys9t6Hxiw7fzkMipGweoKqG0UVZOUu-cM&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T13:30:57.524626723&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:&quot;&quot;,&quot;emergencyContactPhone2&quot;:&quot;&quot;,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:&quot;00000&quot;}},&quot;timestamp&quot;:&quot;2026-08-14T13:30:57.538588608&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </pre>
       </div>
@@ -454,7 +454,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
 
-  <span class="lead-duration duration">0.020</span>
+  <span class="lead-duration duration">0.043</span>
 
 </div>
 
@@ -481,7 +481,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def accessToken  = response.data.accessToken</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -508,7 +508,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def refreshToken = response.data.refreshToken</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -535,7 +535,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; *</span>
   <span class="name">def userId       = response.data.user.id</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -562,7 +562,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">match validLogin.response.success == true</span>
 
-  <span class="lead-duration duration">0.002</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 

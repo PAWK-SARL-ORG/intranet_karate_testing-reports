@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"9ecd4d4d-b90e-4223-9bbf-90b092db9591",karate_version:"1.4.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"0e875fee-3b0c-443d-b69c-1c5889b4bcd3",karate_version:"1.4.1",karate_meta:null});
   }
 });
 </script>
@@ -45,8 +45,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -56,12 +56,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-08-14 11:30:37 AM</div>
+    <div>2026-08-14 01:31:46 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:17]"><span>[1:17]</span> <span>PAWK-430 - Refus d&#39;une demande avec commentaire — le commentaire est persisté</span></a>
           </div>
         </div>
@@ -87,8 +87,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1004</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2882</span>
             </div>
           </div>
           <div class="step-row">
@@ -120,34 +120,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.7">11:30:36.053 karate.env system property was: null 
-11:30:36.053 ✓ Loaded: BASE_URL 
-11:30:36.053 ✓ Loaded: ADMIN_EMAIL 
-11:30:36.054 ✓ Loaded: ADMIN_PASSWORD 
-11:30:36.054 ✓ Loaded: ADMIN_ID 
-11:30:36.054 ✓ Loaded: MANAGER_EMAIL 
-11:30:36.054 ✓ Loaded: MANAGER_PASSWORD 
-11:30:36.054 ✓ Loaded: MANAGER_ID 
-11:30:36.054 ✓ Loaded: COLLAB_EMAIL 
-11:30:36.054 ✓ Loaded: COLLAB_PASSWORD 
-11:30:36.054 ✓ Loaded: COLLAB_ID 
-11:30:36.055 ✓ Loaded: BLOCKED_EMAIL 
-11:30:36.055 ✓ Loaded: BLOCKED_PASSWORD 
-11:30:36.055 ✓ Loaded: BLOCKED_ID 
-11:30:36.055 ✓ Loaded: ARCHIVED_EMAIL 
-11:30:36.055 ✓ Loaded: ARCHIVED_PASSWORD 
-11:30:36.055 ✓ Loaded: ARCHIVED_ID 
-11:30:36.055 ✓ Loaded: EXPIRED_JWT_TOKEN 
-11:30:36.055 ✓ .env file loaded successfully 
-11:30:36.055 ========== Configuration Loaded ========== 
-11:30:36.055 Base URL:          https://api-int.intranet-pawk.com 
-11:30:36.055 Admin Email:       admin@zenity.com 
-11:30:36.055 Manager Email:     manager@zenity.com 
-11:30:36.055 Collab Email:      collab@zenity.com 
-11:30:36.055 Blocked Email:     collab.bloque@zenity.com 
-11:30:36.055 Archived Email:    collab.archive@zenity.com 
-11:30:36.055 Expired Token:     NOT SET 
-11:30:36.055 ========================================== 
+  <div class="preformatted" data-parent="0.7">13:31:43.613 karate.env system property was: null 
+13:31:43.614 ✓ Loaded: BASE_URL 
+13:31:43.616 ✓ Loaded: ADMIN_EMAIL 
+13:31:43.616 ✓ Loaded: ADMIN_PASSWORD 
+13:31:43.616 ✓ Loaded: ADMIN_ID 
+13:31:43.616 ✓ Loaded: MANAGER_EMAIL 
+13:31:43.616 ✓ Loaded: MANAGER_PASSWORD 
+13:31:43.616 ✓ Loaded: MANAGER_ID 
+13:31:43.616 ✓ Loaded: COLLAB_EMAIL 
+13:31:43.616 ✓ Loaded: COLLAB_PASSWORD 
+13:31:43.616 ✓ Loaded: COLLAB_ID 
+13:31:43.616 ✓ Loaded: BLOCKED_EMAIL 
+13:31:43.617 ✓ Loaded: BLOCKED_PASSWORD 
+13:31:43.617 ✓ Loaded: BLOCKED_ID 
+13:31:43.617 ✓ Loaded: ARCHIVED_EMAIL 
+13:31:43.617 ✓ Loaded: ARCHIVED_PASSWORD 
+13:31:43.617 ✓ Loaded: ARCHIVED_ID 
+13:31:43.617 ✓ Loaded: EXPIRED_JWT_TOKEN 
+13:31:43.617 ✓ .env file loaded successfully 
+13:31:43.620 ========== Configuration Loaded ========== 
+13:31:43.620 Base URL:          https://api-rec.intranet-pawk.com 
+13:31:43.620 Admin Email:       admin@zenity.com 
+13:31:43.620 Manager Email:     manager@zenity.com 
+13:31:43.620 Collab Email:      collab@zenity.com 
+13:31:43.620 Blocked Email:     collab.bloque@zenity.com 
+13:31:43.620 Archived Email:    collab.archive@zenity.com 
+13:31:43.620 Expired Token:     NOT SET 
+13:31:43.620 ========================================== 
 </div>   
 
   
@@ -167,7 +167,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def admin       = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(adminEmail)&#39;,  password: &#39;#(adminPassword)&#39;  }</span>
       </div>
     </div>
-    <div class="time-cell passed">560</div>
+    <div class="time-cell passed">544</div>
   </div>
 
    
@@ -186,7 +186,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">555</div>
+      <div class="time-cell passed">535</div>
     </div>
     <div>
       <div><div>
@@ -286,7 +286,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">553</div>
+    <div class="time-cell passed">533</div>
   </div>
 
    
@@ -295,20 +295,20 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8.0.call.0.8">11:30:36.061 request:
-1 &gt; POST https://api-int.intranet-pawk.com/api/v1/auth/login
+  <div class="preformatted" data-parent="0.8.0.call.0.8">13:31:43.635 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 54
-1 &gt; Host: api-int.intranet-pawk.com
+1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
 
-11:30:36.607 response time in milliseconds: 545
+13:31:44.165 response time in milliseconds: 530
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 11:30:36 GMT
+1 &lt; Date: Fri, 14 Aug 2026 13:31:44 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -321,8 +321,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-int.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImIzZTY1MTZiLWIyOTAtNDFiMi04Yzc4LTQ0NDU1NzA5NzQyNiIsImlhdCI6MTc4NjcwNzAzNiwiZXhwIjoxNzg2NzA3OTM2fQ.KGc829TvZhoSpTNtjHoKnmhJ3gSmtl7gJI2e7qZj8So&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiODgyNzFmZjgtMjk1YS00MTY2LWIyZjctMGI5NmEyYTEyZTVmIiwiaWF0IjoxNzg2NzA3MDM2LCJleHAiOjE3ODczMTE4MzZ9.R2PeQ82iQzlTkYJaONvCW4XvXvbTBVgwCYc7IHQn-Fs&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T11:30:36.51941101&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:null,&quot;nationalId&quot;:null,&quot;startDate&quot;:null,&quot;contractType&quot;:null,&quot;birthDate&quot;:null,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:&quot;&quot;,&quot;locationMapUrl&quot;:&quot;https://bucket.example.com/profiles/1/map_1774063482087.jpg&quot;,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-14T11:30:36.529048951&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijg2MWViMzhjLTU3OTYtNDBlNC1iZjI3LWNjMjU2MWVkNTk0MSIsImlhdCI6MTc4NjcxNDMwNCwiZXhwIjoxNzg2NzE1MjA0fQ.v5_jy6M7UkYec8ka7jYoJcaJ2vik83ahDQgtkdqJrOc&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiN2I1NWFmMDQtZDFlZC00YTU0LWJjMDctZTkxNjVjNDE4Y2U5IiwiaWF0IjoxNzg2NzE0MzA0LCJleHAiOjE3ODczMTkxMDR9.wSrb3rpiQFTlCCPoQ8lt9R5UQen-TvznFEon9N_M3cI&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T13:31:44.081472581&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+237612345678&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:&quot;&quot;,&quot;emergencyContactPhone2&quot;:&quot;&quot;,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:&quot;00000&quot;}},&quot;timestamp&quot;:&quot;2026-08-14T13:31:44.087131872&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -484,11 +484,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.9">
       <div class="step-ref bg-step">9</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def collab      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;, password: &#39;#(collabPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell failed">444</div>
+    <div class="time-cell passed">529</div>
   </div>
 
    
@@ -497,13 +497,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.9">11:30:37.060 classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
-* def collab      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;, password: &#39;#(collabPassword)&#39; }
-status code was: 401, expected: 200, response time in milliseconds: 435, url: https://api-int.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Invalid email or password&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T11:30:36.984649638&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;AUTHENTICATION_FAILED&quot;}
-classpath:zenity/ofintra/common/login-helper.feature:9
-classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
-</div>   
+     
 
   <div>
         
@@ -513,7 +507,7 @@ classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">438</div>
+      <div class="time-cell passed">525</div>
     </div>
     <div>
       <div><div>
@@ -613,7 +607,7 @@ classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">437</div>
+    <div class="time-cell passed">523</div>
   </div>
 
    
@@ -622,20 +616,20 @@ classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
 
   
 
-  <div class="preformatted" data-parent="0.9.0.call.0.8">11:30:36.623 request:
-1 &gt; POST https://api-int.intranet-pawk.com/api/v1/auth/login
+  <div class="preformatted" data-parent="0.9.0.call.0.8">13:31:44.172 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 56
-1 &gt; Host: api-int.intranet-pawk.com
+1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-11:30:37.059 response time in milliseconds: 435
-1 &lt; 401
+13:31:44.694 response time in milliseconds: 521
+1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 11:30:36 GMT
+1 &lt; Date: Fri, 14 Aug 2026 13:31:44 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -648,7 +642,8 @@ classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Invalid email or password&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T11:30:36.984649638&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;AUTHENTICATION_FAILED&quot;}
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjJkMzdmOWQ2LTVhMjMtNDdiMy05ZGFhLTNlZmJiY2E4NTM5MiIsImlhdCI6MTc4NjcxNDMwNCwiZXhwIjoxNzg2NzE1MjA0fQ.nEH9gFoT7qaEL67m_VoYLkqs0-jY2Khpz_Ca6MnSDZY&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6ImVjNjk5MDk3LTg4ODEtNGQyYy04ZGRiLTA1YTEyNjMwYWUwOCIsImlhdCI6MTc4NjcxNDMwNCwiZXhwIjoxNzg3MzE5MTA0fQ.jxkxBmsj2gMr5DoeSRtYzOWotWT511JoyiIfM3dsVnM&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T13:31:44.611270943&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:&quot;1ZZERR&quot;,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:&quot;Chez Moi&quot;}},&quot;timestamp&quot;:&quot;2026-08-14T13:31:44.616643067&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -665,11 +660,11 @@ classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
     <div class="step-container" id="0.9.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -678,12 +673,7 @@ classpath:zenity/ofintra/features/leaves/PAWK-430.feature:9
 
   
 
-  <div class="preformatted" data-parent="0.9.0.call.0.9">11:30:37.059 classpath:zenity/ofintra/common/login-helper.feature:9
-Then status 200
-status code was: 401, expected: 200, response time in milliseconds: 435, url: https://api-int.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Invalid email or password&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T11:30:36.984649638&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;AUTHENTICATION_FAILED&quot;}
-classpath:zenity/ofintra/common/login-helper.feature:9
-</div>   
+     
 
   
 
@@ -698,11 +688,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.9.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.data  == read(&#39;classpath:zenity/ofintra/common/data/response/auth-success-schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -726,11 +716,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.9.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def accessToken  = response.data.accessToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -754,11 +744,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.9.0.call.0.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def refreshToken = response.data.refreshToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -782,11 +772,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.9.0.call.0.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userId       = response.data.user.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -815,11 +805,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.10">
       <div class="step-ref bg-step">10</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def adminToken  = admin.accessToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -843,11 +833,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.11">
       <div class="step-ref bg-step">11</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def collabToken = collab.accessToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -871,11 +861,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.12">
       <div class="step-ref bg-step">12</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def baseDay     = 1100 + Math.floor((java.lang.System.currentTimeMillis() % 100000) / 100)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -899,11 +889,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.13">
       <div class="step-ref bg-step">13</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def futureStart = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -927,11 +917,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.14">
       <div class="step-ref bg-step">14</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def futureEnd   = java.time.LocalDate.now().plusDays(baseDay + 4).toString()</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -953,13 +943,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.18">
-      <div class="step-ref skipped">18</div>
+      <div class="step-ref passed">18</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -981,13 +971,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.19">
-      <div class="step-ref skipped">19</div>
+      <div class="step-ref passed">19</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1009,13 +999,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.20">
-      <div class="step-ref skipped">20</div>
+      <div class="step-ref passed">20</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request { type: &#39;UNPAID_LEAVE&#39;, startDate: &#39;#(futureStart)&#39;, endDate: &#39;#(futureEnd)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1037,13 +1027,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.21">
-      <div class="step-ref skipped">21</div>
+      <div class="step-ref passed">21</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">453</div>
   </div>
 
    
@@ -1052,7 +1042,37 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   
 
-     
+  <div class="preformatted" data-parent="0.21">13:31:44.701 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjJkMzdmOWQ2LTVhMjMtNDdiMy05ZGFhLTNlZmJiY2E4NTM5MiIsImlhdCI6MTc4NjcxNDMwNCwiZXhwIjoxNzg2NzE1MjA0fQ.nEH9gFoT7qaEL67m_VoYLkqs0-jY2Khpz_Ca6MnSDZY
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 71
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2029-10-03&quot;,&quot;endDate&quot;:&quot;2029-10-07&quot;}
+
+13:31:45.152 response time in milliseconds: 451
+1 &lt; 201
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 13:31:45 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;id&quot;:25,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2029-10-03&quot;,&quot;endDate&quot;:&quot;2029-10-07&quot;,&quot;durationInDays&quot;:3,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-08-14T13:31:45.066970363&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null}
+
+</div>   
 
   
 
@@ -1065,13 +1085,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.22">
-      <div class="step-ref skipped">22</div>
+      <div class="step-ref passed">22</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 201</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1093,13 +1113,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.23">
-      <div class="step-ref skipped">23</div>
+      <div class="step-ref passed">23</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def leaveId = response.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1121,13 +1141,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.25">
-      <div class="step-ref skipped">25</div>
+      <div class="step-ref passed">25</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/&#39; + leaveId + &#39;/reject&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1149,13 +1169,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.26">
-      <div class="step-ref skipped">26</div>
+      <div class="step-ref passed">26</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + adminToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1177,13 +1197,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.27">
-      <div class="step-ref skipped">27</div>
+      <div class="step-ref passed">27</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request { comment: &#39;Period not allowed&#39; }</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1205,13 +1225,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.28">
-      <div class="step-ref skipped">28</div>
+      <div class="step-ref passed">28</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">456</div>
   </div>
 
    
@@ -1220,7 +1240,35 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   
 
-     
+  <div class="preformatted" data-parent="0.28">13:31:45.154 request:
+2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/leaves/25/reject
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijg2MWViMzhjLTU3OTYtNDBlNC1iZjI3LWNjMjU2MWVkNTk0MSIsImlhdCI6MTc4NjcxNDMwNCwiZXhwIjoxNzg2NzE1MjA0fQ.v5_jy6M7UkYec8ka7jYoJcaJ2vik83ahDQgtkdqJrOc
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 32
+2 &gt; Host: api-rec.intranet-pawk.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;comment&quot;:&quot;Period not allowed&quot;}
+
+13:31:45.609 response time in milliseconds: 454
+2 &lt; 204
+2 &lt; Server: openresty
+2 &lt; Date: Fri, 14 Aug 2026 13:31:45 GMT
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-Served-By: api-rec.intranet-pawk.com
+
+
+</div>   
 
   
 
@@ -1233,13 +1281,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.29">
-      <div class="step-ref skipped">29</div>
+      <div class="step-ref passed">29</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 204</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1261,13 +1309,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.31">
-      <div class="step-ref skipped">31</div>
+      <div class="step-ref passed">31</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/&#39; + leaveId</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1289,13 +1337,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.32">
-      <div class="step-ref skipped">32</div>
+      <div class="step-ref passed">32</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + adminToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1317,13 +1365,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.33">
-      <div class="step-ref skipped">33</div>
+      <div class="step-ref passed">33</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">450</div>
   </div>
 
    
@@ -1332,7 +1380,35 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   
 
-     
+  <div class="preformatted" data-parent="0.33">13:31:45.610 request:
+3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/25
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijg2MWViMzhjLTU3OTYtNDBlNC1iZjI3LWNjMjU2MWVkNTk0MSIsImlhdCI6MTc4NjcxNDMwNCwiZXhwIjoxNzg2NzE1MjA0fQ.v5_jy6M7UkYec8ka7jYoJcaJ2vik83ahDQgtkdqJrOc
+3 &gt; Host: api-rec.intranet-pawk.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+13:31:46.059 response time in milliseconds: 448
+3 &lt; 200
+3 &lt; Server: openresty
+3 &lt; Date: Fri, 14 Aug 2026 13:31:45 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 0
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+3 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;id&quot;:25,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2029-10-03&quot;,&quot;endDate&quot;:&quot;2029-10-07&quot;,&quot;durationInDays&quot;:3.0,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;REJECTED&quot;,&quot;processingComment&quot;:&quot;Period not allowed&quot;,&quot;createdAt&quot;:&quot;2026-08-14T13:31:45.06697&quot;,&quot;processedBy&quot;:&quot;Admin System&quot;,&quot;processedAt&quot;:&quot;2026-08-14T13:31:45.521724&quot;}
+
+</div>   
 
   
 
@@ -1345,13 +1421,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.34">
-      <div class="step-ref skipped">34</div>
+      <div class="step-ref passed">34</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1373,13 +1449,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.35">
-      <div class="step-ref skipped">35</div>
+      <div class="step-ref passed">35</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.status            == &#39;REJECTED&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1401,13 +1477,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.36">
-      <div class="step-ref skipped">36</div>
+      <div class="step-ref passed">36</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.processingComment == &#39;Period not allowed&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1436,13 +1512,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.39">
-      <div class="step-ref skipped">39</div>
+      <div class="step-ref passed">39</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/&#39; + leaveId</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1464,13 +1540,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.40">
-      <div class="step-ref skipped">40</div>
+      <div class="step-ref passed">40</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1492,13 +1568,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.41">
-      <div class="step-ref skipped">41</div>
+      <div class="step-ref passed">41</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">446</div>
   </div>
 
    
@@ -1507,7 +1583,34 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   
 
-     
+  <div class="preformatted" data-parent="0.41">13:31:46.061 request:
+4 &gt; DELETE https://api-rec.intranet-pawk.com/api/v1/leaves/25
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjJkMzdmOWQ2LTVhMjMtNDdiMy05ZGFhLTNlZmJiY2E4NTM5MiIsImlhdCI6MTc4NjcxNDMwNCwiZXhwIjoxNzg2NzE1MjA0fQ.nEH9gFoT7qaEL67m_VoYLkqs0-jY2Khpz_Ca6MnSDZY
+4 &gt; Host: api-rec.intranet-pawk.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+13:31:46.506 response time in milliseconds: 444
+4 &lt; 400
+4 &lt; Server: openresty
+4 &lt; Date: Fri, 14 Aug 2026 13:31:46 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 0
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Only PENDING requests can be cancelled.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T13:31:46.428197413&quot;,&quot;path&quot;:&quot;/api/v1/leaves/25&quot;,&quot;errorCode&quot;:&quot;LEAVE_NOT_PENDING&quot;}
+
+</div>   
 
   
 

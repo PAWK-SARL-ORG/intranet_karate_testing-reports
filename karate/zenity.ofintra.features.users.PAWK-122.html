@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"9ecd4d4d-b90e-4223-9bbf-90b092db9591",karate_version:"1.4.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"0e875fee-3b0c-443d-b69c-1c5889b4bcd3",karate_version:"1.4.1",karate_meta:null});
   }
 });
 </script>
@@ -45,8 +45,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -56,12 +56,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-08-14 11:30:57 AM</div>
+    <div>2026-08-14 01:32:20 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
+          <div class="nav-item passed">
             <a href="#[1:16]"><span>[1:16]</span> <span>PAWK-122 - Restriction du choix des rôles pour un manager</span></a>
           </div>
         </div>
@@ -87,8 +87,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>472</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>986</span>
             </div>
           </div>
           <div class="step-row">
@@ -120,34 +120,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">11:30:56.653 karate.env system property was: null 
-11:30:56.656 ✓ Loaded: BASE_URL 
-11:30:56.656 ✓ Loaded: ADMIN_EMAIL 
-11:30:56.657 ✓ Loaded: ADMIN_PASSWORD 
-11:30:56.657 ✓ Loaded: ADMIN_ID 
-11:30:56.657 ✓ Loaded: MANAGER_EMAIL 
-11:30:56.657 ✓ Loaded: MANAGER_PASSWORD 
-11:30:56.657 ✓ Loaded: MANAGER_ID 
-11:30:56.657 ✓ Loaded: COLLAB_EMAIL 
-11:30:56.657 ✓ Loaded: COLLAB_PASSWORD 
-11:30:56.657 ✓ Loaded: COLLAB_ID 
-11:30:56.657 ✓ Loaded: BLOCKED_EMAIL 
-11:30:56.657 ✓ Loaded: BLOCKED_PASSWORD 
-11:30:56.657 ✓ Loaded: BLOCKED_ID 
-11:30:56.657 ✓ Loaded: ARCHIVED_EMAIL 
-11:30:56.658 ✓ Loaded: ARCHIVED_PASSWORD 
-11:30:56.658 ✓ Loaded: ARCHIVED_ID 
-11:30:56.658 ✓ Loaded: EXPIRED_JWT_TOKEN 
-11:30:56.658 ✓ .env file loaded successfully 
-11:30:56.660 ========== Configuration Loaded ========== 
-11:30:56.660 Base URL:          https://api-int.intranet-pawk.com 
-11:30:56.660 Admin Email:       admin@zenity.com 
-11:30:56.660 Manager Email:     manager@zenity.com 
-11:30:56.660 Collab Email:      collab@zenity.com 
-11:30:56.660 Blocked Email:     collab.bloque@zenity.com 
-11:30:56.660 Archived Email:    collab.archive@zenity.com 
-11:30:56.660 Expired Token:     NOT SET 
-11:30:56.661 ========================================== 
+  <div class="preformatted" data-parent="0.4">13:32:19.966 karate.env system property was: null 
+13:32:19.967 ✓ Loaded: BASE_URL 
+13:32:19.967 ✓ Loaded: ADMIN_EMAIL 
+13:32:19.967 ✓ Loaded: ADMIN_PASSWORD 
+13:32:19.968 ✓ Loaded: ADMIN_ID 
+13:32:19.968 ✓ Loaded: MANAGER_EMAIL 
+13:32:19.968 ✓ Loaded: MANAGER_PASSWORD 
+13:32:19.968 ✓ Loaded: MANAGER_ID 
+13:32:19.968 ✓ Loaded: COLLAB_EMAIL 
+13:32:19.968 ✓ Loaded: COLLAB_PASSWORD 
+13:32:19.968 ✓ Loaded: COLLAB_ID 
+13:32:19.968 ✓ Loaded: BLOCKED_EMAIL 
+13:32:19.968 ✓ Loaded: BLOCKED_PASSWORD 
+13:32:19.970 ✓ Loaded: BLOCKED_ID 
+13:32:19.970 ✓ Loaded: ARCHIVED_EMAIL 
+13:32:19.970 ✓ Loaded: ARCHIVED_PASSWORD 
+13:32:19.970 ✓ Loaded: ARCHIVED_ID 
+13:32:19.970 ✓ Loaded: EXPIRED_JWT_TOKEN 
+13:32:19.970 ✓ .env file loaded successfully 
+13:32:19.971 ========== Configuration Loaded ========== 
+13:32:19.971 Base URL:          https://api-rec.intranet-pawk.com 
+13:32:19.971 Admin Email:       admin@zenity.com 
+13:32:19.971 Manager Email:     manager@zenity.com 
+13:32:19.971 Collab Email:      collab@zenity.com 
+13:32:19.971 Blocked Email:     collab.bloque@zenity.com 
+13:32:19.971 Archived Email:    collab.archive@zenity.com 
+13:32:19.971 Expired Token:     NOT SET 
+13:32:19.971 ========================================== 
 </div>   
 
   
@@ -163,11 +163,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def manager      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(managerEmail)&#39;, password: &#39;#(managerPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell failed">472</div>
+    <div class="time-cell passed">537</div>
   </div>
 
    
@@ -176,13 +176,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">11:30:57.133 classpath:zenity/ofintra/features/users/PAWK-122.feature:5
-* def manager      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(managerEmail)&#39;, password: &#39;#(managerPassword)&#39; }
-status code was: 401, expected: 200, response time in milliseconds: 459, url: https://api-int.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Invalid email or password&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T11:30:57.054847883&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;AUTHENTICATION_FAILED&quot;}
-classpath:zenity/ofintra/common/login-helper.feature:9
-classpath:zenity/ofintra/features/users/PAWK-122.feature:5
-</div>   
+     
 
   <div>
         
@@ -192,7 +186,7 @@ classpath:zenity/ofintra/features/users/PAWK-122.feature:5
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">463</div>
+      <div class="time-cell passed">529</div>
     </div>
     <div>
       <div><div>
@@ -292,7 +286,7 @@ classpath:zenity/ofintra/features/users/PAWK-122.feature:5
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">462</div>
+    <div class="time-cell passed">528</div>
   </div>
 
    
@@ -301,20 +295,20 @@ classpath:zenity/ofintra/features/users/PAWK-122.feature:5
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.8">11:30:56.672 request:
-1 &gt; POST https://api-int.intranet-pawk.com/api/v1/auth/login
+  <div class="preformatted" data-parent="0.5.0.call.0.8">13:32:19.982 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 58
-1 &gt; Host: api-int.intranet-pawk.com
+1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
 
-11:30:57.132 response time in milliseconds: 459
-1 &lt; 401
+13:32:20.507 response time in milliseconds: 524
+1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 11:30:57 GMT
+1 &lt; Date: Fri, 14 Aug 2026 13:32:20 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -327,7 +321,8 @@ classpath:zenity/ofintra/features/users/PAWK-122.feature:5
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Invalid email or password&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T11:30:57.054847883&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;AUTHENTICATION_FAILED&quot;}
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMzdlYmM3MDItNDI4Ni00Yzg4LTkxYzQtNDYyZTVmYWExNzU5IiwiaWF0IjoxNzg2NzE0MzQwLCJleHAiOjE3ODY3MTUyNDB9.S6MQ_G1G5swKfcE8jYuG7y2cnbSzEuobdB3rVwQyAN0&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiIxODdhMTZmMy0zODEwLTRhZTgtYjlkZC1mNjQzZDk1MDQ5YWMiLCJpYXQiOjE3ODY3MTQzNDAsImV4cCI6MTc4NzMxOTE0MH0.RILPFh12cgYYhh_B3HjRvSeqyCa3LOuZOmas6RomKvA&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T13:32:20.423271526&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-14T13:32:20.429034746&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -344,11 +339,11 @@ classpath:zenity/ofintra/features/users/PAWK-122.feature:5
     <div class="step-container" id="0.5.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -357,12 +352,7 @@ classpath:zenity/ofintra/features/users/PAWK-122.feature:5
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.9">11:30:57.132 classpath:zenity/ofintra/common/login-helper.feature:9
-Then status 200
-status code was: 401, expected: 200, response time in milliseconds: 459, url: https://api-int.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Invalid email or password&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T11:30:57.054847883&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;AUTHENTICATION_FAILED&quot;}
-classpath:zenity/ofintra/common/login-helper.feature:9
-</div>   
+     
 
   
 
@@ -377,11 +367,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.data  == read(&#39;classpath:zenity/ofintra/common/data/response/auth-success-schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -405,11 +395,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def accessToken  = response.data.accessToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -433,11 +423,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def refreshToken = response.data.refreshToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -461,11 +451,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userId       = response.data.user.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -494,11 +484,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.6">
       <div class="step-ref bg-step">6</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def managerToken = manager.accessToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -522,11 +512,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def createAdminData = read(&#39;data/request/create-admin.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -550,11 +540,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.8">
       <div class="step-ref bg-step">8</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def uniqueEmail =</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -578,13 +568,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.17">
-      <div class="step-ref skipped">17</div>
+      <div class="step-ref passed">17</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def payload = karate.merge(createAdminData, { email: uniqueEmail(&#39;admin&#39;) })</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -606,13 +596,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.18">
-      <div class="step-ref skipped">18</div>
+      <div class="step-ref passed">18</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/auth/register&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -634,13 +624,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.19">
-      <div class="step-ref skipped">19</div>
+      <div class="step-ref passed">19</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + managerToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -662,13 +652,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.20">
-      <div class="step-ref skipped">20</div>
+      <div class="step-ref passed">20</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>request payload</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -690,13 +680,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.21">
-      <div class="step-ref skipped">21</div>
+      <div class="step-ref passed">21</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">446</div>
   </div>
 
    
@@ -705,7 +695,36 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   
 
-     
+  <div class="preformatted" data-parent="0.21">13:32:20.512 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/register
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMzdlYmM3MDItNDI4Ni00Yzg4LTkxYzQtNDYyZTVmYWExNzU5IiwiaWF0IjoxNzg2NzE0MzQwLCJleHAiOjE3ODY3MTUyNDB9.S6MQ_G1G5swKfcE8jYuG7y2cnbSzEuobdB3rVwQyAN0
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 306
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;lastName&quot;:&quot;Dubois&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;emergencyContactName&quot;:&quot;Claire Dubois&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;roleId&quot;:1,&quot;birthDate&quot;:&quot;1980-12-05&quot;,&quot;firstName&quot;:&quot;Alexandre&quot;,&quot;emergencyContactPhone&quot;:&quot;+237677889900&quot;,&quot;phoneNumber&quot;:&quot;+237633445566&quot;,&quot;nationalId&quot;:&quot;&quot;,&quot;email&quot;:&quot;admin.1786714340510@zenity.com&quot;,&quot;startDate&quot;:&quot;2022-03-10&quot;}
+
+13:32:20.957 response time in milliseconds: 445
+1 &lt; 400
+1 &lt; Server: openresty
+1 &lt; Date: Fri, 14 Aug 2026 13:32:20 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Managers cannot create Administrator accounts&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T13:32:20.879959364&quot;,&quot;path&quot;:&quot;/api/v1/auth/register&quot;,&quot;errorCode&quot;:&quot;BUSINESS_ERROR&quot;}
+
+</div>   
 
   
 
@@ -718,13 +737,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.22">
-      <div class="step-ref skipped">22</div>
+      <div class="step-ref passed">22</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -746,13 +765,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.23">
-      <div class="step-ref skipped">23</div>
+      <div class="step-ref passed">23</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>match response.success == false</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
