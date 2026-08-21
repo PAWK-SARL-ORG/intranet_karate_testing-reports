@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>14 Aug 2026, 15:11</td>
+      <td>21 Aug 2026, 16:37</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">zenity/ofintra/features/leaves/PAWK-413.feature</td>
-          <td      class="passed"    >49</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >41</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >7</td>
           <td >0</td>
           <td >0</td>
           <td class="total">49</td>
 
-          <td  class="passed"    >2</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >1</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="3491670438">3.491</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="2243168201">2.243</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">zenity/ofintra/features/leaves/PAWK-413.feature</span>
 
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.041</span>
+  <span class="lead-duration duration">0.845</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -250,34 +250,34 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>15:08:54.592 karate.env system property was: null 
-15:08:54.593 &#10003; Loaded: BASE_URL 
-15:08:54.594 &#10003; Loaded: ADMIN_EMAIL 
-15:08:54.594 &#10003; Loaded: ADMIN_PASSWORD 
-15:08:54.595 &#10003; Loaded: ADMIN_ID 
-15:08:54.595 &#10003; Loaded: MANAGER_EMAIL 
-15:08:54.595 &#10003; Loaded: MANAGER_PASSWORD 
-15:08:54.595 &#10003; Loaded: MANAGER_ID 
-15:08:54.595 &#10003; Loaded: COLLAB_EMAIL 
-15:08:54.595 &#10003; Loaded: COLLAB_PASSWORD 
-15:08:54.595 &#10003; Loaded: COLLAB_ID 
-15:08:54.595 &#10003; Loaded: BLOCKED_EMAIL 
-15:08:54.595 &#10003; Loaded: BLOCKED_PASSWORD 
-15:08:54.595 &#10003; Loaded: BLOCKED_ID 
-15:08:54.595 &#10003; Loaded: ARCHIVED_EMAIL 
-15:08:54.595 &#10003; Loaded: ARCHIVED_PASSWORD 
-15:08:54.595 &#10003; Loaded: ARCHIVED_ID 
-15:08:54.595 &#10003; Loaded: EXPIRED_JWT_TOKEN 
-15:08:54.596 &#10003; .env file loaded successfully 
-15:08:54.596 ========== Configuration Loaded ========== 
-15:08:54.598 Base URL:          https://api-rec.intranet-pawk.com 
-15:08:54.598 Admin Email:       admin@zenity.com 
-15:08:54.598 Manager Email:     manager@zenity.com 
-15:08:54.599 Collab Email:      collab@zenity.com 
-15:08:54.599 Blocked Email:     collab.bloque@zenity.com 
-15:08:54.599 Archived Email:    collab.archive@zenity.com 
-15:08:54.599 Expired Token:     NOT SET 
-15:08:54.599 ========================================== 
+        <pre>16:35:48.789 karate.env system property was: null 
+16:35:48.789 &#10003; Loaded: BASE_URL 
+16:35:48.789 &#10003; Loaded: ADMIN_EMAIL 
+16:35:48.790 &#10003; Loaded: ADMIN_PASSWORD 
+16:35:48.791 &#10003; Loaded: ADMIN_ID 
+16:35:48.791 &#10003; Loaded: MANAGER_EMAIL 
+16:35:48.791 &#10003; Loaded: MANAGER_PASSWORD 
+16:35:48.791 &#10003; Loaded: MANAGER_ID 
+16:35:48.791 &#10003; Loaded: COLLAB_EMAIL 
+16:35:48.792 &#10003; Loaded: COLLAB_PASSWORD 
+16:35:48.792 &#10003; Loaded: COLLAB_ID 
+16:35:48.792 &#10003; Loaded: BLOCKED_EMAIL 
+16:35:48.792 &#10003; Loaded: BLOCKED_PASSWORD 
+16:35:48.792 &#10003; Loaded: BLOCKED_ID 
+16:35:48.792 &#10003; Loaded: ARCHIVED_EMAIL 
+16:35:48.792 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:35:48.792 &#10003; Loaded: ARCHIVED_ID 
+16:35:48.792 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:35:48.792 &#10003; .env file loaded successfully 
+16:35:48.793 ========== Configuration Loaded ========== 
+16:35:48.794 Base URL:          https://api-rec.intranet-pawk.com 
+16:35:48.794 Admin Email:       admin@zenity.com 
+16:35:48.794 Manager Email:     manager@zenity.com 
+16:35:48.794 Collab Email:      collab@zenity.com 
+16:35:48.794 Blocked Email:     collab.bloque@zenity.com 
+16:35:48.794 Archived Email:    collab.archive@zenity.com 
+16:35:48.794 Expired Token:     NOT SET 
+16:35:48.794 ========================================== 
 </pre>
       </div>
     </div>
@@ -297,7 +297,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def collab      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
 
-  <span class="lead-duration duration">0.522</span>
+  <span class="lead-duration duration">0.426</span>
 
 </div>
 
@@ -432,7 +432,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.513</span>
+  <span class="lead-duration duration">0.415</span>
 
 </div>
 
@@ -450,7 +450,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>15:08:54.608 request:
+        <pre>16:35:48.805 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 56
@@ -460,10 +460,10 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-15:08:55.119 response time in milliseconds: 510
+16:35:49.219 response time in milliseconds: 413
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 15:08:55 GMT
+1 &lt; Date: Fri, 21 Aug 2026 16:35:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -477,7 +477,7 @@ $(document).ready(function() {
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjcwM2I0YTkzLTI5MGEtNDZmNy05MTEyLTFiMjNmM2QxYzk3ZCIsImlhdCI6MTc4NjcyMDEzNSwiZXhwIjoxNzg2NzIxMDM1fQ.8c_kA5Omvb2qsq6Qn64ef3mTEGzqe4p8ys_3Q987DkI&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6ImM1NGJiNTc5LTFlYTQtNDk4NC04ZGMyLWNiNGZkZjMyZTA2YSIsImlhdCI6MTc4NjcyMDEzNSwiZXhwIjoxNzg3MzI0OTM1fQ.lqaDUvWKkZe5hAjzoTZBQUzgK-tNbjKjUcqX0bMTBRg&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T15:08:55.047589981&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-14T15:08:55.052166713&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijg3NTI1NWIzLTQ5ZjQtNDE0My05MzBkLWM1ODI0ZjU5MWQ3MSIsImlhdCI6MTc4NzMzMDE0OSwiZXhwIjoxNzg3MzMxMDQ5fQ.aWLhBd_nqxduSA6MR8uJ_R-tH6B6YSiiHadUMao6NaM&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6ImI1M2ZiYjA3LWEwNTktNGJkYi05MGZmLTk5MjQ2ODQ2ZDIwYSIsImlhdCI6MTc4NzMzMDE0OSwiZXhwIjoxNzg3OTM0OTQ5fQ.z-kGpZgv_wrB7nAUKEu9PnySOIhMyX-nUK2vT-o8d8Q&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-21T16:35:49.157355633&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+237600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:&quot;&quot;,&quot;emergencyContactPhone2&quot;:&quot;&quot;,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:&quot;yassa douala 3&egrave;me&quot;}},&quot;timestamp&quot;:&quot;2026-08-21T16:35:49.171181299&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </pre>
       </div>
@@ -525,7 +525,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -687,7 +687,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def futureStart = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -755,7 +755,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.452</span>
+  <span class="lead-duration duration">0.301</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
@@ -880,7 +880,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.451</span>
+  <span class="lead-duration duration">0.301</span>
 
 </div>
 
@@ -898,21 +898,21 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-7" class="collapse collapsable-details">
-        <pre>15:08:55.127 request:
+        <pre>16:35:49.226 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjcwM2I0YTkzLTI5MGEtNDZmNy05MTEyLTFiMjNmM2QxYzk3ZCIsImlhdCI6MTc4NjcyMDEzNSwiZXhwIjoxNzg2NzIxMDM1fQ.8c_kA5Omvb2qsq6Qn64ef3mTEGzqe4p8ys_3Q987DkI
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijg3NTI1NWIzLTQ5ZjQtNDE0My05MzBkLWM1ODI0ZjU5MWQ3MSIsImlhdCI6MTc4NzMzMDE0OSwiZXhwIjoxNzg3MzMxMDQ5fQ.aWLhBd_nqxduSA6MR8uJ_R-tH6B6YSiiHadUMao6NaM
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 114
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;type&quot;:&quot;EXCEPTIONAL_LEAVE&quot;,&quot;startDate&quot;:&quot;2030-08-04&quot;,&quot;endDate&quot;:&quot;2030-08-08&quot;,&quot;proofDocumentPath&quot;:&quot;docs\/proof.pdf&quot;}
+{&quot;type&quot;:&quot;EXCEPTIONAL_LEAVE&quot;,&quot;startDate&quot;:&quot;2030-12-30&quot;,&quot;endDate&quot;:&quot;2031-01-03&quot;,&quot;proofDocumentPath&quot;:&quot;docs\/proof.pdf&quot;}
 
-15:08:55.578 response time in milliseconds: 450
+16:35:49.525 response time in milliseconds: 298
 1 &lt; 400
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 15:08:55 GMT
+1 &lt; Date: Fri, 21 Aug 2026 16:35:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -925,7 +925,7 @@ $(document).ready(function() {
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Reason is mandatory for exceptional leave.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-14T15:08:55.507620638&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_REASON_REQUIRED&quot;}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Reason is mandatory for exceptional leave.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-21T16:35:49.476634388&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_REASON_REQUIRED&quot;}
 
 </pre>
       </div>
@@ -984,7 +984,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.075</span>
+  <span class="lead-duration duration">0.788</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-8">
@@ -1027,7 +1027,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">url baseUrl</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.002</span>
 
 </div>
 
@@ -1045,34 +1045,34 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-10" class="collapse collapsable-details">
-        <pre>15:08:55.581 karate.env system property was: null 
-15:08:55.582 &#10003; Loaded: BASE_URL 
-15:08:55.582 &#10003; Loaded: ADMIN_EMAIL 
-15:08:55.582 &#10003; Loaded: ADMIN_PASSWORD 
-15:08:55.582 &#10003; Loaded: ADMIN_ID 
-15:08:55.583 &#10003; Loaded: MANAGER_EMAIL 
-15:08:55.583 &#10003; Loaded: MANAGER_PASSWORD 
-15:08:55.583 &#10003; Loaded: MANAGER_ID 
-15:08:55.583 &#10003; Loaded: COLLAB_EMAIL 
-15:08:55.583 &#10003; Loaded: COLLAB_PASSWORD 
-15:08:55.583 &#10003; Loaded: COLLAB_ID 
-15:08:55.583 &#10003; Loaded: BLOCKED_EMAIL 
-15:08:55.583 &#10003; Loaded: BLOCKED_PASSWORD 
-15:08:55.583 &#10003; Loaded: BLOCKED_ID 
-15:08:55.583 &#10003; Loaded: ARCHIVED_EMAIL 
-15:08:55.583 &#10003; Loaded: ARCHIVED_PASSWORD 
-15:08:55.583 &#10003; Loaded: ARCHIVED_ID 
-15:08:55.583 &#10003; Loaded: EXPIRED_JWT_TOKEN 
-15:08:55.583 &#10003; .env file loaded successfully 
-15:08:55.584 ========== Configuration Loaded ========== 
-15:08:55.584 Base URL:          https://api-rec.intranet-pawk.com 
-15:08:55.584 Admin Email:       admin@zenity.com 
-15:08:55.584 Manager Email:     manager@zenity.com 
-15:08:55.584 Collab Email:      collab@zenity.com 
-15:08:55.584 Blocked Email:     collab.bloque@zenity.com 
-15:08:55.584 Archived Email:    collab.archive@zenity.com 
-15:08:55.584 Expired Token:     NOT SET 
-15:08:55.584 ========================================== 
+        <pre>16:35:49.530 karate.env system property was: null 
+16:35:49.534 &#10003; Loaded: BASE_URL 
+16:35:49.535 &#10003; Loaded: ADMIN_EMAIL 
+16:35:49.539 &#10003; Loaded: ADMIN_PASSWORD 
+16:35:49.539 &#10003; Loaded: ADMIN_ID 
+16:35:49.539 &#10003; Loaded: MANAGER_EMAIL 
+16:35:49.539 &#10003; Loaded: MANAGER_PASSWORD 
+16:35:49.539 &#10003; Loaded: MANAGER_ID 
+16:35:49.539 &#10003; Loaded: COLLAB_EMAIL 
+16:35:49.540 &#10003; Loaded: COLLAB_PASSWORD 
+16:35:49.544 &#10003; Loaded: COLLAB_ID 
+16:35:49.544 &#10003; Loaded: BLOCKED_EMAIL 
+16:35:49.544 &#10003; Loaded: BLOCKED_PASSWORD 
+16:35:49.544 &#10003; Loaded: BLOCKED_ID 
+16:35:49.544 &#10003; Loaded: ARCHIVED_EMAIL 
+16:35:49.544 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:35:49.544 &#10003; Loaded: ARCHIVED_ID 
+16:35:49.544 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:35:49.544 &#10003; .env file loaded successfully 
+16:35:49.545 ========== Configuration Loaded ========== 
+16:35:49.545 Base URL:          https://api-rec.intranet-pawk.com 
+16:35:49.545 Admin Email:       admin@zenity.com 
+16:35:49.545 Manager Email:     manager@zenity.com 
+16:35:49.545 Collab Email:      collab@zenity.com 
+16:35:49.545 Blocked Email:     collab.bloque@zenity.com 
+16:35:49.545 Archived Email:    collab.archive@zenity.com 
+16:35:49.545 Expired Token:     NOT SET 
+16:35:49.545 ========================================== 
 </pre>
       </div>
     </div>
@@ -1092,7 +1092,7 @@ $(document).ready(function() {
   <span class="keyword indention">*</span>
   <span class="name">def collab      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
 
-  <span class="lead-duration duration">0.539</span>
+  <span class="lead-duration duration">0.404</span>
 
 </div>
 
@@ -1200,7 +1200,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; And</span>
   <span class="name">request { email: '#(email)', password: '#(password)' }</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -1227,7 +1227,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.532</span>
+  <span class="lead-duration duration">0.375</span>
 
 </div>
 
@@ -1245,7 +1245,7 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-11" class="collapse collapsable-details">
-        <pre>15:08:55.589 request:
+        <pre>16:35:49.579 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 56
@@ -1255,10 +1255,10 @@ $(document).ready(function() {
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-15:08:56.121 response time in milliseconds: 531
+16:35:49.954 response time in milliseconds: 374
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 15:08:56 GMT
+1 &lt; Date: Fri, 21 Aug 2026 16:35:49 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1272,7 +1272,7 @@ $(document).ready(function() {
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjQzNGMzMmJjLWQxZDMtNDY1MS1hNGVkLTE1ZGFkZDEzN2NhOSIsImlhdCI6MTc4NjcyMDEzNiwiZXhwIjoxNzg2NzIxMDM2fQ.g8e3q333_h6Gw5Bf7sOaSAvQRvyegLN-DBJb7PrLqnI&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjZjNTZlZjgxLTYxZjktNGM3ZC1hMDhhLWNlYTllZWY4NGM1YiIsImlhdCI6MTc4NjcyMDEzNiwiZXhwIjoxNzg3MzI0OTM2fQ.d9Bf7H50aE7zPrApo0duqJti5ixl0av8CtaOSaRp-NA&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-14T15:08:56.045825735&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-14T15:08:56.049905259&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjA1OGM4ZmVhLTMzYmItNDI2Yi1hMzQ5LWZkN2U4MTVhM2FmOCIsImlhdCI6MTc4NzMzMDE0OSwiZXhwIjoxNzg3MzMxMDQ5fQ.HNRV6p2bp76Qc7Ym9swPNUxb9IdP4OO5mnx6lySZmgA&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjA3N2M3ZDcyLWJiNGUtNDQ5MS04ZmJiLTk1YjE1M2EwOTgyOCIsImlhdCI6MTc4NzMzMDE0OSwiZXhwIjoxNzg3OTM0OTQ5fQ.7FHPhy6oDZj7O-sDFXqnGyQebCwk2s9CPQe_Op4zUxo&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-21T16:35:49.896016921&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+237600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:&quot;&quot;,&quot;emergencyContactPhone2&quot;:&quot;&quot;,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:&quot;yassa douala 3&egrave;me&quot;}},&quot;timestamp&quot;:&quot;2026-08-21T16:35:49.905931692&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </pre>
       </div>
@@ -1550,12 +1550,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.921</span>
+  <span class="lead-duration duration">0.307</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-12">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-413 - Cong&eacute; exceptionnel avec motif et justificatif est accept&eacute;</span>
 
@@ -1566,16 +1566,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-12" class="collapse collapsable-details ">
+  <div id="element-12" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-13">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -1585,7 +1585,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-13" class="inner-level collapse collapsable-details ">
+  <div id="steps-13" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1674,7 +1674,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.452</span>
+  <span class="lead-duration duration">0.306</span>
 
 </div>
 
@@ -1692,21 +1692,21 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-14" class="collapse collapsable-details">
-        <pre>15:08:56.127 request:
+        <pre>16:35:49.959 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjQzNGMzMmJjLWQxZDMtNDY1MS1hNGVkLTE1ZGFkZDEzN2NhOSIsImlhdCI6MTc4NjcyMDEzNiwiZXhwIjoxNzg2NzIxMDM2fQ.g8e3q333_h6Gw5Bf7sOaSAvQRvyegLN-DBJb7PrLqnI
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjA1OGM4ZmVhLTMzYmItNDI2Yi1hMzQ5LWZkN2U4MTVhM2FmOCIsImlhdCI6MTc4NzMzMDE0OSwiZXhwIjoxNzg3MzMxMDQ5fQ.HNRV6p2bp76Qc7Ym9swPNUxb9IdP4OO5mnx6lySZmgA
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 142
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;type&quot;:&quot;EXCEPTIONAL_LEAVE&quot;,&quot;startDate&quot;:&quot;2030-08-14&quot;,&quot;endDate&quot;:&quot;2030-08-18&quot;,&quot;reason&quot;:&quot;Family emergency&quot;,&quot;proofDocumentPath&quot;:&quot;docs\/proof.pdf&quot;}
+{&quot;type&quot;:&quot;EXCEPTIONAL_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-01-06&quot;,&quot;endDate&quot;:&quot;2031-01-10&quot;,&quot;reason&quot;:&quot;Family emergency&quot;,&quot;proofDocumentPath&quot;:&quot;docs\/proof.pdf&quot;}
 
-15:08:56.578 response time in milliseconds: 451
-1 &lt; 201
+16:35:50.264 response time in milliseconds: 305
+1 &lt; 400
 1 &lt; Server: openresty
-1 &lt; Date: Fri, 14 Aug 2026 15:08:56 GMT
+1 &lt; Date: Fri, 21 Aug 2026 16:35:50 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1719,8 +1719,7 @@ $(document).ready(function() {
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:10,&quot;userId&quot;:3,&quot;type&quot;:&quot;EXCEPTIONAL_LEAVE&quot;,&quot;startDate&quot;:&quot;2030-08-14&quot;,&quot;endDate&quot;:&quot;2030-08-18&quot;,&quot;durationInDays&quot;:3,&quot;reason&quot;:&quot;Family emergency&quot;,&quot;proofDocumentPath&quot;:&quot;docs/proof.pdf&quot;,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-08-14T15:08:56.502086542&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Proof document is mandatory for exceptional leave.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-21T16:35:50.216464768&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_PROOF_REQUIRED&quot;}
 
 </pre>
       </div>
@@ -1737,7 +1736,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 201</span>
 
@@ -1750,9 +1749,37 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-15">
+          <a>status</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details  in ">
+        <pre>status code was: 400, expected: 201, response time in milliseconds: 305, url: https://api-rec.intranet-pawk.com/api/v1/leaves, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Proof document is mandatory for exceptional leave.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-21T16:35:50.216464768&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_PROOF_REQUIRED&quot;}
+classpath:zenity/ofintra/features/leaves/PAWK-413.feature:26</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>16:35:50.270 classpath:zenity/ofintra/features/leaves/PAWK-413.feature:26
+Then status 201
+status code was: 400, expected: 201, response time in milliseconds: 305, url: https://api-rec.intranet-pawk.com/api/v1/leaves, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Proof document is mandatory for exceptional leave.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-21T16:35:50.216464768&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_PROOF_REQUIRED&quot;}
+classpath:zenity/ofintra/features/leaves/PAWK-413.feature:26
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1764,7 +1791,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.status == 'PENDING'</span>
 
@@ -1791,7 +1818,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.type   == 'EXCEPTIONAL_LEAVE'</span>
 
@@ -1818,7 +1845,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.reason == 'Family emergency'</span>
 
@@ -1845,7 +1872,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def leaveId = response.id</span>
 
@@ -1873,7 +1900,7 @@ $(document).ready(function() {
           <div class="comment indention"># Cleanup</div>
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves/' + leaveId</span>
 
@@ -1900,7 +1927,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -1927,11 +1954,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method delete</span>
 
-  <span class="lead-duration duration">0.467</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -1943,42 +1970,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-15" class="collapse collapsable-details">
-        <pre>15:08:56.582 request:
-2 &gt; DELETE https://api-rec.intranet-pawk.com/api/v1/leaves/10
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjQzNGMzMmJjLWQxZDMtNDY1MS1hNGVkLTE1ZGFkZDEzN2NhOSIsImlhdCI6MTc4NjcyMDEzNiwiZXhwIjoxNzg2NzIxMDM2fQ.g8e3q333_h6Gw5Bf7sOaSAvQRvyegLN-DBJb7PrLqnI
-2 &gt; Host: api-rec.intranet-pawk.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-2 &gt; Accept-Encoding: gzip,deflate
-
-
-15:08:57.048 response time in milliseconds: 465
-2 &lt; 204
-2 &lt; Server: openresty
-2 &lt; Date: Fri, 14 Aug 2026 15:08:56 GMT
-2 &lt; Connection: keep-alive
-2 &lt; Vary: Origin
-2 &lt; Vary: Access-Control-Request-Method
-2 &lt; Vary: Access-Control-Request-Headers
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-XSS-Protection: 0
-2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 &lt; Pragma: no-cache
-2 &lt; Expires: 0
-2 &lt; X-Frame-Options: DENY
-2 &lt; X-Served-By: api-rec.intranet-pawk.com
-
-
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
