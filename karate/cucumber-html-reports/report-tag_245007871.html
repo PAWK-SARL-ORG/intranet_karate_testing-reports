@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>26 Aug 2026, 12:40</td>
+      <td>26 Aug 2026, 12:50</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-190</td>
-          <td      class="passed"    >5</td>
-          <td      class="failed"    >2</td>
-          <td     class="skipped"   >6</td>
+          <td      class="passed"    >31</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">13</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">31</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="658551734">0.658</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="5418925537">5.418</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.658</span>
+  <span class="lead-duration duration">5.418</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-190 - R&eacute;activation d'un utilisateur archiv&eacute;</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,16 +218,16 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># Precondition: L'utilisateur doit &ecirc;tre archiv&eacute;</div>
 
 
-<div class="brief step-name-* failed">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def getArchivedUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(archivedId)', token: '#(adminToken)'}</span>
 
-  <span class="lead-duration duration">0.330</span>
+  <span class="lead-duration duration">0.447</span>
 
 </div>
 
@@ -236,39 +236,9 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>status</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>status code was: 404, expected: 200, response time in milliseconds: 326, url: https://api-rec.intranet-pawk.com/api/v1/users/5, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;User not found with id: 5&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T12:40:14.521556967&quot;,&quot;path&quot;:&quot;/api/v1/users/5&quot;,&quot;errorCode&quot;:&quot;RESOURCE_NOT_FOUND&quot;}
-classpath:zenity/ofintra/common/get-user-by-id.feature:9
-classpath:zenity/ofintra/features/users/PAWK-190.feature:11</pre>
-      </div>
-    </div>
-  </div>
 
 
 
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>12:40:14.577 classpath:zenity/ofintra/features/users/PAWK-190.feature:11
-* def getArchivedUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(archivedId)', token: '#(adminToken)'}
-status code was: 404, expected: 200, response time in milliseconds: 326, url: https://api-rec.intranet-pawk.com/api/v1/users/5, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;User not found with id: 5&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T12:40:14.521556967&quot;,&quot;path&quot;:&quot;/api/v1/users/5&quot;,&quot;errorCode&quot;:&quot;RESOURCE_NOT_FOUND&quot;}
-classpath:zenity/ofintra/common/get-user-by-id.feature:9
-classpath:zenity/ofintra/features/users/PAWK-190.feature:11
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -392,7 +362,7 @@ classpath:zenity/ofintra/features/users/PAWK-190.feature:11
   <span class="keyword indention">&gt; When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.327</span>
+  <span class="lead-duration duration">0.443</span>
 
 </div>
 
@@ -406,23 +376,23 @@ classpath:zenity/ofintra/features/users/PAWK-190.feature:11
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
           <a>Doc string</a>
       </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>12:40:14.250 request:
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>12:49:31.381 request:
 1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/5
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjQxZDljYWRlLTUxNDctNDg5NC04ZGM1LTNlZmQ0Zjg4MTE4MCIsImlhdCI6MTc4Nzc0ODAxNCwiZXhwIjoxNzg3NzQ4OTE0fQ.r2TEaHB7IfqZLHyMxj91q0P5C7in3ORvsGNz1ptnFDI
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjE5NDRhZTEwLTFjOWMtNDlkNC04ZWE4LWFhM2QxYWFjZmJmZiIsImlhdCI6MTc4Nzc0ODU3MSwiZXhwIjoxNzg3NzQ5NDcxfQ.AYiY-iHQcr2FCrc0Kcwq2uLLXJJ4RPf4xiws6BFyW0M
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-12:40:14.576 response time in milliseconds: 326
-1 &lt; 404
+12:49:31.824 response time in milliseconds: 443
+1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 26 Aug 2026 12:40:14 GMT
+1 &lt; Date: Wed, 26 Aug 2026 12:49:31 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -435,7 +405,8 @@ classpath:zenity/ofintra/features/users/PAWK-190.feature:11
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;User not found with id: 5&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T12:40:14.521556967&quot;,&quot;path&quot;:&quot;/api/v1/users/5&quot;,&quot;errorCode&quot;:&quot;RESOURCE_NOT_FOUND&quot;}
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:5,&quot;email&quot;:&quot;collab.archive@zenity.com&quot;,&quot;status&quot;:&quot;ARCHIVED&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Marie&quot;,&quot;lastName&quot;:&quot;Lefebvre&quot;,&quot;trigramme&quot;:&quot;MLE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000005&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-02-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-09-12&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-08-26T12:49:31.74825799&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </pre>
       </div>
@@ -452,7 +423,7 @@ classpath:zenity/ofintra/features/users/PAWK-190.feature:11
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; Then failed">
+<div class="brief step-name-&amp;gt; Then passed">
   <span class="keyword indention">&gt; Then</span>
   <span class="name">status 200</span>
 
@@ -465,37 +436,9 @@ classpath:zenity/ofintra/features/users/PAWK-190.feature:11
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>status</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>status code was: 404, expected: 200, response time in milliseconds: 326, url: https://api-rec.intranet-pawk.com/api/v1/users/5, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;User not found with id: 5&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T12:40:14.521556967&quot;,&quot;path&quot;:&quot;/api/v1/users/5&quot;,&quot;errorCode&quot;:&quot;RESOURCE_NOT_FOUND&quot;}
-classpath:zenity/ofintra/common/get-user-by-id.feature:9</pre>
-      </div>
-    </div>
-  </div>
 
 
 
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-7" class="collapse collapsable-details">
-        <pre>12:40:14.577 classpath:zenity/ofintra/common/get-user-by-id.feature:9
-Then status 200
-status code was: 404, expected: 200, response time in milliseconds: 326, url: https://api-rec.intranet-pawk.com/api/v1/users/5, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;User not found with id: 5&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T12:40:14.521556967&quot;,&quot;path&quot;:&quot;/api/v1/users/5&quot;,&quot;errorCode&quot;:&quot;RESOURCE_NOT_FOUND&quot;}
-classpath:zenity/ofintra/common/get-user-by-id.feature:9
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -507,7 +450,7 @@ classpath:zenity/ofintra/common/get-user-by-id.feature:9
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match getArchivedUser.response.data.status == 'ARCHIVED'</span>
 
@@ -535,9 +478,36 @@ classpath:zenity/ofintra/common/get-user-by-id.feature:9
           <div class="comment indention"># Action: Cliquer sur &quot;R&eacute;activer&quot; (appel &agrave; l'endpoint de r&eacute;activation)</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def reactivateUser = call read('classpath:zenity/ofintra/features/users/helpers/reactivate-user.feature') {userId: '#(archivedId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">1.364</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/features/users/helpers/reactivate-user.feature</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -562,7 +532,180 @@ classpath:zenity/ofintra/common/get-user-by-id.feature:9
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId + '/reactivate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">1.360</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>12:49:31.829 request:
+1 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/users/5/reactivate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjE5NDRhZTEwLTFjOWMtNDlkNC04ZWE4LWFhM2QxYWFjZmJmZiIsImlhdCI6MTc4Nzc0ODU3MSwiZXhwIjoxNzg3NzQ5NDcxfQ.AYiY-iHQcr2FCrc0Kcwq2uLLXJJ4RPf4xiws6BFyW0M
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:49:33.189 response time in milliseconds: 1359
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 26 Aug 2026 12:49:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User reactivated successfully&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T12:49:33.112679415&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match reactivateUser.response.success == true</span>
 
@@ -590,9 +733,36 @@ classpath:zenity/ofintra/common/get-user-by-id.feature:9
           <div class="comment indention"># Result: L'utilisateur est r&eacute;activ&eacute; avec succ&egrave;s</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def getReactivatedUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(archivedId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">0.443</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/get-user-by-id.feature</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -617,7 +787,180 @@ classpath:zenity/ofintra/common/get-user-by-id.feature:9
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.440</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>12:49:33.193 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/5
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjE5NDRhZTEwLTFjOWMtNDlkNC04ZWE4LWFhM2QxYWFjZmJmZiIsImlhdCI6MTc4Nzc0ODU3MSwiZXhwIjoxNzg3NzQ5NDcxfQ.AYiY-iHQcr2FCrc0Kcwq2uLLXJJ4RPf4xiws6BFyW0M
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:49:33.632 response time in milliseconds: 439
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 26 Aug 2026 12:49:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:5,&quot;email&quot;:&quot;collab.archive@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:null,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Marie&quot;,&quot;lastName&quot;:&quot;Lefebvre&quot;,&quot;trigramme&quot;:&quot;MLE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000005&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-02-15&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1990-09-12&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-08-26T12:49:33.556424986&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match getReactivatedUser.response.data.status == 'ACTIVE'</span>
 
@@ -645,9 +988,209 @@ classpath:zenity/ofintra/common/get-user-by-id.feature:9
           <div class="comment indention"># Re-archive for next test iterations</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">karate.call('classpath:zenity/ofintra/features/users/helpers/archive-user.feature', { userId: archivedId, token: adminToken })</span>
+
+  <span class="lead-duration duration">0.460</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/features/users/helpers/archive-user.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId + '/archive'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.456</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>12:49:33.638 request:
+1 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/users/5/archive
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjE5NDRhZTEwLTFjOWMtNDlkNC04ZWE4LWFhM2QxYWFjZmJmZiIsImlhdCI6MTc4Nzc0ODU3MSwiZXhwIjoxNzg3NzQ5NDcxfQ.AYiY-iHQcr2FCrc0Kcwq2uLLXJJ4RPf4xiws6BFyW0M
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:49:34.094 response time in milliseconds: 455
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 26 Aug 2026 12:49:34 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User archived successfully&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T12:49:34.017831968&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
 
   <span class="lead-duration duration">0.000</span>
 
