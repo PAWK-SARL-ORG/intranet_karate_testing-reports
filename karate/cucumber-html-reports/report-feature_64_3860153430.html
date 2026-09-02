@@ -1,0 +1,3766 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: zenity/ofintra/features/attendances/PAWK-370.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>oFintra Karate Tests</td>
+      <td>02 Sep 2026, 16:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">zenity/ofintra/features/attendances/PAWK-370.feature</td>
+          <td      class="passed"    >95</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >8</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">105</td>
+
+          <td >0</td>
+          <td  class="failed"    >2</td>
+          <td class="total">2</td>
+
+          <td class="duration" data-value="10032347278">10.032</td>
+          <td class="failed">Failed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief failed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">zenity/ofintra/features/attendances/PAWK-370.feature</span>
+
+
+</div>
+
+        <div class="description indention">PAWK-370 &mdash; Envoi de notification apr&egrave;s enregistrement ou modification d'une pr&eacute;sence</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.956</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:41:30.836 karate..env system property was: null 
+16:41:30.887 &#10003; Loaded: BASE_URL 
+16:41:30.888 &#10003; Loaded: ADMIN_EMAIL 
+16:41:30.889 &#10003; Loaded: ADMIN_PASSWORD 
+16:41:30.890 &#10003; Loaded: ADMIN_ID 
+16:41:30.891 &#10003; Loaded: MANAGER_EMAIL 
+16:41:30.892 &#10003; Loaded: MANAGER_PASSWORD 
+16:41:30.893 &#10003; Loaded: MANAGER_ID 
+16:41:30.894 &#10003; Loaded: COLLAB_EMAIL 
+16:41:30.895 &#10003; Loaded: COLLAB_PASSWORD 
+16:41:30.896 &#10003; Loaded: COLLAB_ID 
+16:41:30.897 &#10003; Loaded: BLOCKED_EMAIL 
+16:41:30.898 &#10003; Loaded: BLOCKED_PASSWORD 
+16:41:30.899 &#10003; Loaded: BLOCKED_ID 
+16:41:30.899 &#10003; Loaded: ARCHIVED_EMAIL 
+16:41:30.900 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:41:30.905 &#10003; Loaded: ARCHIVED_ID 
+16:41:30.906 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:41:30.906 &#10003; ..env file loaded successfully 
+16:41:30.935 ========== Configuration Loaded ========== 
+16:41:30.938 Base URL:          https://api-rec.intranet-pawk.com 
+16:41:30.938 Admin Email:       admin@zenity.com 
+16:41:30.939 Manager Email:     manager@zenity.com 
+16:41:30.940 Collab Email:      collab@zenity.com 
+16:41:30.940 Blocked Email:     collab.bloque@zenity.com 
+16:41:30.941 Archived Email:    collab.archive@zenity.com 
+16:41:30.942 Expired Token:     NOT SET 
+16:41:30.950 ========================================== 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">2.033</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">1.853</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:41:31.702 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+16:41:32.970 response time in milliseconds: 1263
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYTExZjcxNzktODU1Mi00ODVhLTk3OGMtOTgxMzQ0MzhlNWFiIiwiaWF0IjoxNzg4MzY3MjkyLCJleHAiOjE3ODgzNjgxOTJ9.Wa2ZamqFk4PQ2OhGwR84l4VnqdlMCXcnY5ZEIcqq5EE&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiJlYmYwZDdiNi1jOWI1LTQwZmEtOGU3NC04ZDJjMTQ0ZTg1NTMiLCJpYXQiOjE3ODgzNjcyOTIsImV4cCI6MTc4ODk3MjA5Mn0.mmz-l7oPe_qUXejlH6abO1MyuEGdJgcXAbgcQWKajiI&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:41:32.871010509&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:41:32.886387239&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.023</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def managerToken = manager.accessToken</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseDay        = 1100 + Math.floor((java.lang.System.currentTimeMillis() % 100000) / 100)</span>
+
+  <span class="lead-duration duration">0.010</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def attendanceDate = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_245009731.html">@PAWK-370</a>
+</div>
+
+
+  <span class="lead-duration duration">2.294</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">PAWK-370 - Le collaborateur re&ccedil;oit une notification apr&egrave;s l'enregistrement d'une pr&eacute;sence par un manager</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+          <div class="comment indention"># When: le manager enregistre une nouvelle pr&eacute;sence pour le collaborateur</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { date: '#(attendanceDate)', userId: '#(parseInt(collabId))', status: 'PRESENT', arrivalTime: '08:00:00', departureTime: '17:00:00' }</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.493</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:41:33.118 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/attendances
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYTExZjcxNzktODU1Mi00ODVhLTk3OGMtOTgxMzQ0MzhlNWFiIiwiaWF0IjoxNzg4MzY3MjkyLCJleHAiOjE3ODgzNjgxOTJ9.Wa2ZamqFk4PQ2OhGwR84l4VnqdlMCXcnY5ZEIcqq5EE
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 103
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:&quot;2032-03-24&quot;,&quot;userId&quot;:3,&quot;status&quot;:&quot;PRESENT&quot;,&quot;arrivalTime&quot;:&quot;08:00:00&quot;,&quot;departureTime&quot;:&quot;17:00:00&quot;}
+
+16:41:33.609 response time in milliseconds: 489
+1 &lt; 201
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Attendance successfully created!&quot;,&quot;data&quot;:{&quot;arrivalTime&quot;:&quot;08:00:00&quot;,&quot;date&quot;:&quot;2032-03-24&quot;,&quot;departureTime&quot;:&quot;17:00:00&quot;,&quot;id&quot;:11,&quot;ipAddress&quot;:&quot;10.0.0.2&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:41:33&quot;,&quot;periodEnd&quot;:null,&quot;periodStart&quot;:null,&quot;registerBy&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;PRESENT&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;profilePhoto&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;},&quot;workingDaysInPeriod&quot;:0},&quot;timestamp&quot;:&quot;2026-09-02T16:41:33.533487441&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def attendanceId = response.data.id</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># When: le collaborateur consulte ses notifications</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collab      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
+
+  <span class="lead-duration duration">0.595</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.549</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>16:41:33.647 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
+
+16:41:34.193 response time in milliseconds: 545
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:34 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijg2ZTRiY2Q2LTg3ODgtNDRlYy04M2IxLWNjZjQyNzNiYjRmYyIsImlhdCI6MTc4ODM2NzI5NCwiZXhwIjoxNzg4MzY4MTk0fQ.LeOabFJyI8GjfYUt9LRF5M7C944V7d8oVXE__OZlTYw&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6ImUzNWUzOTkwLWUxN2MtNDcxNi04N2Q0LWMxZjNmZDhhN2Y5ZSIsImlhdCI6MTc4ODM2NzI5NCwiZXhwIjoxNzg4OTcyMDk0fQ.f399rVAB2w-N1jt6JbFt-CBxB8rdtPItDJlqs4xSHxg&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:41:34.113879234&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:41:34.119398027&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collabToken = collab.accessToken</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/notifications'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + collabToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.615</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:41:34.213 request:
+2 &gt; GET https://api-rec.intranet-pawk.com/api/v1/notifications
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijg2ZTRiY2Q2LTg3ODgtNDRlYy04M2IxLWNjZjQyNzNiYjRmYyIsImlhdCI6MTc4ODM2NzI5NCwiZXhwIjoxNzg4MzY4MTk0fQ.LeOabFJyI8GjfYUt9LRF5M7C944V7d8oVXE__OZlTYw
+2 &gt; Host: api-rec.intranet-pawk.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+
+16:41:34.820 response time in milliseconds: 603
+2 &lt; 200
+2 &lt; Server: openresty
+2 &lt; Date: Wed, 02 Sep 2026 16:41:34 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Notifications retrieved successfully&quot;,&quot;data&quot;:[{&quot;id&quot;:206,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 20) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:20},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:12.257843&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:12.257843&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:205,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 19) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:19},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:10.62253&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:10.62253&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:204,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 18) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:18},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:08.989885&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:08.989885&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:203,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 17) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:17},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:04.969721&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:04.969721&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:202,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 16) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:16},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:03.568215&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:03.568215&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:201,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 15) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:15},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:02.259126&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:02.259126&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:200,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:59.788866&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:59.788866&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:199,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:56.142789&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:56.142789&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:196,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 12) a &eacute;t&eacute; refus&eacute;e. Motif : Period not allowed&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Period not allowed&quot;,&quot;requestId&quot;:12},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:53.918046&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:53.918046&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:189,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 9) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:9},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:46.585773&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:46.585773&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:186,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 8) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:8},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:44.722928&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:44.722928&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:183,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:42.786947&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:42.786947&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:155,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 20) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:20},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:15:06.813073&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:15:06.813073&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:154,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 19) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:19},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:15:05.18825&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:15:05.18825&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:153,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 18) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:18},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:15:03.552953&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:15:03.552953&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:152,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 17) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:17},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:59.483764&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:59.483764&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:151,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 16) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:16},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:58.119179&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:58.119179&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:150,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 15) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:15},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:56.840285&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:56.840285&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:149,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:54.384209&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:54.384209&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:148,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:50.807633&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:50.807633&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:145,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 12) a &eacute;t&eacute; refus&eacute;e. Motif : Period not allowed&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Period not allowed&quot;,&quot;requestId&quot;:12},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:48.591367&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:48.591367&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:138,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 9) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:9},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:41.437326&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:41.437326&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:135,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 8) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:8},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:39.577849&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:39.577849&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:132,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:37.625993&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:37.625993&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:91,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 17) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:17},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:48.597229&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:48.597229&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:90,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 16) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:16},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:46.390137&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:46.390137&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:89,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 15) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:15},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:44.136204&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:44.136204&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:88,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:38.462592&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:38.462592&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:87,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:36.628837&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:36.628837&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:86,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 12) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:12},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:34.886193&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:34.886193&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:85,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 11) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:11},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:31.665255&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:31.665255&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:84,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 10) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:10},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:26.761207&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:26.761207&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:81,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 9) a &eacute;t&eacute; refus&eacute;e. Motif : Period not allowed&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Period not allowed&quot;,&quot;requestId&quot;:9},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:23.742891&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:23.742891&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:74,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 6) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:6},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:14.277385&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:14.277385&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:71,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 5) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:5},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:11.707008&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:11.707008&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:68,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:09.658772&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:09.658772&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:60,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 19) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:19},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:33:14.026296&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:33:14.026296&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:49,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:32:41.131304&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:32:41.131304&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:46,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:32:39.240812&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:32:39.240812&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:33,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 8) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:8},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:26:23.216308&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:26:23.216308&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:30,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:26:21.32488&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:26:21.32488&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:27,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 6) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:6},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:26:19.345943&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:26:19.345943&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:1,&quot;userId&quot;:3,&quot;title&quot;:&quot;R&eacute;initialisation de mot de passe&quot;,&quot;message&quot;:&quot;Votre mot de passe a &eacute;t&eacute; r&eacute;initialis&eacute; par un administrateur. Veuillez le changer lors de votre prochaine connexion.&quot;,&quot;type&quot;:&quot;SECURITY&quot;,&quot;metadata&quot;:{},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-08-28T08:36:16.511946&quot;,&quot;lastModifiedBy&quot;:&quot;collab@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-08-31T09:13:03.215799&quot;,&quot;read&quot;:true,&quot;version&quot;:1}],&quot;timestamp&quot;:&quot;2026-09-02T16:41:34.597845628&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.success == true</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Then: la notification la plus r&eacute;cente concerne l'enregistrement de la pr&eacute;sence</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def notifications = response.data</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert notifications.length &gt; 0</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def latest = notifications[0]</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match latest.userId == parseInt(collabId)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match latest.read == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def latestText = ((latest.title || '') + ' ' + (latest.message || '')).toLowerCase()</span>
+
+  <span class="lead-duration duration">0.005</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mentionsAttendance = latestText.includes('pr&eacute;sence') || latestText.includes('presence') || latestText.includes('arriv') || latestText.includes('attendance')</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert mentionsAttendance == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-10">
+          <a>did</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details  in ">
+        <pre>did not evaluate to 'true': mentionsAttendance == true
+classpath:zenity/ofintra/features/attendances/PAWK-370.feature:39</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>16:41:34.850 classpath:zenity/ofintra/features/attendances/PAWK-370.feature:39
+* assert mentionsAttendance == true
+did not evaluate to 'true': mentionsAttendance == true
+classpath:zenity/ofintra/features/attendances/PAWK-370.feature:39
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Cleanup</div>
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances/' + attendanceId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.145</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-12" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-13">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-13" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>16:41:34.878 karate..env system property was: null 
+16:41:34.881 &#10003; Loaded: BASE_URL 
+16:41:34.882 &#10003; Loaded: ADMIN_EMAIL 
+16:41:34.883 &#10003; Loaded: ADMIN_PASSWORD 
+16:41:34.883 &#10003; Loaded: ADMIN_ID 
+16:41:34.886 &#10003; Loaded: MANAGER_EMAIL 
+16:41:34.886 &#10003; Loaded: MANAGER_PASSWORD 
+16:41:34.887 &#10003; Loaded: MANAGER_ID 
+16:41:34.887 &#10003; Loaded: COLLAB_EMAIL 
+16:41:34.888 &#10003; Loaded: COLLAB_PASSWORD 
+16:41:34.888 &#10003; Loaded: COLLAB_ID 
+16:41:34.889 &#10003; Loaded: BLOCKED_EMAIL 
+16:41:34.890 &#10003; Loaded: BLOCKED_PASSWORD 
+16:41:34.890 &#10003; Loaded: BLOCKED_ID 
+16:41:34.891 &#10003; Loaded: ARCHIVED_EMAIL 
+16:41:34.891 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:41:34.892 &#10003; Loaded: ARCHIVED_ID 
+16:41:34.892 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:41:34.893 &#10003; ..env file loaded successfully 
+16:41:34.895 ========== Configuration Loaded ========== 
+16:41:34.895 Base URL:          https://api-rec.intranet-pawk.com 
+16:41:34.896 Admin Email:       admin@zenity.com 
+16:41:34.896 Manager Email:     manager@zenity.com 
+16:41:34.896 Collab Email:      collab@zenity.com 
+16:41:34.896 Blocked Email:     collab.bloque@zenity.com 
+16:41:34.897 Archived Email:    collab.archive@zenity.com 
+16:41:34.897 Expired Token:     NOT SET 
+16:41:34.897 ========================================== 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">0.579</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.557</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>16:41:34.919 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+16:41:35.470 response time in milliseconds: 548
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:35 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMDljZmNkZjEtOTAwNC00NTFlLWE0ZjktNjIyNTY3NzkwMmNlIiwiaWF0IjoxNzg4MzY3Mjk1LCJleHAiOjE3ODgzNjgxOTV9.oRh1cMHa2Y79hevtyjqve6K_XXZHKz338zlAjjME4c0&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiJjZjEwNWZmMy1lZTZlLTQxODEtOTc5Ni00MWEzZjE2YzU5ZTkiLCJpYXQiOjE3ODgzNjcyOTUsImV4cCI6MTc4ODk3MjA5NX0._lSNJTobSmw4wIS5Zlgdi5Q_BKlFYzPkMICh9ZITmN4&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:41:35.382754847&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:41:35.387985151&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def managerToken = manager.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseDay        = 1100 + Math.floor((java.lang.System.currentTimeMillis() % 100000) / 100)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def attendanceDate = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_245009731.html">@PAWK-370</a>
+</div>
+
+
+  <span class="lead-duration duration">2.635</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-16">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">PAWK-370 - Le collaborateur re&ccedil;oit une notification apr&egrave;s la modification d'une pr&eacute;sence par un manager</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-17">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+          <div class="comment indention"># Given: une pr&eacute;sence existante pour le collaborateur</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { date: '#(attendanceDate)', userId: '#(parseInt(collabId))', status: 'PRESENT', arrivalTime: '08:00:00', departureTime: '17:00:00' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.464</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>16:41:35.487 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/attendances
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMDljZmNkZjEtOTAwNC00NTFlLWE0ZjktNjIyNTY3NzkwMmNlIiwiaWF0IjoxNzg4MzY3Mjk1LCJleHAiOjE3ODgzNjgxOTV9.oRh1cMHa2Y79hevtyjqve6K_XXZHKz338zlAjjME4c0
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 103
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:&quot;2032-04-17&quot;,&quot;userId&quot;:3,&quot;status&quot;:&quot;PRESENT&quot;,&quot;arrivalTime&quot;:&quot;08:00:00&quot;,&quot;departureTime&quot;:&quot;17:00:00&quot;}
+
+16:41:35.949 response time in milliseconds: 461
+1 &lt; 201
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:35 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Attendance successfully created!&quot;,&quot;data&quot;:{&quot;arrivalTime&quot;:&quot;08:00:00&quot;,&quot;date&quot;:&quot;2032-04-17&quot;,&quot;departureTime&quot;:&quot;17:00:00&quot;,&quot;id&quot;:12,&quot;ipAddress&quot;:&quot;10.0.0.2&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:41:35&quot;,&quot;periodEnd&quot;:null,&quot;periodStart&quot;:null,&quot;registerBy&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;PRESENT&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;profilePhoto&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;},&quot;workingDaysInPeriod&quot;:0},&quot;timestamp&quot;:&quot;2026-09-02T16:41:35.875304268&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def attendanceId = response.data.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># When: le manager modifie cette pr&eacute;sence</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances/' + attendanceId</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { date: '#(attendanceDate)', userId: '#(parseInt(collabId))', status: 'REMOTE' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.458</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>16:41:35.957 request:
+2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/attendances/12
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMDljZmNkZjEtOTAwNC00NTFlLWE0ZjktNjIyNTY3NzkwMmNlIiwiaWF0IjoxNzg4MzY3Mjk1LCJleHAiOjE3ODgzNjgxOTV9.oRh1cMHa2Y79hevtyjqve6K_XXZHKz338zlAjjME4c0
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 50
+2 &gt; Host: api-rec.intranet-pawk.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:&quot;2032-04-17&quot;,&quot;userId&quot;:3,&quot;status&quot;:&quot;REMOTE&quot;}
+
+16:41:36.412 response time in milliseconds: 454
+2 &lt; 200
+2 &lt; Server: openresty
+2 &lt; Date: Wed, 02 Sep 2026 16:41:36 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Attendance successfully updated!&quot;,&quot;data&quot;:{&quot;arrivalTime&quot;:null,&quot;date&quot;:&quot;2032-04-17&quot;,&quot;departureTime&quot;:null,&quot;id&quot;:12,&quot;ipAddress&quot;:&quot;10.0.0.2&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:41:36&quot;,&quot;periodEnd&quot;:null,&quot;periodStart&quot;:null,&quot;registerBy&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;REMOTE&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;profilePhoto&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;},&quot;workingDaysInPeriod&quot;:0},&quot;timestamp&quot;:&quot;2026-09-02T16:41:36.338751444&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># When: le collaborateur consulte ses notifications</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collab      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
+
+  <span class="lead-duration duration">0.555</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.534</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>16:41:36.432 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
+
+16:41:36.962 response time in milliseconds: 529
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:36 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjBkZjcxNjRmLTJkZTEtNDQ3Ny1hZmU3LTRlZDlkYjhjYzczMiIsImlhdCI6MTc4ODM2NzI5NiwiZXhwIjoxNzg4MzY4MTk2fQ.aawmpC1TPQT1Zrhl1z1qltPTg6iznLgsibFfFuP7GgU&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6ImFhODgyNjhlLWJlNjktNGJiMy1hOGYzLTZlZDc1ZWNkNTk3MCIsImlhdCI6MTc4ODM2NzI5NiwiZXhwIjoxNzg4OTcyMDk2fQ.4AVbjeTnTAdjsUnCzKQHqTiSucCpYxht4bgrRV3DID4&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:41:36.883913193&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:41:36.889247987&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collabToken = collab.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/notifications'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + collabToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.608</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-21" class="collapse collapsable-details">
+        <pre>16:41:36.971 request:
+3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/notifications
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjBkZjcxNjRmLTJkZTEtNDQ3Ny1hZmU3LTRlZDlkYjhjYzczMiIsImlhdCI6MTc4ODM2NzI5NiwiZXhwIjoxNzg4MzY4MTk2fQ.aawmpC1TPQT1Zrhl1z1qltPTg6iznLgsibFfFuP7GgU
+3 &gt; Host: api-rec.intranet-pawk.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+16:41:37.576 response time in milliseconds: 604
+3 &lt; 200
+3 &lt; Server: openresty
+3 &lt; Date: Wed, 02 Sep 2026 16:41:37 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 0
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+3 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Notifications retrieved successfully&quot;,&quot;data&quot;:[{&quot;id&quot;:206,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 20) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:20},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:12.257843&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:12.257843&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:205,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 19) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:19},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:10.62253&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:10.62253&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:204,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 18) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:18},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:08.989885&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:08.989885&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:203,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 17) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:17},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:04.969721&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:04.969721&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:202,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 16) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:16},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:03.568215&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:03.568215&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:201,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 15) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:15},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:30:02.259126&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:30:02.259126&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:200,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:59.788866&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:59.788866&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:199,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:56.142789&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:56.142789&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:196,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 12) a &eacute;t&eacute; refus&eacute;e. Motif : Period not allowed&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Period not allowed&quot;,&quot;requestId&quot;:12},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:53.918046&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:53.918046&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:189,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 9) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:9},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:46.585773&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:46.585773&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:186,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 8) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:8},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:44.722928&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:44.722928&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:183,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:29:42.786947&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:29:42.786947&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:155,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 20) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:20},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:15:06.813073&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:15:06.813073&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:154,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 19) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:19},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:15:05.18825&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:15:05.18825&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:153,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 18) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:18},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:15:03.552953&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:15:03.552953&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:152,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 17) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:17},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:59.483764&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:59.483764&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:151,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 16) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:16},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:58.119179&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:58.119179&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:150,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 15) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:15},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:56.840285&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:56.840285&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:149,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:54.384209&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:54.384209&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:148,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:50.807633&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:50.807633&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:145,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 12) a &eacute;t&eacute; refus&eacute;e. Motif : Period not allowed&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Period not allowed&quot;,&quot;requestId&quot;:12},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:48.591367&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:48.591367&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:138,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 9) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:9},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:41.437326&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:41.437326&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:135,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 8) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:8},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:39.577849&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:39.577849&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:132,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T16:14:37.625993&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:14:37.625993&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:91,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 17) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:17},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:48.597229&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:48.597229&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:90,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 16) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:16},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:46.390137&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:46.390137&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:89,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 15) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:15},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:44.136204&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:44.136204&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:88,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:38.462592&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:38.462592&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:87,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:36.628837&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:36.628837&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:86,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 12) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:12},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:34.886193&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:34.886193&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:85,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 11) a &eacute;t&eacute; valid&eacute;e. Motif : Created on behalf of user by manager&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:&quot;Created on behalf of user by manager&quot;,&quot;requestId&quot;:11},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:31.665255&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:31.665255&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:84,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 10) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:10},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:26.761207&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:26.761207&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:81,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 9) a &eacute;t&eacute; refus&eacute;e. Motif : Period not allowed&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Period not allowed&quot;,&quot;requestId&quot;:9},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:23.742891&quot;,&quot;lastModifiedBy&quot;:&quot;admin@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:23.742891&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:74,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 6) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:6},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:14.277385&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:14.277385&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:71,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 5) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:5},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:11.707008&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:11.707008&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:68,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:36:09.658772&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:36:09.658772&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:60,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 19) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:19},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:33:14.026296&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:33:14.026296&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:49,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 14) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:14},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:32:41.131304&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:32:41.131304&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:46,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 13) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:13},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:32:39.240812&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:32:39.240812&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:33,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 8) a &eacute;t&eacute; refus&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:8},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:26:23.216308&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:26:23.216308&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:30,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; refus&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 7) a &eacute;t&eacute; refus&eacute;e. Motif : Workload conflict&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;REJECTED&quot;,&quot;comment&quot;:&quot;Workload conflict&quot;,&quot;requestId&quot;:7},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:26:21.32488&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:26:21.32488&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:27,&quot;userId&quot;:3,&quot;title&quot;:&quot;Votre demande de cong&eacute; a &eacute;t&eacute; valid&eacute;e&quot;,&quot;message&quot;:&quot;Votre demande de cong&eacute; (ID: 6) a &eacute;t&eacute; valid&eacute;e.&quot;,&quot;type&quot;:&quot;LEAVE_PROCESSED&quot;,&quot;metadata&quot;:{&quot;status&quot;:&quot;APPROVED&quot;,&quot;comment&quot;:null,&quot;requestId&quot;:6},&quot;createdBy&quot;:&quot;manager@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-09-02T13:26:19.345943&quot;,&quot;lastModifiedBy&quot;:&quot;manager@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T13:26:19.345943&quot;,&quot;read&quot;:false,&quot;version&quot;:0},{&quot;id&quot;:1,&quot;userId&quot;:3,&quot;title&quot;:&quot;R&eacute;initialisation de mot de passe&quot;,&quot;message&quot;:&quot;Votre mot de passe a &eacute;t&eacute; r&eacute;initialis&eacute; par un administrateur. Veuillez le changer lors de votre prochaine connexion.&quot;,&quot;type&quot;:&quot;SECURITY&quot;,&quot;metadata&quot;:{},&quot;createdBy&quot;:&quot;admin@zenity.com&quot;,&quot;createdDate&quot;:&quot;2026-08-28T08:36:16.511946&quot;,&quot;lastModifiedBy&quot;:&quot;collab@zenity.com&quot;,&quot;lastModifiedDate&quot;:&quot;2026-08-31T09:13:03.215799&quot;,&quot;read&quot;:true,&quot;version&quot;:1}],&quot;timestamp&quot;:&quot;2026-09-02T16:41:37.35777005&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.success == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Then: la notification la plus r&eacute;cente concerne la modification de la pr&eacute;sence</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def notifications = response.data</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert notifications.length &gt; 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def latest = notifications[0]</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match latest.userId == parseInt(collabId)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match latest.read == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def latestText = ((latest.title || '') + ' ' + (latest.message || '')).toLowerCase()</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def mentionsAttendance = latestText.includes('pr&eacute;sence') || latestText.includes('presence') || latestText.includes('modifi') || latestText.includes('attendance')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert mentionsAttendance == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-22">
+          <a>did</a>
+      </div>
+      <div id="msg-22" class="collapse collapsable-details  in ">
+        <pre>did not evaluate to 'true': mentionsAttendance == true
+classpath:zenity/ofintra/features/attendances/PAWK-370.feature:83</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>16:41:37.584 classpath:zenity/ofintra/features/attendances/PAWK-370.feature:83
+* assert mentionsAttendance == true
+did not evaluate to 'true': mentionsAttendance == true
+classpath:zenity/ofintra/features/attendances/PAWK-370.feature:83
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Cleanup</div>
+
+
+<div class="brief step-name-Given skipped">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances/' + attendanceId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

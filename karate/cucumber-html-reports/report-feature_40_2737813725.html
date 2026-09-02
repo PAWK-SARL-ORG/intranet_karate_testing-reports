@@ -1,0 +1,5893 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: zenity/ofintra/features/users/PAWK-188.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>oFintra Karate Tests</td>
+      <td>02 Sep 2026, 16:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">zenity/ofintra/features/users/PAWK-188.feature</td>
+          <td      class="passed"    >169</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">169</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="16123961677">16.123</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">zenity/ofintra/features/users/PAWK-188.feature</span>
+
+
+</div>
+
+        <div class="description indention">PAWK-188 &mdash; Seul l'administrateur peut archiver un manager</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.221</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:43:29.268 karate..env system property was: null 
+16:43:29.268 &#10003; Loaded: BASE_URL 
+16:43:29.268 &#10003; Loaded: ADMIN_EMAIL 
+16:43:29.268 &#10003; Loaded: ADMIN_PASSWORD 
+16:43:29.268 &#10003; Loaded: ADMIN_ID 
+16:43:29.268 &#10003; Loaded: MANAGER_EMAIL 
+16:43:29.269 &#10003; Loaded: MANAGER_PASSWORD 
+16:43:29.269 &#10003; Loaded: MANAGER_ID 
+16:43:29.269 &#10003; Loaded: COLLAB_EMAIL 
+16:43:29.269 &#10003; Loaded: COLLAB_PASSWORD 
+16:43:29.269 &#10003; Loaded: COLLAB_ID 
+16:43:29.269 &#10003; Loaded: BLOCKED_EMAIL 
+16:43:29.269 &#10003; Loaded: BLOCKED_PASSWORD 
+16:43:29.269 &#10003; Loaded: BLOCKED_ID 
+16:43:29.269 &#10003; Loaded: ARCHIVED_EMAIL 
+16:43:29.269 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:43:29.269 &#10003; Loaded: ARCHIVED_ID 
+16:43:29.269 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:43:29.269 &#10003; ..env file loaded successfully 
+16:43:29.269 ========== Configuration Loaded ========== 
+16:43:29.269 Base URL:          https://api-rec.intranet-pawk.com 
+16:43:29.269 Admin Email:       admin@zenity.com 
+16:43:29.269 Manager Email:     manager@zenity.com 
+16:43:29.269 Collab Email:      collab@zenity.com 
+16:43:29.269 Blocked Email:     collab.bloque@zenity.com 
+16:43:29.269 Archived Email:    collab.archive@zenity.com 
+16:43:29.269 Expired Token:     NOT SET 
+16:43:29.270 ========================================== 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def admin      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(adminEmail)', password: '#(adminPassword)' }</span>
+
+  <span class="lead-duration duration">0.555</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.550</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:43:29.274 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
+
+16:43:29.824 response time in milliseconds: 549
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:29 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjNmZTlkMjc1LTc0MDMtNDdlMC1hZDllLTI1MjE4Y2MwYjJiZiIsImlhdCI6MTc4ODM2NzQwOSwiZXhwIjoxNzg4MzY4MzA5fQ.4vlOYAp_-W6ndMP-2YXEHWXrr2IjGAgiFalW7cTAdX8&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiZTRiODhiYTgtYjM3NS00NzNkLWI1ZGMtNWVhZWUwZTE5Njg3IiwiaWF0IjoxNzg4MzY3NDA5LCJleHAiOjE3ODg5NzIyMDl9.N-gHiTY-3G73cIoQzoj4FMRFMMwmSeWq1ZlcTmLM5X4&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:29.741005261&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:29.747950463&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager    = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">0.527</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.522</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>16:43:29.830 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+16:43:30.351 response time in milliseconds: 521
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:30 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMDYzMTQyNzQtMjExMi00YmNjLWE1YjUtMjMzNDE0MjM0NjA1IiwiaWF0IjoxNzg4MzY3NDEwLCJleHAiOjE3ODgzNjgzMTB9.9MTPE5W7PeGYa0n6SDkyqjGab57LMsHeCCl9msVIksg&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiJiOTk1MDU1Yy1kODVmLTQzMWYtYTFiOS0zNjFhYmE3YTY5ZGIiLCJpYXQiOjE3ODgzNjc0MTAsImV4cCI6MTc4ODk3MjIxMH0.Lg5jFF3IKPWoAO214jgVGmH0iQH-dqwALAK51dTFZ3I&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:30.275726178&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:30.280953027&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collab      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
+
+  <span class="lead-duration duration">0.534</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.529</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>16:43:30.357 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
+
+16:43:30.885 response time in milliseconds: 528
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:30 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjM4NGFjZjA0LTg3NDQtNDljYi1iZjE2LTc3YjkyOWRmNmZhZSIsImlhdCI6MTc4ODM2NzQxMCwiZXhwIjoxNzg4MzY4MzEwfQ.LuddCpWg9zYdA2gm8Bq7j1sNheSxQTQB46-zPilSQIg&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6Ijc3ZmI3ZDMzLTQwOTItNDUzOC1iZjk0LWViMjlmNTgxYTEyZiIsImlhdCI6MTc4ODM2NzQxMCwiZXhwIjoxNzg4OTcyMjEwfQ.evce78nCoDRchWsmUpTQ9KbtZsSp7hTUrG4QNZDqPvk&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:30.805166446&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:30.813842785&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def adminToken = admin.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def managerToken = manager.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collabToken = collab.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3383637887.html">@security</a>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_245007848.html">@PAWK-188</a>
+</div>
+
+
+  <span class="lead-duration duration">1.347</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">PAWK-188 - Un manager ne peut pas archiver un manager</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># When: Un manager tente d'archiver un collaborateur</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/users/' + managerId + '/archive'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.445</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:43:30.888 request:
+1 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/users/2/archive
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMDYzMTQyNzQtMjExMi00YmNjLWE1YjUtMjMzNDE0MjM0NjA1IiwiaWF0IjoxNzg4MzY3NDEwLCJleHAiOjE3ODgzNjgzMTB9.9MTPE5W7PeGYa0n6SDkyqjGab57LMsHeCCl9msVIksg
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:31.333 response time in milliseconds: 445
+1 &lt; 403
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:31 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Access denied: you do not have permission to access this resource&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T16:43:31.263056312&quot;,&quot;path&quot;:&quot;/api/v1/users/2/archive&quot;,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 403</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.message == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And: L'utilisateur reste ACTIVE</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(managerId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">0.452</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/get-user-by-id.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.448</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>16:43:31.338 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjNmZTlkMjc1LTc0MDMtNDdlMC1hZDllLTI1MjE4Y2MwYjJiZiIsImlhdCI6MTc4ODM2NzQwOSwiZXhwIjoxNzg4MzY4MzA5fQ.4vlOYAp_-W6ndMP-2YXEHWXrr2IjGAgiFalW7cTAdX8
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:31.786 response time in milliseconds: 447
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:31 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:30.275726&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-09-02T16:43:31.710886064&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match getUser.response.data.status == 'ACTIVE'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.142</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-11">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-11" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-12">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-12" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>16:43:31.790 karate..env system property was: null 
+16:43:31.790 &#10003; Loaded: BASE_URL 
+16:43:31.790 &#10003; Loaded: ADMIN_EMAIL 
+16:43:31.790 &#10003; Loaded: ADMIN_PASSWORD 
+16:43:31.790 &#10003; Loaded: ADMIN_ID 
+16:43:31.790 &#10003; Loaded: MANAGER_EMAIL 
+16:43:31.790 &#10003; Loaded: MANAGER_PASSWORD 
+16:43:31.790 &#10003; Loaded: MANAGER_ID 
+16:43:31.790 &#10003; Loaded: COLLAB_EMAIL 
+16:43:31.791 &#10003; Loaded: COLLAB_PASSWORD 
+16:43:31.791 &#10003; Loaded: COLLAB_ID 
+16:43:31.791 &#10003; Loaded: BLOCKED_EMAIL 
+16:43:31.791 &#10003; Loaded: BLOCKED_PASSWORD 
+16:43:31.791 &#10003; Loaded: BLOCKED_ID 
+16:43:31.791 &#10003; Loaded: ARCHIVED_EMAIL 
+16:43:31.791 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:43:31.791 &#10003; Loaded: ARCHIVED_ID 
+16:43:31.791 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:43:31.791 &#10003; ..env file loaded successfully 
+16:43:31.791 ========== Configuration Loaded ========== 
+16:43:31.791 Base URL:          https://api-rec.intranet-pawk.com 
+16:43:31.791 Admin Email:       admin@zenity.com 
+16:43:31.791 Manager Email:     manager@zenity.com 
+16:43:31.791 Collab Email:      collab@zenity.com 
+16:43:31.791 Blocked Email:     collab.bloque@zenity.com 
+16:43:31.791 Archived Email:    collab.archive@zenity.com 
+16:43:31.791 Expired Token:     NOT SET 
+16:43:31.791 ========================================== 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def admin      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(adminEmail)', password: '#(adminPassword)' }</span>
+
+  <span class="lead-duration duration">0.529</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.525</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>16:43:31.796 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
+
+16:43:32.320 response time in milliseconds: 524
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdjZWUzOGFiLTliYjEtNGI3Zi04YmY2LTBlMjRmZjQzNGI4ZiIsImlhdCI6MTc4ODM2NzQxMiwiZXhwIjoxNzg4MzY4MzEyfQ.OT5ec4ShP_3FPCbj2LQ9l964eUvbjMYanoid8m1r1lE&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiODNmZmQ3MzgtMDVlYS00ZGMyLWJhN2MtN2Y0NzU4MTRiNjMxIiwiaWF0IjoxNzg4MzY3NDEyLCJleHAiOjE3ODg5NzIyMTJ9.YQkxTcv7PRy5qBqJkNY8sSDY7dZ39Y3NZL5LjPxgwx0&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:32.244617035&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:32.25011074&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager    = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">0.520</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.516</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>16:43:32.325 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+16:43:32.841 response time in milliseconds: 516
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:32 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMzUyYWYzY2YtNzYzMC00YjhiLWIxMTAtODkzZGI2Y2I2NmRkIiwiaWF0IjoxNzg4MzY3NDEyLCJleHAiOjE3ODgzNjgzMTJ9.gyVYJ4CSJHp50mBIqpTgEDI-PMnfV9L0hxnEBFX_p5s&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiI4MGVmZmZiNi0wMTI4LTQwMjItYTc3YS0xN2ViM2UwOGM1OTciLCJpYXQiOjE3ODgzNjc0MTIsImV4cCI6MTc4ODk3MjIxMn0.JJCFeVrFxPdq5ZNnETHkhqJ0XZBEAM6gcRlaWPFdoWM&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:32.766201735&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:32.770775682&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collab      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
+
+  <span class="lead-duration duration">0.525</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.521</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>16:43:32.846 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
+
+16:43:33.366 response time in milliseconds: 520
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjlhMjUzYmU4LWExNDMtNGE1Ny1hOWJkLWU5MDIzMDgzMGRlMiIsImlhdCI6MTc4ODM2NzQxMywiZXhwIjoxNzg4MzY4MzEzfQ.XCC2OfWt4ytKUzvhMppLgmDRnqkSULY7LY_NYGJ72ik&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjMxY2I1Yzc3LWE5MGEtNGQwYS1iNWJlLTcwYjNiYjhmNWY2NSIsImlhdCI6MTc4ODM2NzQxMywiZXhwIjoxNzg4OTcyMjEzfQ.Qq2cKyW3p932nU93QaYmVOr5DpA5AvYKafDys22FClw&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:33.284445529&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:33.289711253&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def adminToken = admin.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def managerToken = manager.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collabToken = collab.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3383637887.html">@security</a>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_245007848.html">@PAWK-188</a>
+</div>
+
+
+  <span class="lead-duration duration">1.546</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-17">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">PAWK-188 - Un collaborateur ne peut pas archiver un manager</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-17" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-18">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-18" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># When: Un collaborateur tente d'archiver un autre utilisateur</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/users/' + managerId + '/archive'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + collabToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.655</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>16:43:33.369 request:
+1 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/users/2/archive
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjlhMjUzYmU4LWExNDMtNGE1Ny1hOWJkLWU5MDIzMDgzMGRlMiIsImlhdCI6MTc4ODM2NzQxMywiZXhwIjoxNzg4MzY4MzEzfQ.XCC2OfWt4ytKUzvhMppLgmDRnqkSULY7LY_NYGJ72ik
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:34.024 response time in milliseconds: 655
+1 &lt; 403
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:33 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Access denied: you do not have permission to access this resource&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T16:43:33.953750453&quot;,&quot;path&quot;:&quot;/api/v1/users/2/archive&quot;,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 403</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match response.success == false</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And: L'utilisateur reste ACTIVE</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(managerId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">0.447</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/get-user-by-id.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.441</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>16:43:34.031 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdjZWUzOGFiLTliYjEtNGI3Zi04YmY2LTBlMjRmZjQzNGI4ZiIsImlhdCI6MTc4ODM2NzQxMiwiZXhwIjoxNzg4MzY4MzEyfQ.OT5ec4ShP_3FPCbj2LQ9l964eUvbjMYanoid8m1r1lE
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:34.472 response time in milliseconds: 440
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:34 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:32.766202&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-09-02T16:43:34.401216702&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match getUser.response.data.status == 'ACTIVE'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">3.222</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-21">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-21" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-22">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-22" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-23">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-23" class="collapse collapsable-details">
+        <pre>16:43:34.476 karate..env system property was: null 
+16:43:34.477 &#10003; Loaded: BASE_URL 
+16:43:34.477 &#10003; Loaded: ADMIN_EMAIL 
+16:43:34.478 &#10003; Loaded: ADMIN_PASSWORD 
+16:43:34.478 &#10003; Loaded: ADMIN_ID 
+16:43:34.478 &#10003; Loaded: MANAGER_EMAIL 
+16:43:34.478 &#10003; Loaded: MANAGER_PASSWORD 
+16:43:34.478 &#10003; Loaded: MANAGER_ID 
+16:43:34.478 &#10003; Loaded: COLLAB_EMAIL 
+16:43:34.478 &#10003; Loaded: COLLAB_PASSWORD 
+16:43:34.478 &#10003; Loaded: COLLAB_ID 
+16:43:34.478 &#10003; Loaded: BLOCKED_EMAIL 
+16:43:34.478 &#10003; Loaded: BLOCKED_PASSWORD 
+16:43:34.478 &#10003; Loaded: BLOCKED_ID 
+16:43:34.478 &#10003; Loaded: ARCHIVED_EMAIL 
+16:43:34.478 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:43:34.478 &#10003; Loaded: ARCHIVED_ID 
+16:43:34.478 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:43:34.479 &#10003; ..env file loaded successfully 
+16:43:34.479 ========== Configuration Loaded ========== 
+16:43:34.479 Base URL:          https://api-rec.intranet-pawk.com 
+16:43:34.479 Admin Email:       admin@zenity.com 
+16:43:34.479 Manager Email:     manager@zenity.com 
+16:43:34.479 Collab Email:      collab@zenity.com 
+16:43:34.479 Blocked Email:     collab.bloque@zenity.com 
+16:43:34.479 Archived Email:    collab.archive@zenity.com 
+16:43:34.479 Expired Token:     NOT SET 
+16:43:34.479 ========================================== 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def admin      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(adminEmail)', password: '#(adminPassword)' }</span>
+
+  <span class="lead-duration duration">0.523</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.518</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-24">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-24" class="collapse collapsable-details">
+        <pre>16:43:34.486 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
+
+16:43:35.002 response time in milliseconds: 515
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:34 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdjODVlOWE1LThlYTEtNDI4MC1iM2IzLWVjZjUxNjZiNWMyYSIsImlhdCI6MTc4ODM2NzQxNCwiZXhwIjoxNzg4MzY4MzE0fQ.4BtIjhqbqsHO6wKRffFBQBgiR-qlRnCMcO-ligYfInc&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiOWYxNDI1OTgtNDg1ZS00ZmQ2LWEyZDMtYWM1M2M2OTQ5OWQ3IiwiaWF0IjoxNzg4MzY3NDE0LCJleHAiOjE3ODg5NzIyMTR9.aUfXfIS1_u5LQ1WDV2yRXG44QWpWaNVYJQTb2aOjL1Y&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:34.924911176&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:34.931462433&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager    = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">0.521</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.516</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-25" class="collapse collapsable-details">
+        <pre>16:43:35.008 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+16:43:35.523 response time in milliseconds: 515
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:35 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiOTlkNmI3MzktYzI2ZC00NzY2LWIxMDktMWY1MzAxZGYyMzMzIiwiaWF0IjoxNzg4MzY3NDE1LCJleHAiOjE3ODgzNjgzMTV9.s1Gmx-94x1Opo5JMDSmfzd8MZod_Q8RUd1eI3DFIbAU&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiJlNTE5NDFjMS05OTcwLTQ2YTYtOGRkYi1iNWQ5MWQwODc2ZTQiLCJpYXQiOjE3ODgzNjc0MTUsImV4cCI6MTc4ODk3MjIxNX0.c6WnQDMVOt4laUTj9atL_ZHti4mfRpQ2NgLza1ed7Ck&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:35.445842021&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:35.451907473&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collab      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
+
+  <span class="lead-duration duration">0.572</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.567</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-26">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-26" class="collapse collapsable-details">
+        <pre>16:43:35.529 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 56
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
+
+16:43:36.096 response time in milliseconds: 566
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:36 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjA5ZDI0Mjg5LTA0MjYtNDkyZi1hMDNjLTZmNDE1ZTI4MTFmNyIsImlhdCI6MTc4ODM2NzQxNiwiZXhwIjoxNzg4MzY4MzE2fQ.eJHWS8BeWQbUZFgjLyZgzkc6zGILTF8-UdDSvBMWef4&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjRjMDQzY2I0LTY0MjktNDUxNC05MDcyLTVlNzM0N2JhNDVlNCIsImlhdCI6MTc4ODM2NzQxNiwiZXhwIjoxNzg4OTcyMjE2fQ.P1e700ulOPukevRyTniVvPsspbeeSxmzPK6uo8NR30M&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:36.018212004&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:43:36.02399886&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def adminToken = admin.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def managerToken = manager.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collabToken = collab.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_245007848.html">@PAWK-188</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+</div>
+
+
+  <span class="lead-duration duration">3.643</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-27">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">PAWK-188 - Un administrateur peut archiver un manager</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-27" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-28">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-28" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Precondition: Le manager n'est pas encore archiv&eacute;</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(managerId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">0.455</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/get-user-by-id.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.451</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-29">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-29" class="collapse collapsable-details">
+        <pre>16:43:36.102 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdjODVlOWE1LThlYTEtNDI4MC1iM2IzLWVjZjUxNjZiNWMyYSIsImlhdCI6MTc4ODM2NzQxNCwiZXhwIjoxNzg4MzY4MzE0fQ.4BtIjhqbqsHO6wKRffFBQBgiR-qlRnCMcO-ligYfInc
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:36.553 response time in milliseconds: 450
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:36 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:35.445842&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-09-02T16:43:36.478502743&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match getUser.response.data.status == 'ACTIVE'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># When: Un administrateur archive le manager</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def archiveUser = call read('classpath:zenity/ofintra/features/users/helpers/archive-user.feature') {userId: '#(managerId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">0.460</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/features/users/helpers/archive-user.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId + '/archive'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.456</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-30">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-30" class="collapse collapsable-details">
+        <pre>16:43:36.558 request:
+1 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/users/2/archive
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdjODVlOWE1LThlYTEtNDI4MC1iM2IzLWVjZjUxNjZiNWMyYSIsImlhdCI6MTc4ODM2NzQxNCwiZXhwIjoxNzg4MzY4MzE0fQ.4BtIjhqbqsHO6wKRffFBQBgiR-qlRnCMcO-ligYfInc
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:37.013 response time in milliseconds: 455
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:36 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User archived successfully&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T16:43:36.942793072&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match archiveUser.response.success == true</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Then: Le manager est archiv&eacute;</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def getArchivedUser = call read('classpath:zenity/ofintra/common/get-user-by-id.feature') {userId: '#(managerId)', token: '#(adminToken)'}</span>
+
+  <span class="lead-duration duration">0.446</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/get-user-by-id.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.442</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-31">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-31" class="collapse collapsable-details">
+        <pre>16:43:37.018 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/2
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdjODVlOWE1LThlYTEtNDI4MC1iM2IzLWVjZjUxNjZiNWMyYSIsImlhdCI6MTc4ODM2NzQxNCwiZXhwIjoxNzg4MzY4MzE0fQ.4BtIjhqbqsHO6wKRffFBQBgiR-qlRnCMcO-ligYfInc
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:37.460 response time in milliseconds: 442
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:37 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ARCHIVED&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:43:35.445842&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-09-02T16:43:37.388740437&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match getArchivedUser.response.data.status == 'ARCHIVED'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Cleanup: R&eacute;activer le manager pour les prochains tests</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">karate.call('classpath:zenity/ofintra/features/users/helpers/reactivate-user.feature', { userId: managerId, token: adminToken })</span>
+
+  <span class="lead-duration duration">0.466</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/features/users/helpers/reactivate-user.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">path '/api/v1/users/' + userId + '/reactivate'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">header Authorization = 'Bearer ' + token</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.461</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-32">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-32" class="collapse collapsable-details">
+        <pre>16:43:37.466 request:
+1 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/users/2/reactivate
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjdjODVlOWE1LThlYTEtNDI4MC1iM2IzLWVjZjUxNjZiNWMyYSIsImlhdCI6MTc4ODM2NzQxNCwiZXhwIjoxNzg4MzY4MzE0fQ.4BtIjhqbqsHO6wKRffFBQBgiR-qlRnCMcO-ligYfInc
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:43:37.926 response time in milliseconds: 460
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:43:37 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User reactivated successfully&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T16:43:37.856274493&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,1773 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: zenity/ofintra/features/attendances/PAWK-371.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>oFintra Karate Tests</td>
+      <td>02 Sep 2026, 16:44</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">zenity/ofintra/features/attendances/PAWK-371.feature</td>
+          <td      class="passed"    >44</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">44</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="2992288377">2.992</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">zenity/ofintra/features/attendances/PAWK-371.feature</span>
+
+
+</div>
+
+        <div class="description indention">PAWK-371 &mdash; Historique des modifications de pr&eacute;sence</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+</div>
+
+
+  <span class="lead-duration duration">1.144</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>16:41:38.965 karate..env system property was: null 
+16:41:38.970 &#10003; Loaded: BASE_URL 
+16:41:38.970 &#10003; Loaded: ADMIN_EMAIL 
+16:41:38.972 &#10003; Loaded: ADMIN_PASSWORD 
+16:41:38.972 &#10003; Loaded: ADMIN_ID 
+16:41:38.973 &#10003; Loaded: MANAGER_EMAIL 
+16:41:38.973 &#10003; Loaded: MANAGER_PASSWORD 
+16:41:38.973 &#10003; Loaded: MANAGER_ID 
+16:41:38.974 &#10003; Loaded: COLLAB_EMAIL 
+16:41:38.975 &#10003; Loaded: COLLAB_PASSWORD 
+16:41:38.976 &#10003; Loaded: COLLAB_ID 
+16:41:38.977 &#10003; Loaded: BLOCKED_EMAIL 
+16:41:38.977 &#10003; Loaded: BLOCKED_PASSWORD 
+16:41:38.977 &#10003; Loaded: BLOCKED_ID 
+16:41:38.978 &#10003; Loaded: ARCHIVED_EMAIL 
+16:41:38.978 &#10003; Loaded: ARCHIVED_PASSWORD 
+16:41:38.980 &#10003; Loaded: ARCHIVED_ID 
+16:41:38.981 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+16:41:38.981 &#10003; ..env file loaded successfully 
+16:41:38.984 ========== Configuration Loaded ========== 
+16:41:38.984 Base URL:          https://api-rec.intranet-pawk.com 
+16:41:38.985 Admin Email:       admin@zenity.com 
+16:41:38.985 Manager Email:     manager@zenity.com 
+16:41:38.985 Collab Email:      collab@zenity.com 
+16:41:38.985 Blocked Email:     collab.bloque@zenity.com 
+16:41:38.985 Archived Email:    collab.archive@zenity.com 
+16:41:38.985 Expired Token:     NOT SET 
+16:41:38.985 ========================================== 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">0.577</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.552</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>16:41:39.012 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+16:41:39.561 response time in milliseconds: 548
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:39 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYTAyZGVlNDMtMGQxOC00MjU4LThmZjUtNGQyOWU2ZjlmODQzIiwiaWF0IjoxNzg4MzY3Mjk5LCJleHAiOjE3ODgzNjgxOTl9.u_CNGVbNTK8qcZciuPfCcuZHxUr_DNPONCzOxZsHzlE&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiJlMjdkNDkwNy03OWQ3LTQ5MzEtYWRmMC01NDY0NDg1MTM1ODAiLCJpYXQiOjE3ODgzNjcyOTksImV4cCI6MTc4ODk3MjA5OX0.NROfe8huMwupZNv2-Y586rB8zhhEWAOKOtw9FHF73qo&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T16:41:39.478059773&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T16:41:39.484721146&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def managerToken = manager.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def baseDay        = 1100 + Math.floor((java.lang.System.currentTimeMillis() % 100000) / 100)</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def attendanceDate = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_233058432.html">@regression</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_245009732.html">@PAWK-371</a>
+</div>
+
+
+  <span class="lead-duration duration">1.847</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">PAWK-371 - Une modification de pr&eacute;sence g&eacute;n&egrave;re une trace d'audit consultable</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-5" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-6" class="inner-level collapse collapsable-details ">
+      <div class="step">
+          <div class="comment indention"># Given: une pr&eacute;sence d&eacute;j&agrave; valid&eacute;e dans le syst&egrave;me pour le collaborateur</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { date: '#(attendanceDate)', userId: '#(parseInt(collabId))', status: 'PRESENT', arrivalTime: '08:00:00', departureTime: '17:00:00' }</span>
+
+  <span class="lead-duration duration">0.002</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.472</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>16:41:39.579 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/attendances
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYTAyZGVlNDMtMGQxOC00MjU4LThmZjUtNGQyOWU2ZjlmODQzIiwiaWF0IjoxNzg4MzY3Mjk5LCJleHAiOjE3ODgzNjgxOTl9.u_CNGVbNTK8qcZciuPfCcuZHxUr_DNPONCzOxZsHzlE
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 103
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:&quot;2032-05-28&quot;,&quot;userId&quot;:3,&quot;status&quot;:&quot;PRESENT&quot;,&quot;arrivalTime&quot;:&quot;08:00:00&quot;,&quot;departureTime&quot;:&quot;17:00:00&quot;}
+
+16:41:40.050 response time in milliseconds: 469
+1 &lt; 201
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 16:41:39 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Attendance successfully created!&quot;,&quot;data&quot;:{&quot;arrivalTime&quot;:&quot;08:00:00&quot;,&quot;date&quot;:&quot;2032-05-28&quot;,&quot;departureTime&quot;:&quot;17:00:00&quot;,&quot;id&quot;:13,&quot;ipAddress&quot;:&quot;10.0.0.2&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:41:39&quot;,&quot;periodEnd&quot;:null,&quot;periodStart&quot;:null,&quot;registerBy&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;PRESENT&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;profilePhoto&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;},&quot;workingDaysInPeriod&quot;:0},&quot;timestamp&quot;:&quot;2026-09-02T16:41:39.977495658&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 201</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def attendanceId = response.data.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># When: le manager modifie cette pr&eacute;sence</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances/' + attendanceId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">request { date: '#(attendanceDate)', userId: '#(parseInt(collabId))', status: 'REMOTE' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method put</span>
+
+  <span class="lead-duration duration">0.452</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>16:41:40.054 request:
+2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/attendances/13
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYTAyZGVlNDMtMGQxOC00MjU4LThmZjUtNGQyOWU2ZjlmODQzIiwiaWF0IjoxNzg4MzY3Mjk5LCJleHAiOjE3ODgzNjgxOTl9.u_CNGVbNTK8qcZciuPfCcuZHxUr_DNPONCzOxZsHzlE
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 50
+2 &gt; Host: api-rec.intranet-pawk.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;date&quot;:&quot;2032-05-28&quot;,&quot;userId&quot;:3,&quot;status&quot;:&quot;REMOTE&quot;}
+
+16:41:40.505 response time in milliseconds: 450
+2 &lt; 200
+2 &lt; Server: openresty
+2 &lt; Date: Wed, 02 Sep 2026 16:41:40 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+2 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Attendance successfully updated!&quot;,&quot;data&quot;:{&quot;arrivalTime&quot;:null,&quot;date&quot;:&quot;2032-05-28&quot;,&quot;departureTime&quot;:null,&quot;id&quot;:13,&quot;ipAddress&quot;:&quot;10.0.0.2&quot;,&quot;lastModifiedDate&quot;:&quot;2026-09-02T16:41:40&quot;,&quot;periodEnd&quot;:null,&quot;periodStart&quot;:null,&quot;registerBy&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;REMOTE&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;profilePhoto&quot;:null,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;},&quot;workingDaysInPeriod&quot;:0},&quot;timestamp&quot;:&quot;2026-09-02T16:41:40.433588699&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And: on consulte la section &quot;Historique / Audit log&quot; du collaborateur</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/history/users/' + collabId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param page = 0</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param size = 20</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+
+  <span class="lead-duration duration">0.452</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>16:41:40.510 request:
+3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/history/users/3?size=20&amp;page=0
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYTAyZGVlNDMtMGQxOC00MjU4LThmZjUtNGQyOWU2ZjlmODQzIiwiaWF0IjoxNzg4MzY3Mjk5LCJleHAiOjE3ODgzNjgxOTl9.u_CNGVbNTK8qcZciuPfCcuZHxUr_DNPONCzOxZsHzlE
+3 &gt; Host: api-rec.intranet-pawk.com
+3 &gt; Connection: Keep-Alive
+3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+3 &gt; Accept-Encoding: gzip,deflate
+
+
+16:41:40.960 response time in milliseconds: 449
+3 &lt; 200
+3 &lt; Server: openresty
+3 &lt; Date: Wed, 02 Sep 2026 16:41:40 GMT
+3 &lt; Content-Type: application/json
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Connection: keep-alive
+3 &lt; Vary: Origin
+3 &lt; Vary: Access-Control-Request-Method
+3 &lt; Vary: Access-Control-Request-Headers
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-XSS-Protection: 0
+3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+3 &lt; Pragma: no-cache
+3 &lt; Expires: 0
+3 &lt; X-Frame-Options: DENY
+3 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;content&quot;:[{&quot;id&quot;:5,&quot;entityType&quot;:&quot;ATTENDANCE&quot;,&quot;entityId&quot;:13,&quot;actionType&quot;:&quot;UPDATED&quot;,&quot;performedById&quot;:2,&quot;performedByEmail&quot;:&quot;manager@zenity.com&quot;,&quot;performedByName&quot;:&quot;Thomas Martin&quot;,&quot;targetUserId&quot;:3,&quot;details&quot;:&quot;Attendance updated&quot;,&quot;performedAt&quot;:&quot;2026-09-02T16:41:40.430654&quot;},{&quot;id&quot;:4,&quot;entityType&quot;:&quot;ATTENDANCE&quot;,&quot;entityId&quot;:13,&quot;actionType&quot;:&quot;REGISTERED&quot;,&quot;performedById&quot;:2,&quot;performedByEmail&quot;:&quot;manager@zenity.com&quot;,&quot;performedByName&quot;:&quot;Thomas Martin&quot;,&quot;targetUserId&quot;:3,&quot;details&quot;:&quot;Manual attendance created&quot;,&quot;performedAt&quot;:&quot;2026-09-02T16:41:39.974222&quot;},{&quot;id&quot;:3,&quot;entityType&quot;:&quot;ATTENDANCE&quot;,&quot;entityId&quot;:12,&quot;actionType&quot;:&quot;UPDATED&quot;,&quot;performedById&quot;:2,&quot;performedByEmail&quot;:&quot;manager@zenity.com&quot;,&quot;performedByName&quot;:&quot;Thomas Martin&quot;,&quot;targetUserId&quot;:3,&quot;details&quot;:&quot;Attendance updated&quot;,&quot;performedAt&quot;:&quot;2026-09-02T16:41:36.334839&quot;},{&quot;id&quot;:2,&quot;entityType&quot;:&quot;ATTENDANCE&quot;,&quot;entityId&quot;:12,&quot;actionType&quot;:&quot;REGISTERED&quot;,&quot;performedById&quot;:2,&quot;performedByEmail&quot;:&quot;manager@zenity.com&quot;,&quot;performedByName&quot;:&quot;Thomas Martin&quot;,&quot;targetUserId&quot;:3,&quot;details&quot;:&quot;Manual attendance created&quot;,&quot;performedAt&quot;:&quot;2026-09-02T16:41:35.872192&quot;},{&quot;id&quot;:1,&quot;entityType&quot;:&quot;ATTENDANCE&quot;,&quot;entityId&quot;:11,&quot;actionType&quot;:&quot;REGISTERED&quot;,&quot;performedById&quot;:2,&quot;performedByEmail&quot;:&quot;manager@zenity.com&quot;,&quot;performedByName&quot;:&quot;Thomas Martin&quot;,&quot;targetUserId&quot;:3,&quot;details&quot;:&quot;Manual attendance created&quot;,&quot;performedAt&quot;:&quot;2026-09-02T16:41:33.524038&quot;}],&quot;empty&quot;:false,&quot;first&quot;:true,&quot;last&quot;:true,&quot;number&quot;:0,&quot;numberOfElements&quot;:5,&quot;pageable&quot;:{&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;unpaged&quot;:false},&quot;size&quot;:20,&quot;sort&quot;:{&quot;empty&quot;:false,&quot;sorted&quot;:true,&quot;unsorted&quot;:false},&quot;totalElements&quot;:5,&quot;totalPages&quot;:1}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Then: une nouvelle ligne d'audit existe pour cette modification de pr&eacute;sence</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def historyContent = response.content</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def updateEntry =</span>
+
+  <span class="lead-duration duration">0.003</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>historyContent.find(function(h) {
+  return h.entityType == 'ATTENDANCE' &amp;&amp; h.entityId == attendanceId &amp;&amp; h.actionType == 'UPDATED';
+})</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">assert updateEntry != null</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And: elle indique qui a fait la modification, quand, et sur quelle cible</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match updateEntry.performedByName == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match updateEntry.performedByEmail == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match updateEntry.performedAt == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match updateEntry.targetUserId == parseInt(collabId)</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># And: elle d&eacute;crit le changement (ancienne / nouvelle valeur)</div>
+          <div class="comment indention"># NB: le format exact du contenu de &quot;details&quot; (ancienne/nouvelle valeur) n'a pas</div>
+          <div class="comment indention"># &eacute;t&eacute; v&eacute;rifi&eacute; contre le backend r&eacute;el &mdash; &agrave; confirmer manuellement.</div>
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">match updateEntry.details == '#string'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+          <div class="comment indention"># Cleanup</div>
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path '/api/v1/attendances/' + attendanceId</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">header Authorization = 'Bearer ' + managerToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method delete</span>
+
+  <span class="lead-duration duration">0.453</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>16:41:40.971 request:
+4 &gt; DELETE https://api-rec.intranet-pawk.com/api/v1/attendances/13
+4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYTAyZGVlNDMtMGQxOC00MjU4LThmZjUtNGQyOWU2ZjlmODQzIiwiaWF0IjoxNzg4MzY3Mjk5LCJleHAiOjE3ODgzNjgxOTl9.u_CNGVbNTK8qcZciuPfCcuZHxUr_DNPONCzOxZsHzlE
+4 &gt; Host: api-rec.intranet-pawk.com
+4 &gt; Connection: Keep-Alive
+4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+4 &gt; Accept-Encoding: gzip,deflate
+
+
+16:41:41.423 response time in milliseconds: 452
+4 &lt; 200
+4 &lt; Server: openresty
+4 &lt; Date: Wed, 02 Sep 2026 16:41:41 GMT
+4 &lt; Content-Type: application/json
+4 &lt; Transfer-Encoding: chunked
+4 &lt; Connection: keep-alive
+4 &lt; Vary: Origin
+4 &lt; Vary: Access-Control-Request-Method
+4 &lt; Vary: Access-Control-Request-Headers
+4 &lt; X-Content-Type-Options: nosniff
+4 &lt; X-XSS-Protection: 0
+4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+4 &lt; Pragma: no-cache
+4 &lt; Expires: 0
+4 &lt; X-Frame-Options: DENY
+4 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Attendance record successfully deleted&quot;,&quot;data&quot;:true,&quot;timestamp&quot;:&quot;2026-09-02T16:41:41.350579771&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
