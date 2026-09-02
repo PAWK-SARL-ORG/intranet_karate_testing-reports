@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>26 Aug 2026, 14:12</td>
+      <td>02 Sep 2026, 13:27</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-110</td>
-          <td      class="passed"    >23</td>
+          <td      class="passed"    >5</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >8</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">23</td>
+          <td class="total">15</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1862612664">1.862</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="571081832">0.571</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_25_3201121424.html">zenity/ofintra/features/auth/PAWK-110.feature</a>
+      <a href="report-feature_30_3201121424.html">zenity/ofintra/features/auth/PAWK-110.feature</a>
     </div>
 
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.862</span>
+  <span class="lead-duration duration">0.571</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-110 &mdash; D&eacute;connexion manuelle r&eacute;ussie</span>
 
@@ -198,16 +198,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -217,16 +217,16 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention"># D'abord se connecter pour obtenir un token</div>
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* failed">
   <span class="keyword indention">*</span>
   <span class="name">def loginResult = call read('classpath:zenity/ofintra/common/login-helper.feature') {email: '#(validEmail)', password: '#(validPassword)'}</span>
 
-  <span class="lead-duration duration">0.505</span>
+  <span class="lead-duration duration">0.289</span>
 
 </div>
 
@@ -235,9 +235,39 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>status</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>status code was: 403, expected: 200, response time in milliseconds: 278, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:26:11.267354276&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+classpath:zenity/ofintra/features/auth/PAWK-110.feature:11</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>13:26:11.303 classpath:zenity/ofintra/features/auth/PAWK-110.feature:11
+* def loginResult = call read('classpath:zenity/ofintra/common/login-helper.feature') {email: '#(validEmail)', password: '#(validPassword)'}
+status code was: 403, expected: 200, response time in milliseconds: 278, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:26:11.267354276&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+classpath:zenity/ofintra/features/auth/PAWK-110.feature:11
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -361,7 +391,7 @@ $(document).ready(function() {
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.491</span>
+  <span class="lead-duration duration">0.280</span>
 
 </div>
 
@@ -375,24 +405,24 @@ $(document).ready(function() {
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
           <a>Doc string</a>
       </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>14:10:21.937 request:
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>13:26:11.022 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 54
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
 
-14:10:22.426 response time in milliseconds: 488
-1 &lt; 200
+13:26:11.301 response time in milliseconds: 278
+1 &lt; 403
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 26 Aug 2026 14:10:22 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:26:11 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -405,8 +435,7 @@ $(document).ready(function() {
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImM4MDJkNzUwLWEzMTctNGI4My1iNDRkLTE3ZWRjZDg0NTZhNCIsImlhdCI6MTc4Nzc1MzQyMiwiZXhwIjoxNzg3NzU0MzIyfQ.yRMYAzm2O6c9GDqyUdYJ3Pi_Z5hqrCq1R-lgTbgA6b4&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiZWIwYjIxMTQtNWYzNy00YTUyLTg5MGQtMTYzMDc3MzZmMTliIiwiaWF0IjoxNzg3NzUzNDIyLCJleHAiOjE3ODgzNTgyMjJ9.WrKjxYWOH_zb8NCwvoeGmeph6kPRHz7etf5qD7RDrtw&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-08-26T14:10:22.349261445&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-08-26T14:10:22.360949178&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:26:11.267354276&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 
 </pre>
       </div>
@@ -423,9 +452,64 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; Then passed">
+<div class="brief step-name-&amp;gt; Then failed">
   <span class="keyword indention">&gt; Then</span>
   <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>status</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>status code was: 403, expected: 200, response time in milliseconds: 278, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:26:11.267354276&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>13:26:11.302 classpath:zenity/ofintra/common/login-helper.feature:9
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 278, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:26:11.267354276&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And skipped">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -450,34 +534,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
-
-  <span class="lead-duration duration">0.002</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; * passed">
+<div class="brief step-name-&amp;gt; * skipped">
   <span class="keyword indention">&gt; *</span>
   <span class="name">def accessToken  = response.data.accessToken</span>
 
@@ -504,7 +561,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; * passed">
+<div class="brief step-name-&amp;gt; * skipped">
   <span class="keyword indention">&gt; *</span>
   <span class="name">def refreshToken = response.data.refreshToken</span>
 
@@ -531,7 +588,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; * passed">
+<div class="brief step-name-&amp;gt; * skipped">
   <span class="keyword indention">&gt; *</span>
   <span class="name">def userId       = response.data.user.id</span>
 
@@ -558,7 +615,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def userAccessToken  = loginResult.accessToken</span>
 
@@ -585,7 +642,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def userRefreshToken = loginResult.refreshToken</span>
 
@@ -613,37 +670,10 @@ $(document).ready(function() {
           <div class="comment indention"># Puis se d&eacute;connecter</div>
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def logoutResult = call read('classpath:zenity/ofintra/common/logout-helper.feature') {accessToken: '#(userAccessToken)', refreshToken: '#(userRefreshToken)'}</span>
 
-  <span class="lead-duration duration">0.434</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name- passed">
-  <span class="keyword indention"></span>
-  <span class="name">zenity/ofintra/common/logout-helper.feature</span>
-
   <span class="lead-duration duration">0.000</span>
 
 </div>
@@ -667,234 +697,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-&amp;gt; Given passed">
-  <span class="keyword indention">&gt; Given</span>
-  <span class="name">url baseUrl</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">path 'api/v1/auth/logout'</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">header Authorization = 'Bearer ' + accessToken</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">param refreshToken = refreshToken</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; When passed">
-  <span class="keyword indention">&gt; When</span>
-  <span class="name">method POST</span>
-
-  <span class="lead-duration duration">0.422</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>14:10:22.445 request:
-1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/logout?refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiZWIwYjIxMTQtNWYzNy00YTUyLTg5MGQtMTYzMDc3MzZmMTliIiwiaWF0IjoxNzg3NzUzNDIyLCJleHAiOjE3ODgzNTgyMjJ9.WrKjxYWOH_zb8NCwvoeGmeph6kPRHz7etf5qD7RDrtw
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImM4MDJkNzUwLWEzMTctNGI4My1iNDRkLTE3ZWRjZDg0NTZhNCIsImlhdCI6MTc4Nzc1MzQyMiwiZXhwIjoxNzg3NzU0MzIyfQ.yRMYAzm2O6c9GDqyUdYJ3Pi_Z5hqrCq1R-lgTbgA6b4
-1 &gt; Host: api-rec.intranet-pawk.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-14:10:22.864 response time in milliseconds: 418
-1 &lt; 200
-1 &lt; Server: openresty
-1 &lt; Date: Wed, 26 Aug 2026 14:10:22 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Vary: Origin
-1 &lt; Vary: Access-Control-Request-Method
-1 &lt; Vary: Access-Control-Request-Headers
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Logout successful&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T14:10:22.798740363&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
-
-</pre>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; Then passed">
-  <span class="keyword indention">&gt; Then</span>
-  <span class="name">status 200</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-&amp;gt; And passed">
-  <span class="keyword indention">&gt; And</span>
-  <span class="name">match response.success == true</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">logoutResult.response.message == &quot;Logout successful&quot;</span>
 

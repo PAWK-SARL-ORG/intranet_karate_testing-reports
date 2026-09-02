@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>26 Aug 2026, 14:12</td>
+      <td>02 Sep 2026, 13:27</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-430</td>
-          <td      class="passed"    >20</td>
           <td >0</td>
           <td >0</td>
+          <td     class="skipped"   >20</td>
           <td >0</td>
           <td >0</td>
           <td class="total">20</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1607867966">1.607</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="0">0.000</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_28_1141009437.html">zenity/ofintra/features/leaves/PAWK-430.feature</a>
+      <a href="report-feature_34_1141009437.html">zenity/ofintra/features/leaves/PAWK-430.feature</a>
     </div>
 
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.607</span>
+  <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-430 - Refus d'une demande avec commentaire &mdash; le commentaire est persist&eacute;</span>
 
@@ -198,16 +198,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -217,11 +217,11 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves'</span>
 
@@ -248,7 +248,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -275,7 +275,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">request { type: 'UNPAID_LEAVE', startDate: '#(futureStart)', endDate: '#(futureEnd)' }</span>
 
@@ -302,11 +302,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.389</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -318,46 +318,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details">
-        <pre>14:10:49.959 request:
-1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjQ5MTcxMzUxLTdkMzItNDM2Mi1iZmUwLTRiYmFjMzQxNDMxYyIsImlhdCI6MTc4Nzc1MzQ0OSwiZXhwIjoxNzg3NzU0MzQ5fQ.qWx-dc7RS63j3NqiVYuQ-uGmTkZLUOBV22bh282lZ4A
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 71
-1 &gt; Host: api-rec.intranet-pawk.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-01-11&quot;,&quot;endDate&quot;:&quot;2031-01-15&quot;}
-
-14:10:50.347 response time in milliseconds: 387
-1 &lt; 201
-1 &lt; Server: openresty
-1 &lt; Date: Wed, 26 Aug 2026 14:10:50 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Vary: Origin
-1 &lt; Vary: Access-Control-Request-Method
-1 &lt; Vary: Access-Control-Request-Headers
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:12,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-01-11&quot;,&quot;endDate&quot;:&quot;2031-01-15&quot;,&quot;durationInDays&quot;:3,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-08-26T14:10:50.264091808&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null,&quot;attachments&quot;:[]}
-
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -369,7 +329,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 201</span>
 
@@ -396,7 +356,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* passed">
+<div class="brief step-name-* skipped">
   <span class="keyword indention">*</span>
   <span class="name">def leaveId = response.id</span>
 
@@ -423,7 +383,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves/' + leaveId + '/reject'</span>
 
@@ -450,7 +410,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -477,7 +437,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">request { comment: 'Period not allowed' }</span>
 
@@ -504,11 +464,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method put</span>
 
-  <span class="lead-duration duration">0.394</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -520,44 +480,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>14:10:50.351 request:
-2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/leaves/12/reject
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjI0MjZlN2UxLWRiM2MtNDYwNC05NGU4LWQyMjI2MDk1OTJmYyIsImlhdCI6MTc4Nzc1MzQ0OSwiZXhwIjoxNzg3NzU0MzQ5fQ.mhs0jtus3h19Z0GkIkiOJWbJOGpLlYXFwNw29AlBSnQ
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 32
-2 &gt; Host: api-rec.intranet-pawk.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;comment&quot;:&quot;Period not allowed&quot;}
-
-14:10:50.743 response time in milliseconds: 391
-2 &lt; 204
-2 &lt; Server: openresty
-2 &lt; Date: Wed, 26 Aug 2026 14:10:50 GMT
-2 &lt; Connection: keep-alive
-2 &lt; Vary: Origin
-2 &lt; Vary: Access-Control-Request-Method
-2 &lt; Vary: Access-Control-Request-Headers
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-XSS-Protection: 0
-2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 &lt; Pragma: no-cache
-2 &lt; Expires: 0
-2 &lt; X-Frame-Options: DENY
-2 &lt; X-Served-By: api-rec.intranet-pawk.com
-
-
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -569,7 +491,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 204</span>
 
@@ -596,7 +518,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves/' + leaveId</span>
 
@@ -623,7 +545,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -650,11 +572,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.413</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -666,44 +588,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>14:10:50.745 request:
-3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/12
-3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjI0MjZlN2UxLWRiM2MtNDYwNC05NGU4LWQyMjI2MDk1OTJmYyIsImlhdCI6MTc4Nzc1MzQ0OSwiZXhwIjoxNzg3NzU0MzQ5fQ.mhs0jtus3h19Z0GkIkiOJWbJOGpLlYXFwNw29AlBSnQ
-3 &gt; Host: api-rec.intranet-pawk.com
-3 &gt; Connection: Keep-Alive
-3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-3 &gt; Accept-Encoding: gzip,deflate
-
-
-14:10:51.157 response time in milliseconds: 412
-3 &lt; 200
-3 &lt; Server: openresty
-3 &lt; Date: Wed, 26 Aug 2026 14:10:51 GMT
-3 &lt; Content-Type: application/json
-3 &lt; Transfer-Encoding: chunked
-3 &lt; Connection: keep-alive
-3 &lt; Vary: Origin
-3 &lt; Vary: Access-Control-Request-Method
-3 &lt; Vary: Access-Control-Request-Headers
-3 &lt; X-Content-Type-Options: nosniff
-3 &lt; X-XSS-Protection: 0
-3 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-3 &lt; Pragma: no-cache
-3 &lt; Expires: 0
-3 &lt; X-Frame-Options: DENY
-3 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:12,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-01-11&quot;,&quot;endDate&quot;:&quot;2031-01-15&quot;,&quot;durationInDays&quot;:3.0,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;REJECTED&quot;,&quot;processingComment&quot;:&quot;Period not allowed&quot;,&quot;createdAt&quot;:&quot;2026-08-26T14:10:50.264092&quot;,&quot;processedBy&quot;:&quot;Admin System&quot;,&quot;processedAt&quot;:&quot;2026-08-26T14:10:50.655026&quot;,&quot;attachments&quot;:[]}
-
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -715,7 +599,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -742,7 +626,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.status            == 'REJECTED'</span>
 
@@ -769,7 +653,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.processingComment == 'Period not allowed'</span>
 
@@ -797,7 +681,7 @@ $(document).ready(function() {
           <div class="comment indention"># Cleanup</div>
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves/' + leaveId</span>
 
@@ -824,7 +708,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -851,11 +735,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method delete</span>
 
-  <span class="lead-duration duration">0.407</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -867,43 +751,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>14:10:51.160 request:
-4 &gt; DELETE https://api-rec.intranet-pawk.com/api/v1/leaves/12
-4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjQ5MTcxMzUxLTdkMzItNDM2Mi1iZmUwLTRiYmFjMzQxNDMxYyIsImlhdCI6MTc4Nzc1MzQ0OSwiZXhwIjoxNzg3NzU0MzQ5fQ.qWx-dc7RS63j3NqiVYuQ-uGmTkZLUOBV22bh282lZ4A
-4 &gt; Host: api-rec.intranet-pawk.com
-4 &gt; Connection: Keep-Alive
-4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
-4 &gt; Accept-Encoding: gzip,deflate
-
-
-14:10:51.566 response time in milliseconds: 404
-4 &lt; 400
-4 &lt; Server: openresty
-4 &lt; Date: Wed, 26 Aug 2026 14:10:51 GMT
-4 &lt; Content-Type: application/json
-4 &lt; Transfer-Encoding: chunked
-4 &lt; Connection: keep-alive
-4 &lt; Vary: Origin
-4 &lt; Vary: Access-Control-Request-Method
-4 &lt; Vary: Access-Control-Request-Headers
-4 &lt; X-Content-Type-Options: nosniff
-4 &lt; X-XSS-Protection: 0
-4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-4 &lt; Pragma: no-cache
-4 &lt; Expires: 0
-4 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Only PENDING requests can be cancelled.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-08-26T14:10:51.501646366&quot;,&quot;path&quot;:&quot;/api/v1/leaves/12&quot;,&quot;errorCode&quot;:&quot;LEAVE_NOT_PENDING&quot;}
-
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 

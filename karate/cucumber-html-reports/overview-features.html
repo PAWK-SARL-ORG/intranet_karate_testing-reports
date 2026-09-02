@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                3085,
-                7,
-                50,
+                1481,
+                156,
+                1409,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3142) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 3046) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                85,
-                7
+                31,
+                82
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 92) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 113) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   47,
-                   6
+                   18,
+                   49
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 53) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 67) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>26 Aug 2026, 14:12</td>
+      <td>02 Sep 2026, 13:27</td>
     </tr>
   </tbody>
 </table>
@@ -325,90 +325,107 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_1636398531.html">zenity/ofintra/features/users/PAWK-216.feature</a></td>
 
-        <td      class="passed"    >277</td>
+        <td      class="passed"    >36</td>
+        <td      class="failed"    >12</td>
+        <td     class="skipped"   >92</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">277</td>
+        <td class="total">140</td>
 
-        <td  class="passed"    >6</td>
         <td >0</td>
+        <td  class="failed"    >6</td>
         <td class="total">6</td>
 
-        <td class="duration" data-value="20797726066">20.797</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="3288204074">3.288</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-feature_1_1287179130.html">zenity/ofintra/features/users/PAWK-152.feature</a></td>
 
-        <td      class="passed"    >20</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >12</td>
         <td >0</td>
         <td >0</td>
         <td class="total">20</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1428361366">1.428</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="553601555">0.553</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_2_2308579573.html">zenity/ofintra/features/users/PAWK-191.feature</a></td>
+        <td class="tagname"><a href="report-feature_2_1319180623.html">zenity/ofintra/features/auth/PAWK-450.feature</a></td>
 
-        <td      class="passed"    >19</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >27</td>
         <td >0</td>
         <td >0</td>
+        <td class="total">35</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="567932931">0.567</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_3_2308579573.html">zenity/ofintra/features/users/PAWK-191.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >11</td>
         <td >0</td>
         <td >0</td>
         <td class="total">19</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1251593128">1.251</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="555704764">0.555</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_3_3271702402.html">zenity/ofintra/features/leaves/PAWK-468.feature</a></td>
+        <td class="tagname"><a href="report-feature_4_3271702402.html">zenity/ofintra/features/leaves/PAWK-468.feature</a></td>
 
-        <td      class="passed"    >44</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >26</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">44</td>
+        <td class="total">34</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3109339161">3.109</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="553255595">0.553</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_4_1483692635.html">zenity/ofintra/features/users/PAWK-142.feature</a></td>
+        <td class="tagname"><a href="report-feature_5_1483692635.html">zenity/ofintra/features/users/PAWK-142.feature</a></td>
 
-        <td      class="passed"    >27</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >13</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">27</td>
+        <td class="total">21</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2011708280">2.011</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="552752831">0.552</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_5_1035013787.html">zenity/ofintra/features/leaves/PAWK-472.feature</a></td>
+        <td class="tagname"><a href="report-feature_6_1035013787.html">zenity/ofintra/features/leaves/PAWK-472.feature</a></td>
 
         <td      class="passed"    >85</td>
         <td >0</td>
@@ -421,28 +438,28 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="6166169292">6.166</td>
+        <td class="duration" data-value="4578965025">4.578</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_6_2073725331.html">zenity/ofintra/features/auth/PAWK-113.feature</a></td>
+        <td class="tagname"><a href="report-feature_7_2073725331.html">zenity/ofintra/features/auth/PAWK-113.feature</a></td>
 
-        <td      class="passed"    >31</td>
+        <td      class="passed"    >8</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >13</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">31</td>
+        <td class="total">23</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2220802915">2.220</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="577294214">0.577</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_7_1766757094.html">zenity/ofintra/features/leaves/PAWK-417.feature</a></td>
+        <td class="tagname"><a href="report-feature_8_1766757094.html">zenity/ofintra/features/leaves/PAWK-417.feature</a></td>
 
         <td      class="passed"    >48</td>
         <td >0</td>
@@ -455,11 +472,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3479109670">3.479</td>
+        <td class="duration" data-value="2614777888">2.614</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_8_1716413282.html">zenity/ofintra/features/users/PAWK-149.feature</a></td>
+        <td class="tagname"><a href="report-feature_9_1716413282.html">zenity/ofintra/features/users/PAWK-149.feature</a></td>
 
         <td      class="passed"    >95</td>
         <td >0</td>
@@ -472,215 +489,283 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">5</td>
 
-        <td class="duration" data-value="7008091796">7.008</td>
+        <td class="duration" data-value="5281752287">5.281</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_9_1530402881.html">zenity/ofintra/features/users/PAWK-258.feature</a></td>
+        <td class="tagname"><a href="report-feature_10_2908623192.html">zenity/ofintra/features/users/PAWK-260.feature</a></td>
 
-        <td      class="passed"    >516</td>
-        <td      class="failed"    >1</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >12</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">517</td>
+        <td class="total">20</td>
 
-        <td  class="passed"    >12</td>
+        <td >0</td>
         <td  class="failed"    >1</td>
-        <td class="total">13</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="31292225359">31.292</td>
+        <td class="duration" data-value="769846111">0.769</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_10_3865209818.html">zenity/ofintra/features/users/PAWK-185.feature</a></td>
+        <td class="tagname"><a href="report-feature_11_1530402881.html">zenity/ofintra/features/users/PAWK-258.feature</a></td>
 
-        <td      class="passed"    >27</td>
+        <td      class="passed"    >78</td>
+        <td      class="failed"    >26</td>
+        <td     class="skipped"   >255</td>
         <td >0</td>
         <td >0</td>
+        <td class="total">359</td>
+
+        <td >0</td>
+        <td  class="failed"    >13</td>
+        <td class="total">13</td>
+
+        <td class="duration" data-value="7104761639">7.104</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_12_3865209818.html">zenity/ofintra/features/users/PAWK-185.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >13</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">21</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="541618924">0.541</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_13_2214094817.html">zenity/ofintra/features/leaves/PAWK-412.feature</a></td>
+
+        <td      class="passed"    >21</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">21</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1034185777">1.034</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_14_406640354.html">zenity/ofintra/features/leaves/PAWK-413.feature</a></td>
+
+        <td      class="passed"    >23</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">23</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1395030104">1.395</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_15_354955417.html">zenity/ofintra/features/leaves/PAWK-470.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >27</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">35</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="563786703">0.563</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_16_4077693299.html">zenity/ofintra/features/auth/PAWK-102.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >31</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">39</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="587462478">0.587</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_17_2567281119.html">zenity/ofintra/features/users/PAWK-223.feature</a></td>
+
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >4</td>
+        <td     class="skipped"   >24</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">40</td>
+
+        <td >0</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="1120340682">1.120</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_18_2701606583.html">zenity/ofintra/features/users/PAWK-171.feature</a></td>
+
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >4</td>
+        <td     class="skipped"   >72</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">88</td>
+
+        <td >0</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="1085960708">1.085</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_19_2976339646.html">zenity/ofintra/features/users/PAWK-574.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >19</td>
         <td >0</td>
         <td >0</td>
         <td class="total">27</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2121326872">2.121</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="554351969">0.554</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_11_2214094817.html">zenity/ofintra/features/leaves/PAWK-412.feature</a></td>
+        <td class="tagname"><a href="report-feature_20_3236836385.html">zenity/ofintra/features/users/PAWK-126.feature</a></td>
 
-        <td      class="passed"    >21</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >31</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
+        <td class="total">39</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1330808394">1.330</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="557981439">0.557</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_12_406640354.html">zenity/ofintra/features/leaves/PAWK-413.feature</a></td>
+        <td class="tagname"><a href="report-feature_21_2057755355.html">zenity/ofintra/features/users/PAWK-186.feature</a></td>
 
-        <td      class="passed"    >21</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >8</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">21</td>
+        <td class="total">16</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1318492478">1.318</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="551421857">0.551</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_13_354955417.html">zenity/ofintra/features/leaves/PAWK-470.feature</a></td>
+        <td class="tagname"><a href="report-feature_22_3574211557.html">zenity/ofintra/features/leaves/PAWK-416.feature</a></td>
 
-        <td      class="passed"    >45</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >30</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">45</td>
+        <td class="total">38</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2941766871">2.941</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="567535543">0.567</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_14_4077693299.html">zenity/ofintra/features/auth/PAWK-102.feature</a></td>
+        <td class="tagname"><a href="report-feature_23_2842468250.html">zenity/ofintra/features/leaves/PAWK-471.feature</a></td>
 
-        <td      class="passed"    >45</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >23</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">45</td>
+        <td class="total">31</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="5495583015">5.495</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="562370044">0.562</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_15_2567281119.html">zenity/ofintra/features/users/PAWK-223.feature</a></td>
+        <td class="tagname"><a href="report-feature_24_1086698724.html">zenity/ofintra/features/leaves/PAWK-415.feature</a></td>
 
-        <td      class="passed"    >60</td>
+        <td      class="passed"    >43</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">60</td>
-
-        <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="4999344165">4.999</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_16_3236836385.html">zenity/ofintra/features/users/PAWK-126.feature</a></td>
-
-        <td      class="passed"    >42</td>
-        <td      class="failed"    >1</td>
         <td     class="skipped"   >7</td>
         <td >0</td>
         <td >0</td>
         <td class="total">50</td>
 
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="2319823595">2.319</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_17_2057755355.html">zenity/ofintra/features/users/PAWK-186.feature</a></td>
-
-        <td      class="passed"    >22</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">22</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1745853330">1.745</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_18_3574211557.html">zenity/ofintra/features/leaves/PAWK-416.feature</a></td>
-
-        <td      class="passed"    >48</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">48</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="3167715175">3.167</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_19_2842468250.html">zenity/ofintra/features/leaves/PAWK-471.feature</a></td>
-
-        <td      class="passed"    >41</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">41</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="2642853464">2.642</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_20_1086698724.html">zenity/ofintra/features/leaves/PAWK-415.feature</a></td>
-
-        <td      class="passed"    >43</td>
-        <td >0</td>
-        <td     class="skipped"   >5</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">48</td>
-
         <td  class="passed"    >1</td>
         <td  class="failed"    >1</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="2789582755">2.789</td>
+        <td class="duration" data-value="2045975625">2.045</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_21_1570243589.html">zenity/ofintra/features/leaves/PAWK-427.feature</a></td>
+        <td class="tagname"><a href="report-feature_25_1168885183.html">zenity/ofintra/features/users/PAWK-575.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >19</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">27</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="551031626">0.551</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_26_1570243589.html">zenity/ofintra/features/leaves/PAWK-427.feature</a></td>
 
         <td      class="passed"    >51</td>
         <td >0</td>
@@ -693,11 +778,11 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3462449553">3.462</td>
+        <td class="duration" data-value="2734379009">2.734</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_22_2950297206.html">zenity/ofintra/features/auth/PAWK-105.feature</a></td>
+        <td class="tagname"><a href="report-feature_27_2950297206.html">zenity/ofintra/features/auth/PAWK-105.feature</a></td>
 
         <td      class="passed"    >27</td>
         <td >0</td>
@@ -710,164 +795,198 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="1155291148">1.155</td>
+        <td class="duration" data-value="832409356">0.832</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_23_4116034036.html">zenity/ofintra/features/users/PAWK-190.feature</a></td>
+        <td class="tagname"><a href="report-feature_28_4116034036.html">zenity/ofintra/features/users/PAWK-190.feature</a></td>
 
-        <td      class="passed"    >44</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >12</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">44</td>
+        <td class="total">20</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="4066345818">4.066</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="552770951">0.552</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_24_1821067807.html">zenity/ofintra/features/leaves/PAWK-432.feature</a></td>
+        <td class="tagname"><a href="report-feature_29_1821067807.html">zenity/ofintra/features/leaves/PAWK-432.feature</a></td>
 
-        <td      class="passed"    >58</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">58</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="3742911947">3.742</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_25_3201121424.html">zenity/ofintra/features/auth/PAWK-110.feature</a></td>
-
-        <td      class="passed"    >26</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">26</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1862988872">1.862</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_26_2254268860.html">zenity/ofintra/features/users/PAWK-176.feature</a></td>
-
-        <td      class="passed"    >18</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">18</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1441330829">1.441</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_27_1000147770.html">zenity/ofintra/features/users/PAWK-130.feature</a></td>
-
-        <td      class="passed"    >29</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">29</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1916796353">1.916</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_28_1141009437.html">zenity/ofintra/features/leaves/PAWK-430.feature</a></td>
-
-        <td      class="passed"    >48</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >40</td>
         <td >0</td>
         <td >0</td>
         <td class="total">48</td>
 
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="554450587">0.554</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_30_3201121424.html">zenity/ofintra/features/auth/PAWK-110.feature</a></td>
+
+        <td      class="passed"    >8</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >8</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">18</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="571326689">0.571</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_31_2254268860.html">zenity/ofintra/features/users/PAWK-176.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >10</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">18</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="561340617">0.561</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_32_1000147770.html">zenity/ofintra/features/users/PAWK-130.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >10</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">18</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="547044983">0.547</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_33_2533976614.html">zenity/ofintra/features/users/PAWK-406.feature</a></td>
+
+        <td      class="passed"    >42</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">42</td>
+
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3563190444">3.563</td>
+        <td class="duration" data-value="2438703411">2.438</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_29_2360264510.html">zenity/ofintra/features/users/PAWK-134.feature</a></td>
+        <td class="tagname"><a href="report-feature_34_1141009437.html">zenity/ofintra/features/leaves/PAWK-430.feature</a></td>
 
-        <td      class="passed"    >19</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">19</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1350461060">1.350</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_30_930359262.html">zenity/ofintra/features/users/PAWK-189.feature</a></td>
-
-        <td      class="passed"    >38</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >30</td>
         <td >0</td>
         <td >0</td>
         <td class="total">38</td>
 
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="541324153">0.541</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_35_2360264510.html">zenity/ofintra/features/users/PAWK-134.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >11</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">19</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="570254807">0.570</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_36_509002438.html">zenity/ofintra/features/users/PAWK-219.feature</a></td>
+
+        <td      class="passed"    >37</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">37</td>
+
         <td  class="passed"    >1</td>
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3055516970">3.055</td>
+        <td class="duration" data-value="2517492909">2.517</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_31_3468215907.html">zenity/ofintra/features/leaves/PAWK-458.feature</a></td>
+        <td class="tagname"><a href="report-feature_37_930359262.html">zenity/ofintra/features/users/PAWK-189.feature</a></td>
 
-        <td      class="passed"    >77</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >14</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">77</td>
+        <td class="total">22</td>
 
-        <td  class="passed"    >2</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="537989747">0.537</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_38_3468215907.html">zenity/ofintra/features/leaves/PAWK-458.feature</a></td>
+
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >4</td>
+        <td     class="skipped"   >41</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">57</td>
+
+        <td >0</td>
+        <td  class="failed"    >2</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="5311705176">5.311</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="1310468412">1.310</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_32_2894153187.html">zenity/ofintra/features/leaves/PAWK-414.feature</a></td>
+        <td class="tagname"><a href="report-feature_39_2894153187.html">zenity/ofintra/features/leaves/PAWK-414.feature</a></td>
 
         <td      class="passed"    >21</td>
         <td >0</td>
@@ -880,28 +999,28 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1333281438">1.333</td>
+        <td class="duration" data-value="1034027839">1.034</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_33_2737813725.html">zenity/ofintra/features/users/PAWK-188.feature</a></td>
+        <td class="tagname"><a href="report-feature_40_2737813725.html">zenity/ofintra/features/users/PAWK-188.feature</a></td>
 
-        <td      class="passed"    >169</td>
+        <td      class="passed"    >18</td>
+        <td      class="failed"    >6</td>
+        <td     class="skipped"   >49</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">169</td>
+        <td class="total">73</td>
 
-        <td  class="passed"    >3</td>
         <td >0</td>
+        <td  class="failed"    >3</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="13989731271">13.989</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="1659636346">1.659</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_34_894152120.html">zenity/ofintra/features/users/PAWK-172.feature</a></td>
+        <td class="tagname"><a href="report-feature_41_894152120.html">zenity/ofintra/features/users/PAWK-172.feature</a></td>
 
         <td      class="passed"    >28</td>
         <td >0</td>
@@ -914,45 +1033,62 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1297144371">1.297</td>
+        <td class="duration" data-value="1043395743">1.043</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_35_3684174108.html">zenity/ofintra/features/users/PAWK-121.feature</a></td>
+        <td class="tagname"><a href="report-feature_42_3684174108.html">zenity/ofintra/features/users/PAWK-121.feature</a></td>
 
-        <td      class="passed"    >29</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >10</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">29</td>
+        <td class="total">18</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1977473944">1.977</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="550048994">0.550</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_36_980703074.html">zenity/ofintra/features/leaves/PAWK-457.feature</a></td>
+        <td class="tagname"><a href="report-feature_43_1861241850.html">zenity/ofintra/features/users/PAWK-196.feature</a></td>
 
-        <td      class="passed"    >72</td>
+        <td      class="passed"    >51</td>
+        <td      class="failed"    >3</td>
+        <td     class="skipped"   >21</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">72</td>
+        <td class="total">75</td>
 
         <td  class="passed"    >2</td>
-        <td >0</td>
-        <td class="total">2</td>
+        <td  class="failed"    >2</td>
+        <td class="total">4</td>
 
-        <td class="duration" data-value="5017381752">5.017</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="2824302147">2.824</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_37_1876719645.html">zenity/ofintra/features/users/PAWK-122.feature</a></td>
+        <td class="tagname"><a href="report-feature_44_980703074.html">zenity/ofintra/features/leaves/PAWK-457.feature</a></td>
+
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >4</td>
+        <td     class="skipped"   >36</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">52</td>
+
+        <td >0</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="1104837053">1.104</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_45_1876719645.html">zenity/ofintra/features/users/PAWK-122.feature</a></td>
 
         <td      class="passed"    >22</td>
         <td >0</td>
@@ -965,11 +1101,28 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1285315635">1.285</td>
+        <td class="duration" data-value="1109764695">1.109</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_38_4254269927.html">zenity/ofintra/features/leaves/PAWK-418.feature</a></td>
+        <td class="tagname"><a href="report-feature_46_4235435427.html">zenity/ofintra/features/users/PAWK-447.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >28</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">36</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="555640588">0.555</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_47_4254269927.html">zenity/ofintra/features/leaves/PAWK-418.feature</a></td>
 
         <td      class="passed"    >95</td>
         <td >0</td>
@@ -982,62 +1135,130 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="6860082278">6.860</td>
+        <td class="duration" data-value="5260525915">5.260</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_39_1590180466.html">zenity/ofintra/features/auth/PAWK-101.feature</a></td>
+        <td class="tagname"><a href="report-feature_48_1590180466.html">zenity/ofintra/features/auth/PAWK-101.feature</a></td>
 
-        <td      class="passed"    >15</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >8</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >5</td>
         <td >0</td>
         <td >0</td>
         <td class="total">15</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="4133273714">4.133</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="587711385">0.587</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_40_2296281276.html">zenity/ofintra/features/users/PAWK-572.feature</a></td>
+        <td class="tagname"><a href="report-feature_49_1562695381.html">zenity/ofintra/features/leaves/helpers/exceptional-leave-helper.feature</a></td>
 
-        <td      class="passed"    >56</td>
+        <td      class="passed"    >3</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">7</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="24954554">0.024</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_50_2296281276.html">zenity/ofintra/features/users/PAWK-572.feature</a></td>
+
+        <td      class="passed"    >12</td>
         <td      class="failed"    >4</td>
-        <td     class="skipped"   >33</td>
+        <td     class="skipped"   >37</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">93</td>
+        <td class="total">53</td>
 
         <td >0</td>
         <td  class="failed"    >2</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="5629658307">5.629</td>
+        <td class="duration" data-value="1096478186">1.096</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_41_3443852994.html">zenity/ofintra/features/users/PAWK-215.feature</a></td>
+        <td class="tagname"><a href="report-feature_51_3443852994.html">zenity/ofintra/features/users/PAWK-215.feature</a></td>
 
-        <td      class="passed"    >133</td>
+        <td      class="passed"    >24</td>
+        <td      class="failed"    >8</td>
+        <td     class="skipped"   >67</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">133</td>
+        <td class="total">99</td>
 
-        <td  class="passed"    >4</td>
         <td >0</td>
+        <td  class="failed"    >4</td>
         <td class="total">4</td>
 
-        <td class="duration" data-value="9362256618">9.362</td>
+        <td class="duration" data-value="2184916849">2.184</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_52_552810047.html">zenity/ofintra/features/users/PAWK-135.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >12</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">20</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="553537752">0.553</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_53_2591644032.html">zenity/ofintra/features/leaves/PAWK-466.feature</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >22</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">30</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="561685136">0.561</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_54_2788157537.html">zenity/ofintra/features/leaves/PAWK-456.feature</a></td>
+
+        <td      class="passed"    >65</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">65</td>
+
+        <td  class="passed"    >2</td>
+        <td >0</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="2612435740">2.612</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_42_552810047.html">zenity/ofintra/features/users/PAWK-135.feature</a></td>
+        <td class="tagname"><a href="report-feature_55_2052698967.html">zenity/ofintra/features/attendances/PAWK-371.feature</a></td>
 
         <td      class="passed"    >44</td>
         <td >0</td>
@@ -1050,79 +1271,79 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="4130107916">4.130</td>
+        <td class="duration" data-value="1988530673">1.988</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_43_2591644032.html">zenity/ofintra/features/leaves/PAWK-466.feature</a></td>
+        <td class="tagname"><a href="report-feature_56_4258236828.html">zenity/ofintra/features/users/PAWK-165.feature</a></td>
 
-        <td      class="passed"    >40</td>
+        <td      class="passed"    >12</td>
+        <td      class="failed"    >4</td>
+        <td     class="skipped"   >34</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">40</td>
+        <td class="total">50</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
-        <td class="total">1</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
 
-        <td class="duration" data-value="2803022476">2.803</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="1100441948">1.100</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_44_4258236828.html">zenity/ofintra/features/users/PAWK-165.feature</a></td>
-
-        <td      class="passed"    >25</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">25</td>
-
-        <td  class="passed"    >1</td>
-        <td >0</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="1795287135">1.795</td>
-        <td class="passed">Passed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-feature_45_2017581312.html">zenity/ofintra/features/leaves/PAWK-422.feature</a></td>
+        <td class="tagname"><a href="report-feature_57_2017581312.html">zenity/ofintra/features/leaves/PAWK-422.feature</a></td>
 
         <td      class="passed"    >42</td>
         <td >0</td>
-        <td     class="skipped"   >5</td>
+        <td     class="skipped"   >9</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">47</td>
+        <td class="total">51</td>
 
         <td  class="passed"    >1</td>
         <td  class="failed"    >1</td>
         <td class="total">2</td>
 
-        <td class="duration" data-value="2803664925">2.803</td>
+        <td class="duration" data-value="2043954301">2.043</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_46_250300892.html">zenity/ofintra/features/users/PAWK-187.feature</a></td>
+        <td class="tagname"><a href="report-feature_58_250300892.html">zenity/ofintra/features/users/PAWK-187.feature</a></td>
 
-        <td      class="passed"    >31</td>
-        <td      class="failed"    >1</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >18</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td class="total">32</td>
+        <td class="total">26</td>
 
         <td >0</td>
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2124617681">2.124</td>
+        <td class="duration" data-value="564831454">0.564</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_47_4021549280.html">zenity/ofintra/features/leaves/PAWK-411.feature</a></td>
+        <td class="tagname"><a href="report-feature_59_3214034984.html">zenity/ofintra/features/users/PAWK-408.feature</a></td>
+
+        <td      class="passed"    >50</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">50</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="2124452061">2.124</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_60_4021549280.html">zenity/ofintra/features/leaves/PAWK-411.feature</a></td>
 
         <td      class="passed"    >35</td>
         <td >0</td>
@@ -1135,79 +1356,96 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2544475406">2.544</td>
+        <td class="duration" data-value="1642024534">1.642</td>
         <td class="passed">Passed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_48_3377698052.html">zenity/ofintra/features/leaves/PAWK-426.feature</a></td>
+        <td class="tagname"><a href="report-feature_61_3377698052.html">zenity/ofintra/features/leaves/PAWK-426.feature</a></td>
 
-        <td      class="passed"    >43</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >25</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">43</td>
+        <td class="total">33</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="3385265749">3.385</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="558787474">0.558</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_49_784189569.html">zenity/ofintra/features/leaves/PAWK-467.feature</a></td>
+        <td class="tagname"><a href="report-feature_62_784189569.html">zenity/ofintra/features/leaves/PAWK-467.feature</a></td>
 
-        <td      class="passed"    >88</td>
-        <td >0</td>
-        <td >0</td>
+        <td      class="passed"    >24</td>
+        <td      class="failed"    >8</td>
+        <td     class="skipped"   >56</td>
         <td >0</td>
         <td >0</td>
         <td class="total">88</td>
 
-        <td  class="passed"    >4</td>
         <td >0</td>
+        <td  class="failed"    >4</td>
         <td class="total">4</td>
 
-        <td class="duration" data-value="5135552667">5.135</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="2215530310">2.215</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_50_1196661275.html">zenity/ofintra/features/users/PAWK-120.feature</a></td>
+        <td class="tagname"><a href="report-feature_63_1196661275.html">zenity/ofintra/features/users/PAWK-120.feature</a></td>
 
-        <td      class="passed"    >29</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >10</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">29</td>
+        <td class="total">18</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1970695672">1.970</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="602095533">0.602</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_51_3720381250.html">zenity/ofintra/features/users/PAWK-138.feature</a></td>
+        <td class="tagname"><a href="report-feature_64_3720381250.html">zenity/ofintra/features/users/PAWK-138.feature</a></td>
 
-        <td      class="passed"    >48</td>
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >12</td>
         <td >0</td>
         <td >0</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">48</td>
+        <td class="total">20</td>
 
-        <td  class="passed"    >1</td>
         <td >0</td>
+        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="4227243276">4.227</td>
-        <td class="passed">Passed</td>
+        <td class="duration" data-value="534517375">0.534</td>
+        <td class="failed">Failed</td>
       </tr>
       <tr>
-        <td class="tagname"><a href="report-feature_52_2270238836.html">zenity/ofintra/features/auth/PAWK-103.feature</a></td>
+        <td class="tagname"><a href="report-feature_65_3860153430.html">zenity/ofintra/features/attendances/PAWK-370.feature</a></td>
+
+        <td      class="passed"    >89</td>
+        <td      class="failed"    >2</td>
+        <td     class="skipped"   >14</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">105</td>
+
+        <td >0</td>
+        <td  class="failed"    >2</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="7412977334">7.412</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_66_2270238836.html">zenity/ofintra/features/auth/PAWK-103.feature</a></td>
 
         <td      class="passed"    >8</td>
         <td >0</td>
@@ -1220,7 +1458,7 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="370066692">0.370</td>
+        <td class="duration" data-value="282979025">0.282</td>
         <td class="passed">Passed</td>
       </tr>
   </tbody>
@@ -1228,33 +1466,33 @@ $(document).ready(function() {
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>3085</td>
-      <td>7</td>
-      <td>50</td>
+      <td>1481</td>
+      <td>156</td>
+      <td>1409</td>
       <td>0</td>
       <td>0</td>
-      <td>3142</td>
+      <td>3046</td>
 
-      <td>85</td>
-      <td>7</td>
-      <td>92</td>
+      <td>31</td>
+      <td>82</td>
+      <td>113</td>
 
-      <td class="duration">3:42.742</td>
-      <td>53</td>
+      <td class="duration">1:36.822</td>
+      <td>67</td>
     </tr>
     <tr>
       <td></td>
-      <td>98.19%</td>
-      <td>0.22%</td>
-      <td>1.59%</td>
+      <td>48.62%</td>
+      <td>5.12%</td>
+      <td>46.26%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>92.39%</td>
-      <td>7.61%</td>
+      <td>27.43%</td>
+      <td>72.57%</td>
       <td></td>
       <td></td>
-      <td>88.68%</td>
+      <td>26.87%</td>
     </tr>
   </tfoot>
 </table>
