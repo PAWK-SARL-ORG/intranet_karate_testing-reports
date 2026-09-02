@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"14f6ee75-19e4-46b8-85f7-c0f35301319e",karate_version:"1.4.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"0e642d18-ddb9-488b-8310-92fc9a4e0143",karate_version:"1.4.1",karate_meta:null});
   }
 });
 </script>
@@ -45,8 +45,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">2</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
     </div>
   </div>
   <div id="nav-env">
@@ -56,15 +56,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-09-02 01:32:48 PM</div>
+    <div>2026-09-02 01:33:22 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:10]"><span>[1:10]</span> <span>PAWK-456 - Message d&#39;erreur affiché lorsqu&#39;un congé est sélectionné avec un solde insuffisant (PAID_LEAVE)</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2:37]"><span>[2:37]</span> <span>PAWK-456 - Message d&#39;erreur affiché lorsqu&#39;un congé exceptionnel est sélectionné avec un solde insuffisant</span></a>
           </div>
         </div>
@@ -90,8 +90,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>942</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>457</span>
             </div>
           </div>
           <div class="step-row">
@@ -123,34 +123,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:32:46.250 karate..env system property was: null 
-13:32:46.251 ✓ Loaded: BASE_URL 
-13:32:46.251 ✓ Loaded: ADMIN_EMAIL 
-13:32:46.251 ✓ Loaded: ADMIN_PASSWORD 
-13:32:46.251 ✓ Loaded: ADMIN_ID 
-13:32:46.251 ✓ Loaded: MANAGER_EMAIL 
-13:32:46.251 ✓ Loaded: MANAGER_PASSWORD 
-13:32:46.251 ✓ Loaded: MANAGER_ID 
-13:32:46.251 ✓ Loaded: COLLAB_EMAIL 
-13:32:46.252 ✓ Loaded: COLLAB_PASSWORD 
-13:32:46.252 ✓ Loaded: COLLAB_ID 
-13:32:46.252 ✓ Loaded: BLOCKED_EMAIL 
-13:32:46.252 ✓ Loaded: BLOCKED_PASSWORD 
-13:32:46.252 ✓ Loaded: BLOCKED_ID 
-13:32:46.252 ✓ Loaded: ARCHIVED_EMAIL 
-13:32:46.252 ✓ Loaded: ARCHIVED_PASSWORD 
-13:32:46.252 ✓ Loaded: ARCHIVED_ID 
-13:32:46.252 ✓ Loaded: EXPIRED_JWT_TOKEN 
-13:32:46.252 ✓ ..env file loaded successfully 
-13:32:46.252 ========== Configuration Loaded ========== 
-13:32:46.252 Base URL:          https://api-rec.intranet-pawk.com 
-13:32:46.252 Admin Email:       admin@zenity.com 
-13:32:46.252 Manager Email:     manager@zenity.com 
-13:32:46.252 Collab Email:      collab@zenity.com 
-13:32:46.253 Blocked Email:     collab.bloque@zenity.com 
-13:32:46.253 Archived Email:    collab.archive@zenity.com 
-13:32:46.253 Expired Token:     NOT SET 
-13:32:46.253 ========================================== 
+  <div class="preformatted" data-parent="0.4">13:33:21.532 karate..env system property was: null 
+13:33:21.532 ✓ Loaded: BASE_URL 
+13:33:21.533 ✓ Loaded: ADMIN_EMAIL 
+13:33:21.533 ✓ Loaded: ADMIN_PASSWORD 
+13:33:21.533 ✓ Loaded: ADMIN_ID 
+13:33:21.533 ✓ Loaded: MANAGER_EMAIL 
+13:33:21.533 ✓ Loaded: MANAGER_PASSWORD 
+13:33:21.533 ✓ Loaded: MANAGER_ID 
+13:33:21.533 ✓ Loaded: COLLAB_EMAIL 
+13:33:21.533 ✓ Loaded: COLLAB_PASSWORD 
+13:33:21.533 ✓ Loaded: COLLAB_ID 
+13:33:21.534 ✓ Loaded: BLOCKED_EMAIL 
+13:33:21.534 ✓ Loaded: BLOCKED_PASSWORD 
+13:33:21.534 ✓ Loaded: BLOCKED_ID 
+13:33:21.534 ✓ Loaded: ARCHIVED_EMAIL 
+13:33:21.534 ✓ Loaded: ARCHIVED_PASSWORD 
+13:33:21.534 ✓ Loaded: ARCHIVED_ID 
+13:33:21.534 ✓ Loaded: EXPIRED_JWT_TOKEN 
+13:33:21.534 ✓ ..env file loaded successfully 
+13:33:21.534 ========== Configuration Loaded ========== 
+13:33:21.534 Base URL:          https://api-rec.intranet-pawk.com 
+13:33:21.535 Admin Email:       admin@zenity.com 
+13:33:21.535 Manager Email:     manager@zenity.com 
+13:33:21.535 Collab Email:      collab@zenity.com 
+13:33:21.535 Blocked Email:     collab.bloque@zenity.com 
+13:33:21.535 Archived Email:    collab.archive@zenity.com 
+13:33:21.535 Expired Token:     NOT SET 
+13:33:21.535 ========================================== 
 </div>   
 
   
@@ -166,11 +166,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def collab      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;, password: &#39;#(collabPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">369</div>
+    <div class="time-cell failed">457</div>
   </div>
 
    
@@ -179,7 +179,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5">13:33:21.992 classpath:zenity/ofintra/features/leaves/PAWK-456.feature:5
+* def collab      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;, password: &#39;#(collabPassword)&#39; }
+status code was: 403, expected: 200, response time in milliseconds: 451, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:21.914556302&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+classpath:zenity/ofintra/features/leaves/PAWK-456.feature:5
+</div>   
 
   <div>
         
@@ -189,7 +195,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">365</div>
+      <div class="time-cell passed">453</div>
     </div>
     <div>
       <div><div>
@@ -289,7 +295,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">364</div>
+    <div class="time-cell passed">452</div>
   </div>
 
    
@@ -298,7 +304,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.8">13:32:46.258 request:
+  <div class="preformatted" data-parent="0.5.0.call.0.8">13:33:21.540 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 56
@@ -308,10 +314,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-13:32:46.621 response time in milliseconds: 362
-1 &lt; 200
+13:33:21.992 response time in milliseconds: 451
+1 &lt; 403
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:32:46 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:33:21 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -324,8 +330,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImU3ZWFmN2U4LWIzNWQtNDc3Yi1hOWJlLTk4OTQyMzFhZDFiZCIsImlhdCI6MTc4ODM1NTk2NiwiZXhwIjoxNzg4MzU2ODY2fQ.kCwhhy8X8UfZVwDgKUjbUNeo6zQjUolWDPlPmjYoGbI&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6ImM5NDc4ZWE2LTlhMTQtNDg5OS1iMTBmLTdjMTVlNjkxYjZlZSIsImlhdCI6MTc4ODM1NTk2NiwiZXhwIjoxNzg4OTYwNzY2fQ.QON5QbulqInSyKxJniwyLJLcx9hyC-k-M_jaBVdROKg&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:32:46.575059592&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:32:46.580805835&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:21.914556302&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 
 </div>   
 
@@ -342,11 +347,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -355,7 +360,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5.0.call.0.9">13:33:21.992 classpath:zenity/ofintra/common/login-helper.feature:9
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 451, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:21.914556302&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+</div>   
 
   
 
@@ -370,11 +380,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data  == read(&#39;classpath:zenity/ofintra/common/data/response/auth-success-schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -398,11 +408,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def accessToken  = response.data.accessToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -426,11 +436,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def refreshToken = response.data.refreshToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -454,11 +464,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def userId       = response.data.user.id</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -487,11 +497,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.6">
       <div class="step-ref bg-step">6</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def collabToken = collab.accessToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -515,11 +525,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def baseDay     = 1100 + Math.floor((java.lang.System.currentTimeMillis() % 100000) / 100)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -548,13 +558,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.12">
-      <div class="step-ref passed">12</div>
+      <div class="step-ref skipped">12</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/my-balance&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -576,13 +586,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.13">
-      <div class="step-ref passed">13</div>
+      <div class="step-ref skipped">13</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -604,13 +614,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+      <div class="step-ref skipped">14</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">280</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -619,35 +629,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.14">13:32:46.625 request:
-1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/my-balance
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImU3ZWFmN2U4LWIzNWQtNDc3Yi1hOWJlLTk4OTQyMzFhZDFiZCIsImlhdCI6MTc4ODM1NTk2NiwiZXhwIjoxNzg4MzU2ODY2fQ.kCwhhy8X8UfZVwDgKUjbUNeo6zQjUolWDPlPmjYoGbI
-1 &gt; Host: api-rec.intranet-pawk.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-13:32:46.903 response time in milliseconds: 278
-1 &lt; 200
-1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:32:46 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Vary: Origin
-1 &lt; Vary: Access-Control-Request-Method
-1 &lt; Vary: Access-Control-Request-Headers
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;annualBalance&quot;:8.0,&quot;exceptionalBalance&quot;:10.0,&quot;lastResetDate&quot;:&quot;2026-09-02&quot;}
-
-</div>   
+     
 
   
 
@@ -660,13 +642,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+      <div class="step-ref skipped">15</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -688,13 +670,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
+      <div class="step-ref skipped">16</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def currentBalance = response.annualBalance</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -716,13 +698,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
+      <div class="step-ref skipped">17</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print &#39;Current paid leave balance:&#39;, currentBalance</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -731,8 +713,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.17">13:32:46.905 [print] Current paid leave balance: 8.0 
-</div>   
+     
 
   
 
@@ -752,13 +733,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.20">
-      <div class="step-ref passed">20</div>
+      <div class="step-ref skipped">20</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def excessiveDays = Math.ceil(currentBalance) + 10</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -780,13 +761,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
+      <div class="step-ref skipped">21</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def futureStart = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -808,13 +789,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
+      <div class="step-ref skipped">22</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def futureEnd = java.time.LocalDate.now().plusDays(baseDay + excessiveDays).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -836,13 +817,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.24">
-      <div class="step-ref passed">24</div>
+      <div class="step-ref skipped">24</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -864,13 +845,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.25">
-      <div class="step-ref passed">25</div>
+      <div class="step-ref skipped">25</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -892,13 +873,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.26">
-      <div class="step-ref passed">26</div>
+      <div class="step-ref skipped">26</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>request { type: &#39;PAID_LEAVE&#39;, startDate: &#39;#(futureStart)&#39;, endDate: &#39;#(futureEnd)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -920,13 +901,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.27">
-      <div class="step-ref passed">27</div>
+      <div class="step-ref skipped">27</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">282</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -935,36 +916,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">13:32:46.909 request:
-2 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImU3ZWFmN2U4LWIzNWQtNDc3Yi1hOWJlLTk4OTQyMzFhZDFiZCIsImlhdCI6MTc4ODM1NTk2NiwiZXhwIjoxNzg4MzU2ODY2fQ.kCwhhy8X8UfZVwDgKUjbUNeo6zQjUolWDPlPmjYoGbI
-2 &gt; Content-Type: application/json; charset=UTF-8
-2 &gt; Content-Length: 69
-2 &gt; Host: api-rec.intranet-pawk.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
-2 &gt; Accept-Encoding: gzip,deflate
-{&quot;type&quot;:&quot;PAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-07-04&quot;,&quot;endDate&quot;:&quot;2031-07-22&quot;}
-
-13:32:47.190 response time in milliseconds: 280
-2 &lt; 400
-2 &lt; Server: openresty
-2 &lt; Date: Wed, 02 Sep 2026 13:32:47 GMT
-2 &lt; Content-Type: application/json
-2 &lt; Transfer-Encoding: chunked
-2 &lt; Connection: keep-alive
-2 &lt; Vary: Origin
-2 &lt; Vary: Access-Control-Request-Method
-2 &lt; Vary: Access-Control-Request-Headers
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-XSS-Protection: 0
-2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 &lt; Pragma: no-cache
-2 &lt; Expires: 0
-2 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Insufficient paid leave balance. Available: 8.0, Requested: 13&quot;,&quot;data&quot;:{&quot;requested&quot;:13,&quot;available&quot;:8.0},&quot;timestamp&quot;:&quot;2026-09-02T13:32:47.15065399&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_INSUFFICIENT_PAID_BALANCE&quot;}
-
-</div>   
+     
 
   
 
@@ -984,13 +936,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.30">
-      <div class="step-ref passed">30</div>
+      <div class="step-ref skipped">30</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1012,13 +964,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.31">
-      <div class="step-ref passed">31</div>
+      <div class="step-ref skipped">31</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.success == false</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1040,13 +992,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.32">
-      <div class="step-ref passed">32</div>
+      <div class="step-ref skipped">32</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.message == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1075,13 +1027,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
+      <div class="step-ref skipped">34</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert response.message.toLowerCase().contains(&#39;solde&#39;) || response.message.toLowerCase().contains(&#39;balance&#39;) || response.message.toLowerCase().contains(&#39;insufficient&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">5</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1109,8 +1061,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>938</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>456</span>
             </div>
           </div>
           <div class="step-row">
@@ -1142,34 +1094,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:32:47.199 karate..env system property was: null 
-13:32:47.200 ✓ Loaded: BASE_URL 
-13:32:47.200 ✓ Loaded: ADMIN_EMAIL 
-13:32:47.200 ✓ Loaded: ADMIN_PASSWORD 
-13:32:47.200 ✓ Loaded: ADMIN_ID 
-13:32:47.200 ✓ Loaded: MANAGER_EMAIL 
-13:32:47.200 ✓ Loaded: MANAGER_PASSWORD 
-13:32:47.200 ✓ Loaded: MANAGER_ID 
-13:32:47.200 ✓ Loaded: COLLAB_EMAIL 
-13:32:47.200 ✓ Loaded: COLLAB_PASSWORD 
-13:32:47.200 ✓ Loaded: COLLAB_ID 
-13:32:47.201 ✓ Loaded: BLOCKED_EMAIL 
-13:32:47.201 ✓ Loaded: BLOCKED_PASSWORD 
-13:32:47.201 ✓ Loaded: BLOCKED_ID 
-13:32:47.201 ✓ Loaded: ARCHIVED_EMAIL 
-13:32:47.201 ✓ Loaded: ARCHIVED_PASSWORD 
-13:32:47.201 ✓ Loaded: ARCHIVED_ID 
-13:32:47.201 ✓ Loaded: EXPIRED_JWT_TOKEN 
-13:32:47.201 ✓ ..env file loaded successfully 
-13:32:47.201 ========== Configuration Loaded ========== 
-13:32:47.201 Base URL:          https://api-rec.intranet-pawk.com 
-13:32:47.201 Admin Email:       admin@zenity.com 
-13:32:47.201 Manager Email:     manager@zenity.com 
-13:32:47.201 Collab Email:      collab@zenity.com 
-13:32:47.201 Blocked Email:     collab.bloque@zenity.com 
-13:32:47.201 Archived Email:    collab.archive@zenity.com 
-13:32:47.201 Expired Token:     NOT SET 
-13:32:47.201 ========================================== 
+  <div class="preformatted" data-parent="0.4">13:33:21.996 karate..env system property was: null 
+13:33:21.996 ✓ Loaded: BASE_URL 
+13:33:21.996 ✓ Loaded: ADMIN_EMAIL 
+13:33:21.996 ✓ Loaded: ADMIN_PASSWORD 
+13:33:21.996 ✓ Loaded: ADMIN_ID 
+13:33:21.997 ✓ Loaded: MANAGER_EMAIL 
+13:33:21.997 ✓ Loaded: MANAGER_PASSWORD 
+13:33:21.997 ✓ Loaded: MANAGER_ID 
+13:33:21.997 ✓ Loaded: COLLAB_EMAIL 
+13:33:21.997 ✓ Loaded: COLLAB_PASSWORD 
+13:33:21.997 ✓ Loaded: COLLAB_ID 
+13:33:21.999 ✓ Loaded: BLOCKED_EMAIL 
+13:33:21.999 ✓ Loaded: BLOCKED_PASSWORD 
+13:33:21.999 ✓ Loaded: BLOCKED_ID 
+13:33:21.999 ✓ Loaded: ARCHIVED_EMAIL 
+13:33:21.999 ✓ Loaded: ARCHIVED_PASSWORD 
+13:33:21.999 ✓ Loaded: ARCHIVED_ID 
+13:33:22.000 ✓ Loaded: EXPIRED_JWT_TOKEN 
+13:33:22.000 ✓ ..env file loaded successfully 
+13:33:22.000 ========== Configuration Loaded ========== 
+13:33:22.000 Base URL:          https://api-rec.intranet-pawk.com 
+13:33:22.000 Admin Email:       admin@zenity.com 
+13:33:22.000 Manager Email:     manager@zenity.com 
+13:33:22.000 Collab Email:      collab@zenity.com 
+13:33:22.000 Blocked Email:     collab.bloque@zenity.com 
+13:33:22.000 Archived Email:    collab.archive@zenity.com 
+13:33:22.000 Expired Token:     NOT SET 
+13:33:22.000 ========================================== 
 </div>   
 
   
@@ -1185,11 +1137,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>def collab      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;, password: &#39;#(collabPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">352</div>
+    <div class="time-cell failed">456</div>
   </div>
 
    
@@ -1198,7 +1150,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5">13:33:22.457 classpath:zenity/ofintra/features/leaves/PAWK-456.feature:5
+* def collab      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;, password: &#39;#(collabPassword)&#39; }
+status code was: 403, expected: 200, response time in milliseconds: 444, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:22.378941595&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+classpath:zenity/ofintra/features/leaves/PAWK-456.feature:5
+</div>   
 
   <div>
         
@@ -1208,7 +1166,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">348</div>
+      <div class="time-cell passed">448</div>
     </div>
     <div>
       <div><div>
@@ -1308,7 +1266,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">347</div>
+    <div class="time-cell passed">448</div>
   </div>
 
    
@@ -1317,7 +1275,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.8">13:32:47.207 request:
+  <div class="preformatted" data-parent="0.5.0.call.0.8">13:33:22.008 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 56
@@ -1327,10 +1285,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-13:32:47.552 response time in milliseconds: 345
-1 &lt; 200
+13:33:22.453 response time in milliseconds: 444
+1 &lt; 403
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:32:47 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:33:22 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1343,8 +1301,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjhhYjAwNjVkLTE2YWYtNGEwYy04ZTZmLWQ0NTA1ZGMyMTExYiIsImlhdCI6MTc4ODM1NTk2NywiZXhwIjoxNzg4MzU2ODY3fQ.qtZOLHJ9epo5_MbHyQH2EuSWkifmwTKL5UhReZoyL64&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6ImJjZjAwMDhkLThhZWYtNGJhZC1iYzY0LTE3MTRhZTU4Nzk0ZiIsImlhdCI6MTc4ODM1NTk2NywiZXhwIjoxNzg4OTYwNzY3fQ.4ITHONrLMRbG_mTAZiWOh7t3IyV7Z_XkfbkNNJ3dUdE&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:32:47.50835642&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:32:47.514520674&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:22.378941595&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 
 </div>   
 
@@ -1361,11 +1318,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1374,7 +1331,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.5.0.call.0.9">13:33:22.455 classpath:zenity/ofintra/common/login-helper.feature:9
+Then status 200
+status code was: 403, expected: 200, response time in milliseconds: 444, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:22.378941595&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+</div>   
 
   
 
@@ -1389,11 +1351,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.data  == read(&#39;classpath:zenity/ofintra/common/data/response/auth-success-schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1417,11 +1379,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def accessToken  = response.data.accessToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1445,11 +1407,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def refreshToken = response.data.refreshToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1473,11 +1435,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5.0.call.0.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def userId       = response.data.user.id</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1506,11 +1468,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.6">
       <div class="step-ref bg-step">6</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def collabToken = collab.accessToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1534,11 +1496,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.7">
       <div class="step-ref bg-step">7</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def baseDay     = 1100 + Math.floor((java.lang.System.currentTimeMillis() % 100000) / 100)</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1567,13 +1529,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.39">
-      <div class="step-ref passed">39</div>
+      <div class="step-ref skipped">39</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/my-balance&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1595,13 +1557,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.40">
-      <div class="step-ref passed">40</div>
+      <div class="step-ref skipped">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1623,13 +1585,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.41">
-      <div class="step-ref passed">41</div>
+      <div class="step-ref skipped">41</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">280</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1638,35 +1600,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.41">13:32:47.556 request:
-1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/my-balance
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjhhYjAwNjVkLTE2YWYtNGEwYy04ZTZmLWQ0NTA1ZGMyMTExYiIsImlhdCI6MTc4ODM1NTk2NywiZXhwIjoxNzg4MzU2ODY3fQ.qtZOLHJ9epo5_MbHyQH2EuSWkifmwTKL5UhReZoyL64
-1 &gt; Host: api-rec.intranet-pawk.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
-1 &gt; Accept-Encoding: gzip,deflate
-
-
-13:32:47.836 response time in milliseconds: 279
-1 &lt; 200
-1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:32:47 GMT
-1 &lt; Content-Type: application/json
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Connection: keep-alive
-1 &lt; Vary: Origin
-1 &lt; Vary: Access-Control-Request-Method
-1 &lt; Vary: Access-Control-Request-Headers
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-XSS-Protection: 0
-1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Expires: 0
-1 &lt; X-Frame-Options: DENY
-1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;annualBalance&quot;:8.0,&quot;exceptionalBalance&quot;:10.0,&quot;lastResetDate&quot;:&quot;2026-09-02&quot;}
-
-</div>   
+     
 
   
 
@@ -1679,13 +1613,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.42">
-      <div class="step-ref passed">42</div>
+      <div class="step-ref skipped">42</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1707,13 +1641,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.43">
-      <div class="step-ref passed">43</div>
+      <div class="step-ref skipped">43</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def currentExceptionalBalance = response.exceptionalBalance</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1735,13 +1669,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.44">
-      <div class="step-ref passed">44</div>
+      <div class="step-ref skipped">44</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print &#39;Current exceptional leave balance:&#39;, currentExceptionalBalance</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1750,8 +1684,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.44">13:32:47.837 [print] Current exceptional leave balance: 10.0 
-</div>   
+     
 
   
 
@@ -1771,13 +1704,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.47">
-      <div class="step-ref passed">47</div>
+      <div class="step-ref skipped">47</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def excessiveDays = Math.ceil(currentExceptionalBalance) + 5</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1799,13 +1732,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.48">
-      <div class="step-ref passed">48</div>
+      <div class="step-ref skipped">48</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>print excessiveDays</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1814,8 +1747,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.48">13:32:47.837 [print] 15 
-</div>   
+     
 
   
 
@@ -1828,13 +1760,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.49">
-      <div class="step-ref passed">49</div>
+      <div class="step-ref skipped">49</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def futureStart = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1856,13 +1788,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.50">
-      <div class="step-ref passed">50</div>
+      <div class="step-ref skipped">50</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def futureEnd = java.time.LocalDate.now().plusDays(baseDay + excessiveDays).toString()</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1884,13 +1816,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.52">
-      <div class="step-ref passed">52</div>
+      <div class="step-ref skipped">52</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>def leaveData = { type: &#39;EXCEPTIONAL_LEAVE&#39;, startDate: &#39;#(futureStart)&#39;, endDate: &#39;#(futureEnd)&#39;, reason: &#39;Family emergency&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1912,13 +1844,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.53">
-      <div class="step-ref passed">53</div>
+      <div class="step-ref skipped">53</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1940,13 +1872,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.54">
-      <div class="step-ref passed">54</div>
+      <div class="step-ref skipped">54</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1968,13 +1900,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.55">
-      <div class="step-ref passed">55</div>
+      <div class="step-ref skipped">55</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>multipart field data = leaveData</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1996,13 +1928,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.56">
-      <div class="step-ref passed">56</div>
+      <div class="step-ref skipped">56</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>multipart file files = { read: &#39;classpath:zenity/ofintra/features/leaves/resources/testdata/proof.pdf&#39;, filename: &#39;proof.pdf&#39;, contentType: &#39;application/pdf&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2024,13 +1956,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.57">
-      <div class="step-ref passed">57</div>
+      <div class="step-ref skipped">57</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">299</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2039,48 +1971,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.57">13:32:47.841 request:
-2 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjhhYjAwNjVkLTE2YWYtNGEwYy04ZTZmLWQ0NTA1ZGMyMTExYiIsImlhdCI6MTc4ODM1NTk2NywiZXhwIjoxNzg4MzU2ODY3fQ.qtZOLHJ9epo5_MbHyQH2EuSWkifmwTKL5UhReZoyL64
-2 &gt; Content-Type: multipart/form-data; boundary=2e140359b9848547
-2 &gt; Content-Length: 478
-2 &gt; Host: api-rec.intranet-pawk.com
-2 &gt; Connection: Keep-Alive
-2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
-2 &gt; Accept-Encoding: gzip,deflate
-
-content-disposition: form-data; name=&quot;data&quot;; filename=&quot;&quot;
-content-type: application/json; charset=UTF-8
-content-length: 104
-Completed: true
-IsInMemory: true
-
-Mixed: content-disposition: form-data; name=&quot;files&quot;; filename=&quot;proof.pdf&quot;
-content-type: application/pdf; charset=UTF-8
-content-length: 37
-Completed: true
-IsInMemory: true
-
-
-13:32:48.138 response time in milliseconds: 296
-2 &lt; 400
-2 &lt; Server: openresty
-2 &lt; Date: Wed, 02 Sep 2026 13:32:48 GMT
-2 &lt; Content-Type: application/json
-2 &lt; Transfer-Encoding: chunked
-2 &lt; Connection: keep-alive
-2 &lt; Vary: Origin
-2 &lt; Vary: Access-Control-Request-Method
-2 &lt; Vary: Access-Control-Request-Headers
-2 &lt; X-Content-Type-Options: nosniff
-2 &lt; X-XSS-Protection: 0
-2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-2 &lt; Pragma: no-cache
-2 &lt; Expires: 0
-2 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Insufficient exceptional leave balance. Available: 10.0, Requested: 11&quot;,&quot;data&quot;:{&quot;requested&quot;:11,&quot;available&quot;:10.0},&quot;timestamp&quot;:&quot;2026-09-02T13:32:48.097728997&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_INSUFFICIENT_EXCEPTIONAL_BALANCE&quot;}
-
-</div>   
+     
 
   
 
@@ -2100,13 +1991,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.60">
-      <div class="step-ref passed">60</div>
+      <div class="step-ref skipped">60</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Then</span>&nbsp;<span>status 400</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2128,13 +2019,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.61">
-      <div class="step-ref passed">61</div>
+      <div class="step-ref skipped">61</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.success == false</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2156,13 +2047,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.62">
-      <div class="step-ref passed">62</div>
+      <div class="step-ref skipped">62</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.message == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2191,13 +2082,13 @@ IsInMemory: true
 
   <div class="step-row">
     <div class="step-container" id="0.64">
-      <div class="step-ref passed">64</div>
+      <div class="step-ref skipped">64</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>*</span>&nbsp;<span>assert response.message.toLowerCase().contains(&#39;solde&#39;) || response.message.toLowerCase().contains(&#39;balance&#39;) || response.message.toLowerCase().contains(&#39;insufficient&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
