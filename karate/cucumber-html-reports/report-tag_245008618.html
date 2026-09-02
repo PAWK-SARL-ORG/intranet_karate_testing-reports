@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>02 Sep 2026, 13:34</td>
+      <td>02 Sep 2026, 13:38</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-223</td>
+          <td      class="passed"    >10</td>
           <td >0</td>
           <td >0</td>
-          <td     class="skipped"   >10</td>
           <td >0</td>
           <td >0</td>
           <td class="total">10</td>
 
+          <td  class="passed"    >2</td>
           <td >0</td>
-          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="0">0.000</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="807350575">0.807</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.406</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-223 -Afichage des indicateurs cles par l'administrateur</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,11 +218,11 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/reporting/dashboard/stats'</span>
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + adminToken</span>
 
@@ -276,11 +276,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.405</span>
 
 </div>
 
@@ -292,6 +292,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:38:00.419 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/reporting/dashboard/stats
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjhiNDkzYzJkLTM2ZTktNDJjNC1iYmQ0LTljMTczM2YwZDUwNiIsImlhdCI6MTc4ODM1NjI3OSwiZXhwIjoxNzg4MzU3MTc5fQ.nF7UIXLFisoWtkH7rVja1wnxTt5cDhW3RvrfQanp2q4
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:38:00.824 response time in milliseconds: 404
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:38:00 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Dashboard statistics retrieved successfully&quot;,&quot;data&quot;:{&quot;absentCollaborators&quot;:4,&quot;activeUsers&quot;:10,&quot;blockedUsers&quot;:1,&quot;ongoingLeaves&quot;:0,&quot;pendingLeaveRequests&quot;:1,&quot;presentCollaborators&quot;:0,&quot;totalAdmins&quot;:2,&quot;totalCollaborators&quot;:6,&quot;totalManagers&quot;:4,&quot;totalUsers&quot;:12},&quot;timestamp&quot;:&quot;2026-09-02T13:38:00.765928732&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -303,7 +341,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -330,7 +368,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 
@@ -380,12 +418,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.401</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-223 -Afichage des indicateurs cles par le manager</span>
 
@@ -396,16 +434,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-4" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -415,11 +453,11 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/reporting/dashboard/stats'</span>
 
@@ -446,7 +484,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + managerToken</span>
 
@@ -473,11 +511,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.400</span>
 
 </div>
 
@@ -489,6 +527,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>13:38:01.805 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/reporting/dashboard/stats
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiOTA0Mzc4MDItNGI1Zi00MDE2LWI3NTctYTE3YzE3NzdkZTA1IiwiaWF0IjoxNzg4MzU2MjgxLCJleHAiOjE3ODgzNTcxODF9.JfhIyF9eohTEmlNM9U7Se7F1S24WoDhHcjlcLlHTCtY
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:38:02.205 response time in milliseconds: 400
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:38:02 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Dashboard statistics retrieved successfully&quot;,&quot;data&quot;:{&quot;absentCollaborators&quot;:4,&quot;activeUsers&quot;:10,&quot;blockedUsers&quot;:1,&quot;ongoingLeaves&quot;:0,&quot;pendingLeaveRequests&quot;:1,&quot;presentCollaborators&quot;:0},&quot;timestamp&quot;:&quot;2026-09-02T13:38:02.14674162&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -500,7 +576,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -527,7 +603,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">match response.success == true</span>
 

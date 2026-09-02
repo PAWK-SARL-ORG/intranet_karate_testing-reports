@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>02 Sep 2026, 13:34</td>
+      <td>02 Sep 2026, 13:38</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-456</td>
+          <td      class="passed"    >37</td>
           <td >0</td>
           <td >0</td>
-          <td     class="skipped"   >37</td>
           <td >0</td>
           <td >0</td>
           <td class="total">37</td>
 
+          <td  class="passed"    >2</td>
           <td >0</td>
-          <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="0">0.000</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="1601665178">1.601</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.793</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-456 - Message d'erreur affich&eacute; lorsqu'un cong&eacute; est s&eacute;lectionn&eacute; avec un solde insuffisant (PAID_LEAVE)</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,12 +218,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># Given: R&eacute;cup&eacute;rer le solde actuel de cong&eacute;s pay&eacute;s</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves/my-balance'</span>
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -277,11 +277,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.384</span>
 
 </div>
 
@@ -293,6 +293,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>13:36:28.177 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/my-balance
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjNjNDFkNTA4LWU0NmUtNDI4NS1hNmYxLWFhNzQyZGYzNzU4NyIsImlhdCI6MTc4ODM1NjE4OCwiZXhwIjoxNzg4MzU3MDg4fQ.tAGZj_hJlkSO0NGQQjFtspIZ9TeBA0kgJDJ68k6LF2A
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:36:28.561 response time in milliseconds: 383
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:36:28 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;annualBalance&quot;:6.0,&quot;exceptionalBalance&quot;:10.0,&quot;lastResetDate&quot;:&quot;2026-09-02&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -304,7 +342,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -331,7 +369,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def currentBalance = response.annualBalance</span>
 
@@ -358,7 +396,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Current paid leave balance:', currentBalance</span>
 
@@ -374,6 +412,17 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>13:36:28.562 [print] Current paid leave balance: 6.0 
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -386,11 +435,11 @@ $(document).ready(function() {
           <div class="comment indention"># When: Le collaborateur demande un cong&eacute; pay&eacute; dont la dur&eacute;e d&eacute;passe son solde</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def excessiveDays = Math.ceil(currentBalance) + 10</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -413,7 +462,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def futureStart = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
 
@@ -440,7 +489,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def futureEnd = java.time.LocalDate.now().plusDays(baseDay + excessiveDays).toString()</span>
 
@@ -467,7 +516,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves'</span>
 
@@ -494,7 +543,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -521,7 +570,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">request { type: 'PAID_LEAVE', startDate: '#(futureStart)', endDate: '#(futureEnd)' }</span>
 
@@ -548,11 +597,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.397</span>
 
 </div>
 
@@ -564,6 +613,45 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>13:36:28.566 request:
+2 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6IjNjNDFkNTA4LWU0NmUtNDI4NS1hNmYxLWFhNzQyZGYzNzU4NyIsImlhdCI6MTc4ODM1NjE4OCwiZXhwIjoxNzg4MzU3MDg4fQ.tAGZj_hJlkSO0NGQQjFtspIZ9TeBA0kgJDJ68k6LF2A
+2 &gt; Content-Type: application/json; charset=UTF-8
+2 &gt; Content-Length: 69
+2 &gt; Host: api-rec.intranet-pawk.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+2 &gt; Accept-Encoding: gzip,deflate
+{&quot;type&quot;:&quot;PAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2032-02-04&quot;,&quot;endDate&quot;:&quot;2032-02-20&quot;}
+
+13:36:28.962 response time in milliseconds: 396
+2 &lt; 400
+2 &lt; Server: openresty
+2 &lt; Date: Wed, 02 Sep 2026 13:36:28 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Insufficient paid leave balance. Available: 6.0, Requested: 13&quot;,&quot;data&quot;:{&quot;requested&quot;:13,&quot;available&quot;:6.0},&quot;timestamp&quot;:&quot;2026-09-02T13:36:28.90513984&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_INSUFFICIENT_PAID_BALANCE&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -576,7 +664,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Un message d'erreur s'affiche indiquant le solde insuffisant</div>
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
 
@@ -603,7 +691,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.success == false</span>
 
@@ -630,7 +718,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.message == '#string'</span>
 
@@ -658,11 +746,11 @@ $(document).ready(function() {
           <div class="comment indention"># V&eacute;rification que le message mentionne le solde insuffisant</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert response.message.toLowerCase().contains('solde') || response.message.toLowerCase().contains('balance') || response.message.toLowerCase().contains('insufficient')</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.006</span>
 
 </div>
 
@@ -707,12 +795,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.808</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-6">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-456 - Message d'erreur affich&eacute; lorsqu'un cong&eacute; exceptionnel est s&eacute;lectionn&eacute; avec un solde insuffisant</span>
 
@@ -723,16 +811,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details  in ">
+  <div id="element-6" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-7">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -742,12 +830,12 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-7" class="inner-level collapse collapsable-details ">
       <div class="step">
           <div class="comment indention"># Given: R&eacute;cup&eacute;rer le solde actuel de cong&eacute;s exceptionnels</div>
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves/my-balance'</span>
 
@@ -774,7 +862,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -801,11 +889,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.397</span>
 
 </div>
 
@@ -817,6 +905,44 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>13:36:29.458 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/my-balance
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImViNmJkMjUzLTkxMGUtNGVlZi1hZWU3LWIzYTIxNTRmYjczOCIsImlhdCI6MTc4ODM1NjE4OSwiZXhwIjoxNzg4MzU3MDg5fQ.Vg3AMbIynEkS8_dRWLlOWColJbn_Gq72bR-mUYuKEZc
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:36:29.855 response time in milliseconds: 396
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:36:29 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;annualBalance&quot;:6.0,&quot;exceptionalBalance&quot;:10.0,&quot;lastResetDate&quot;:&quot;2026-09-02&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -828,7 +954,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
@@ -855,7 +981,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def currentExceptionalBalance = response.exceptionalBalance</span>
 
@@ -882,7 +1008,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print 'Current exceptional leave balance:', currentExceptionalBalance</span>
 
@@ -898,6 +1024,17 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>13:36:29.856 [print] Current exceptional leave balance: 10.0 
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -910,7 +1047,7 @@ $(document).ready(function() {
           <div class="comment indention"># When: Le collaborateur demande un cong&eacute; exceptionnel dont la dur&eacute;e d&eacute;passe son solde</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def excessiveDays = Math.ceil(currentExceptionalBalance) + 5</span>
 
@@ -937,7 +1074,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">print excessiveDays</span>
 
@@ -953,6 +1090,17 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>13:36:29.856 [print] 15 
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -964,7 +1112,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def futureStart = java.time.LocalDate.now().plusDays(baseDay).toString()</span>
 
@@ -991,7 +1139,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def futureEnd = java.time.LocalDate.now().plusDays(baseDay + excessiveDays).toString()</span>
 
@@ -1018,7 +1166,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def leaveData = { type: 'EXCEPTIONAL_LEAVE', startDate: '#(futureStart)', endDate: '#(futureEnd)', reason: 'Family emergency' }</span>
 
@@ -1045,7 +1193,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given skipped">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves'</span>
 
@@ -1072,7 +1220,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -1099,7 +1247,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">multipart field data = leaveData</span>
 
@@ -1126,7 +1274,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">multipart file files = { read: 'classpath:zenity/ofintra/features/leaves/resources/testdata/proof.pdf', filename: 'proof.pdf', contentType: 'application/pdf' }</span>
 
@@ -1153,11 +1301,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When skipped">
+<div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.406</span>
 
 </div>
 
@@ -1169,6 +1317,57 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-11">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-11" class="collapse collapsable-details">
+        <pre>13:36:29.860 request:
+2 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImViNmJkMjUzLTkxMGUtNGVlZi1hZWU3LWIzYTIxNTRmYjczOCIsImlhdCI6MTc4ODM1NjE4OSwiZXhwIjoxNzg4MzU3MDg5fQ.Vg3AMbIynEkS8_dRWLlOWColJbn_Gq72bR-mUYuKEZc
+2 &gt; Content-Type: multipart/form-data; boundary=eb351ec2fa61a501
+2 &gt; Content-Length: 478
+2 &gt; Host: api-rec.intranet-pawk.com
+2 &gt; Connection: Keep-Alive
+2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+2 &gt; Accept-Encoding: gzip,deflate
+
+content-disposition: form-data; name=&quot;data&quot;; filename=&quot;&quot;
+content-type: application/json; charset=UTF-8
+content-length: 104
+Completed: true
+IsInMemory: true
+
+Mixed: content-disposition: form-data; name=&quot;files&quot;; filename=&quot;proof.pdf&quot;
+content-type: application/pdf; charset=UTF-8
+content-length: 37
+Completed: true
+IsInMemory: true
+
+
+13:36:30.265 response time in milliseconds: 404
+2 &lt; 400
+2 &lt; Server: openresty
+2 &lt; Date: Wed, 02 Sep 2026 13:36:30 GMT
+2 &lt; Content-Type: application/json
+2 &lt; Transfer-Encoding: chunked
+2 &lt; Connection: keep-alive
+2 &lt; Vary: Origin
+2 &lt; Vary: Access-Control-Request-Method
+2 &lt; Vary: Access-Control-Request-Headers
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-XSS-Protection: 0
+2 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+2 &lt; Pragma: no-cache
+2 &lt; Expires: 0
+2 &lt; X-Frame-Options: DENY
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Insufficient exceptional leave balance. Available: 10.0, Requested: 12&quot;,&quot;data&quot;:{&quot;requested&quot;:12,&quot;available&quot;:10.0},&quot;timestamp&quot;:&quot;2026-09-02T13:36:30.207305278&quot;,&quot;path&quot;:&quot;/api/v1/leaves&quot;,&quot;errorCode&quot;:&quot;LEAVE_INSUFFICIENT_EXCEPTIONAL_BALANCE&quot;}
+
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1181,7 +1380,7 @@ $(document).ready(function() {
           <div class="comment indention"># Then: Un message d'erreur s'affiche indiquant le solde insuffisant</div>
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">status 400</span>
 
@@ -1208,7 +1407,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.success == false</span>
 
@@ -1235,7 +1434,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And skipped">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">match response.message == '#string'</span>
 
@@ -1263,7 +1462,7 @@ $(document).ready(function() {
           <div class="comment indention"># V&eacute;rification que le message mentionne le solde insuffisant</div>
 
 
-<div class="brief step-name-* skipped">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">assert response.message.toLowerCase().contains('solde') || response.message.toLowerCase().contains('balance') || response.message.toLowerCase().contains('insufficient')</span>
 

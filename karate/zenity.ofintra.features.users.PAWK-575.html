@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"0e642d18-ddb9-488b-8310-92fc9a4e0143",karate_version:"1.4.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"87370b8e-f699-43aa-a8b5-a537430fc3db",karate_version:"1.4.1",karate_meta:null});
   }
 });
 </script>
@@ -56,7 +56,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-09-02 01:34:08 PM</div>
+    <div>2026-09-02 01:38:30 PM</div>
   </div>
 </div>
 
@@ -88,7 +88,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>440</span>
+              <span>ms:</span>&nbsp;<span>859</span>
             </div>
           </div>
           <div class="step-row">
@@ -120,34 +120,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:34:07.975 karate..env system property was: null 
-13:34:07.975 ✓ Loaded: BASE_URL 
-13:34:07.975 ✓ Loaded: ADMIN_EMAIL 
-13:34:07.976 ✓ Loaded: ADMIN_PASSWORD 
-13:34:07.976 ✓ Loaded: ADMIN_ID 
-13:34:07.976 ✓ Loaded: MANAGER_EMAIL 
-13:34:07.976 ✓ Loaded: MANAGER_PASSWORD 
-13:34:07.976 ✓ Loaded: MANAGER_ID 
-13:34:07.976 ✓ Loaded: COLLAB_EMAIL 
-13:34:07.976 ✓ Loaded: COLLAB_PASSWORD 
-13:34:07.976 ✓ Loaded: COLLAB_ID 
-13:34:07.976 ✓ Loaded: BLOCKED_EMAIL 
-13:34:07.976 ✓ Loaded: BLOCKED_PASSWORD 
-13:34:07.976 ✓ Loaded: BLOCKED_ID 
-13:34:07.976 ✓ Loaded: ARCHIVED_EMAIL 
-13:34:07.976 ✓ Loaded: ARCHIVED_PASSWORD 
-13:34:07.976 ✓ Loaded: ARCHIVED_ID 
-13:34:07.976 ✓ Loaded: EXPIRED_JWT_TOKEN 
-13:34:07.976 ✓ ..env file loaded successfully 
-13:34:07.976 ========== Configuration Loaded ========== 
-13:34:07.976 Base URL:          https://api-rec.intranet-pawk.com 
-13:34:07.976 Admin Email:       admin@zenity.com 
-13:34:07.976 Manager Email:     manager@zenity.com 
-13:34:07.976 Collab Email:      collab@zenity.com 
-13:34:07.976 Blocked Email:     collab.bloque@zenity.com 
-13:34:07.976 Archived Email:    collab.archive@zenity.com 
-13:34:07.976 Expired Token:     NOT SET 
-13:34:07.976 ========================================== 
+  <div class="preformatted" data-parent="0.4">13:38:29.511 karate..env system property was: null 
+13:38:29.512 ✓ Loaded: BASE_URL 
+13:38:29.512 ✓ Loaded: ADMIN_EMAIL 
+13:38:29.512 ✓ Loaded: ADMIN_PASSWORD 
+13:38:29.512 ✓ Loaded: ADMIN_ID 
+13:38:29.512 ✓ Loaded: MANAGER_EMAIL 
+13:38:29.512 ✓ Loaded: MANAGER_PASSWORD 
+13:38:29.512 ✓ Loaded: MANAGER_ID 
+13:38:29.512 ✓ Loaded: COLLAB_EMAIL 
+13:38:29.512 ✓ Loaded: COLLAB_PASSWORD 
+13:38:29.512 ✓ Loaded: COLLAB_ID 
+13:38:29.512 ✓ Loaded: BLOCKED_EMAIL 
+13:38:29.512 ✓ Loaded: BLOCKED_PASSWORD 
+13:38:29.512 ✓ Loaded: BLOCKED_ID 
+13:38:29.512 ✓ Loaded: ARCHIVED_EMAIL 
+13:38:29.512 ✓ Loaded: ARCHIVED_PASSWORD 
+13:38:29.512 ✓ Loaded: ARCHIVED_ID 
+13:38:29.512 ✓ Loaded: EXPIRED_JWT_TOKEN 
+13:38:29.512 ✓ ..env file loaded successfully 
+13:38:29.512 ========== Configuration Loaded ========== 
+13:38:29.512 Base URL:          https://api-rec.intranet-pawk.com 
+13:38:29.512 Admin Email:       admin@zenity.com 
+13:38:29.512 Manager Email:     manager@zenity.com 
+13:38:29.512 Collab Email:      collab@zenity.com 
+13:38:29.512 Blocked Email:     collab.bloque@zenity.com 
+13:38:29.512 Archived Email:    collab.archive@zenity.com 
+13:38:29.512 Expired Token:     NOT SET 
+13:38:29.512 ========================================== 
 </div>   
 
   
@@ -163,11 +163,11 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div class="step-container" id="0.5">
       <div class="step-ref bg-step">5</div>
       
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def admin      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(adminEmail)&#39;, password: &#39;#(adminPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell failed">440</div>
+    <div class="time-cell passed">472</div>
   </div>
 
    
@@ -176,13 +176,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5">13:34:08.417 classpath:zenity/ofintra/features/users/PAWK-575.feature:5
-* def admin      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(adminEmail)&#39;, password: &#39;#(adminPassword)&#39; }
-status code was: 403, expected: 200, response time in milliseconds: 435, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:08.343208363&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
-classpath:zenity/ofintra/common/login-helper.feature:9
-classpath:zenity/ofintra/features/users/PAWK-575.feature:5
-</div>   
+     
 
   <div>
         
@@ -192,7 +186,7 @@ classpath:zenity/ofintra/features/users/PAWK-575.feature:5
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">436</div>
+      <div class="time-cell passed">469</div>
     </div>
     <div>
       <div><div>
@@ -292,7 +286,7 @@ classpath:zenity/ofintra/features/users/PAWK-575.feature:5
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">436</div>
+    <div class="time-cell passed">468</div>
   </div>
 
    
@@ -301,7 +295,7 @@ classpath:zenity/ofintra/features/users/PAWK-575.feature:5
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.8">13:34:07.981 request:
+  <div class="preformatted" data-parent="0.5.0.call.0.8">13:38:29.516 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 54
@@ -311,10 +305,10 @@ classpath:zenity/ofintra/features/users/PAWK-575.feature:5
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
 
-13:34:08.416 response time in milliseconds: 435
-1 &lt; 403
+13:38:29.983 response time in milliseconds: 467
+1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:34:08 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:38:29 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -327,7 +321,8 @@ classpath:zenity/ofintra/features/users/PAWK-575.feature:5
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:08.343208363&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijk3ZGVkM2RjLTZmYjItNDIzYy05YmM4LTVmODg0Zjk2Yzc4MiIsImlhdCI6MTc4ODM1NjMwOSwiZXhwIjoxNzg4MzU3MjA5fQ.Vs7yT56IGLSCLlwTUZN06zOMX3i3tInyj26K5vSd8Lg&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiZGNjODBjYjQtNDkxMS00NGFlLTg5NDUtMzQ5MGU1NDUyNjJlIiwiaWF0IjoxNzg4MzU2MzA5LCJleHAiOjE3ODg5NjExMDl9.yg--RBRAqF8ESIUAf3Tuy7XzBaRSLeNNI7AsLocO9fI&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:38:29.920048364&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:38:29.925326891&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -344,11 +339,11 @@ classpath:zenity/ofintra/features/users/PAWK-575.feature:5
     <div class="step-container" id="0.5.0.call.0.9">
       <div class="step-ref bg-step">9</div>
       <div class="step-indent"></div>
-      <div class="step-cell failed">
+      <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell failed">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -357,12 +352,7 @@ classpath:zenity/ofintra/features/users/PAWK-575.feature:5
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.9">13:34:08.417 classpath:zenity/ofintra/common/login-helper.feature:9
-Then status 200
-status code was: 403, expected: 200, response time in milliseconds: 435, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqué suite à plusieurs tentatives de connexion échouées. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:08.343208363&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
-classpath:zenity/ofintra/common/login-helper.feature:9
-</div>   
+     
 
   
 
@@ -377,11 +367,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.10">
       <div class="step-ref bg-step">10</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>And</span>&nbsp;<span>match response.data  == read(&#39;classpath:zenity/ofintra/common/data/response/auth-success-schema.json&#39;)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -405,11 +395,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.11">
       <div class="step-ref bg-step">11</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def accessToken  = response.data.accessToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -433,11 +423,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.12">
       <div class="step-ref bg-step">12</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def refreshToken = response.data.refreshToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -461,11 +451,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.5.0.call.0.13">
       <div class="step-ref bg-step">13</div>
       <div class="step-indent"></div>
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def userId       = response.data.user.id</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -494,11 +484,11 @@ classpath:zenity/ofintra/common/login-helper.feature:9
     <div class="step-container" id="0.6">
       <div class="step-ref bg-step">6</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def adminToken = admin.accessToken</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -527,13 +517,48 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.11">
-      <div class="step-ref skipped">11</div>
+      <div class="step-ref passed">11</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell passed">
         <span>*</span>&nbsp;<span>def getUser = call read(&#39;classpath:zenity/ofintra/common/get-user-by-id.feature&#39;) {userId: &#39;#(collabId)&#39;, token: &#39;#(adminToken)&#39;}</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">387</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.11.0.call">
+        <div class="step-ref passed">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">zenity.ofintra.common.get-user-by-id</div>
+      </div>
+      <div class="time-cell passed">384</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.5">
+      <div class="step-ref passed">5</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -545,6 +570,151 @@ classpath:zenity/ofintra/common/login-helper.feature:9
      
 
   
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.6">
+      <div class="step-ref passed">6</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/api/v1/users/&#39; + userId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.7">
+      <div class="step-ref passed">7</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.8">
+      <div class="step-ref passed">8</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">384</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11.0.call.0.8">13:38:29.987 request:
+1 &gt; GET https://api-rec.intranet-pawk.com/api/v1/users/3
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6Ijk3ZGVkM2RjLTZmYjItNDIzYy05YmM4LTVmODg0Zjk2Yzc4MiIsImlhdCI6MTc4ODM1NjMwOSwiZXhwIjoxNzg4MzU3MjA5fQ.Vs7yT56IGLSCLlwTUZN06zOMX3i3tInyj26K5vSd8Lg
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+13:38:30.371 response time in milliseconds: 383
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:38:30 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;User retrieved successfully&quot;,&quot;data&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;BLOCKED&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:37:58.01534&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null},&quot;timestamp&quot;:&quot;2026-09-02T13:38:30.313405419&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.11.0.call">
+    <div class="step-container" id="0.11.0.call.0.9">
+      <div class="step-ref passed">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
 
 </div>
 </div>
@@ -555,13 +725,13 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="step-row">
     <div class="step-container" id="0.12">
-      <div class="step-ref skipped">12</div>
+      <div class="step-ref failed">12</div>
       
-      <div class="step-cell skipped">
+      <div class="step-cell failed">
         <span>*</span>&nbsp;<span>match getUser.response.data.status == &#39;ACTIVE&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -570,7 +740,15 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   
 
-     
+  <div class="preformatted" data-parent="0.12">13:38:30.372 classpath:zenity/ofintra/features/users/PAWK-575.feature:12
+* match getUser.response.data.status == &#39;ACTIVE&#39;
+match failed: EQUALS
+  $ | not equal (STRING:STRING)
+  &#39;BLOCKED&#39;
+  &#39;ACTIVE&#39;
+
+classpath:zenity/ofintra/features/users/PAWK-575.feature:12
+</div>   
 
   
 

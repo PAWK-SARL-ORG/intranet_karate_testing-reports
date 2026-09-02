@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>02 Sep 2026, 13:34</td>
+      <td>02 Sep 2026, 13:38</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@PAWK-417</td>
-          <td      class="passed"    >20</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >13</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >6</td>
           <td >0</td>
           <td >0</td>
           <td class="total">20</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1819377896">1.819</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="1353004432">1.353</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -183,12 +183,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.819</span>
+  <span class="lead-duration duration">1.353</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">PAWK-417 - Le manager approuve une demande PENDING</span>
 
@@ -199,16 +199,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -218,7 +218,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -280,7 +280,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">request { type: 'UNPAID_LEAVE', startDate: '#(futureStart)', endDate: '#(futureEnd)' }</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -307,7 +307,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.458</span>
+  <span class="lead-duration duration">0.405</span>
 
 </div>
 
@@ -325,21 +325,21 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>13:33:13.170 request:
+        <pre>13:36:08.371 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijk0OGYzYmIwLWM3MTEtNGU4OS1hMGQyLTEzZGZjYmQ4YWFiMCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4MzU2ODkzfQ.Pxg9JcNU5T06G-SpOE4aN8PaxPpQrj8vyHHmAZKAYR8
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImIxMGNlNjJlLTczNjgtNDRlMi05MGI2LTI0YTg3NTQ1Yzg1YiIsImlhdCI6MTc4ODM1NjE2OCwiZXhwIjoxNzg4MzU3MDY4fQ.6RZlu1wLxw8-gZMtwkEOpu_08wiFTFLWWgyxU4DftIc
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 71
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2032-03-25&quot;,&quot;endDate&quot;:&quot;2032-03-29&quot;}
+{&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-07-21&quot;,&quot;endDate&quot;:&quot;2031-07-25&quot;}
 
-13:33:13.626 response time in milliseconds: 456
+13:36:08.776 response time in milliseconds: 402
 1 &lt; 201
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:33:13 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:36:08 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -353,7 +353,7 @@ $(document).ready(function() {
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:19,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2032-03-25&quot;,&quot;endDate&quot;:&quot;2032-03-29&quot;,&quot;durationInDays&quot;:3,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-09-02T13:33:13.539239209&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null,&quot;attachments&quot;:[]}
+{&quot;id&quot;:7,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-07-21&quot;,&quot;endDate&quot;:&quot;2031-07-25&quot;,&quot;durationInDays&quot;:5,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-09-02T13:36:08.703933054&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null,&quot;attachments&quot;:[]}
 
 </pre>
       </div>
@@ -482,7 +482,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method put</span>
 
-  <span class="lead-duration duration">0.455</span>
+  <span class="lead-duration duration">0.400</span>
 
 </div>
 
@@ -500,19 +500,19 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details">
-        <pre>13:33:13.629 request:
-2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/leaves/19/approve
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiZjhhMmM3ZWYtMzY5NS00ODJlLTlkZGItMTg2YTk3NWIwMGJlIiwiaWF0IjoxNzg4MzU1OTkyLCJleHAiOjE3ODgzNTY4OTJ9.vEcHVHUZtWphQmLWZgr71oGqAfms5TVQjQGXRkXpKX0
+        <pre>13:36:08.779 request:
+2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/leaves/7/approve
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYzc2OWM1YmUtMDJkMS00YjhlLTkyYzYtNDY0NTgzOWViZDBmIiwiaWF0IjoxNzg4MzU2MTY3LCJleHAiOjE3ODgzNTcwNjd9.K2BaV1oVF8q6wiIH0mMm1QvPu3-2eCZPrd0vOTQ_kcY
 2 &gt; Host: api-rec.intranet-pawk.com
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-13:33:14.083 response time in milliseconds: 454
+13:36:09.178 response time in milliseconds: 398
 2 &lt; 204
 2 &lt; Server: openresty
-2 &lt; Date: Wed, 02 Sep 2026 13:33:14 GMT
+2 &lt; Date: Wed, 02 Sep 2026 13:36:09 GMT
 2 &lt; Connection: keep-alive
 2 &lt; Vary: Origin
 2 &lt; Vary: Access-Control-Request-Method
@@ -626,7 +626,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">method get</span>
 
-  <span class="lead-duration duration">0.454</span>
+  <span class="lead-duration duration">0.539</span>
 
 </div>
 
@@ -644,21 +644,21 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>13:33:14.085 request:
-3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/19
-3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijk0OGYzYmIwLWM3MTEtNGU4OS1hMGQyLTEzZGZjYmQ4YWFiMCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4MzU2ODkzfQ.Pxg9JcNU5T06G-SpOE4aN8PaxPpQrj8vyHHmAZKAYR8
+        <pre>13:36:09.179 request:
+3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/7
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImIxMGNlNjJlLTczNjgtNDRlMi05MGI2LTI0YTg3NTQ1Yzg1YiIsImlhdCI6MTc4ODM1NjE2OCwiZXhwIjoxNzg4MzU3MDY4fQ.6RZlu1wLxw8-gZMtwkEOpu_08wiFTFLWWgyxU4DftIc
 3 &gt; Host: api-rec.intranet-pawk.com
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-13:33:14.539 response time in milliseconds: 453
-3 &lt; 200
+13:36:09.718 response time in milliseconds: 538
+3 &lt; 401
 3 &lt; Server: openresty
-3 &lt; Date: Wed, 02 Sep 2026 13:33:14 GMT
+3 &lt; Date: Wed, 02 Sep 2026 13:36:09 GMT
 3 &lt; Content-Type: application/json
-3 &lt; Transfer-Encoding: chunked
+3 &lt; Content-Length: 190
 3 &lt; Connection: keep-alive
 3 &lt; Vary: Origin
 3 &lt; Vary: Access-Control-Request-Method
@@ -669,8 +669,7 @@ $(document).ready(function() {
 3 &lt; Pragma: no-cache
 3 &lt; Expires: 0
 3 &lt; X-Frame-Options: DENY
-3 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:19,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2032-03-25&quot;,&quot;endDate&quot;:&quot;2032-03-29&quot;,&quot;durationInDays&quot;:3.0,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;APPROVED&quot;,&quot;processingComment&quot;:&quot;Request approved&quot;,&quot;createdAt&quot;:&quot;2026-09-02T13:33:13.539239&quot;,&quot;processedBy&quot;:&quot;Thomas Martin&quot;,&quot;processedAt&quot;:&quot;2026-09-02T13:33:14.001344&quot;,&quot;attachments&quot;:[]}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Authentication required. Please provide a valid access token.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:36:09.660358384&quot;,&quot;path&quot;:&quot;/api/v1/leaves/7&quot;,&quot;errorCode&quot;:null}
 
 </pre>
       </div>
@@ -687,11 +686,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
   <span class="name">status 200</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.005</span>
 
 </div>
 
@@ -700,9 +699,37 @@ $(document).ready(function() {
 
 
 
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>status</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>status code was: 401, expected: 200, response time in milliseconds: 538, url: https://api-rec.intranet-pawk.com/api/v1/leaves/7, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Authentication required. Please provide a valid access token.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:36:09.660358384&quot;,&quot;path&quot;:&quot;/api/v1/leaves/7&quot;,&quot;errorCode&quot;:null}
+classpath:zenity/ofintra/features/leaves/PAWK-417.feature:30</pre>
+      </div>
+    </div>
+  </div>
 
 
 
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>13:36:09.723 classpath:zenity/ofintra/features/leaves/PAWK-417.feature:30
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 538, url: https://api-rec.intranet-pawk.com/api/v1/leaves/7, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Authentication required. Please provide a valid access token.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:36:09.660358384&quot;,&quot;path&quot;:&quot;/api/v1/leaves/7&quot;,&quot;errorCode&quot;:null}
+classpath:zenity/ofintra/features/leaves/PAWK-417.feature:30
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -714,7 +741,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.status      == 'APPROVED'</span>
 
@@ -741,7 +768,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.processedBy == '#string'</span>
 
@@ -768,7 +795,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">match response.processedAt == '#string'</span>
 
@@ -796,7 +823,7 @@ $(document).ready(function() {
           <div class="comment indention"># Cleanup</div>
 
 
-<div class="brief step-name-Given passed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">path '/api/v1/leaves/' + leaveId</span>
 
@@ -823,7 +850,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">header Authorization = 'Bearer ' + collabToken</span>
 
@@ -850,11 +877,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When skipped">
   <span class="keyword indention">When</span>
   <span class="name">method delete</span>
 
-  <span class="lead-duration duration">0.445</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -866,43 +893,6 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
-          <a>Doc string</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>13:33:14.541 request:
-4 &gt; DELETE https://api-rec.intranet-pawk.com/api/v1/leaves/19
-4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijk0OGYzYmIwLWM3MTEtNGU4OS1hMGQyLTEzZGZjYmQ4YWFiMCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4MzU2ODkzfQ.Pxg9JcNU5T06G-SpOE4aN8PaxPpQrj8vyHHmAZKAYR8
-4 &gt; Host: api-rec.intranet-pawk.com
-4 &gt; Connection: Keep-Alive
-4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
-4 &gt; Accept-Encoding: gzip,deflate
-
-
-13:33:14.985 response time in milliseconds: 444
-4 &lt; 400
-4 &lt; Server: openresty
-4 &lt; Date: Wed, 02 Sep 2026 13:33:14 GMT
-4 &lt; Content-Type: application/json
-4 &lt; Transfer-Encoding: chunked
-4 &lt; Connection: keep-alive
-4 &lt; Vary: Origin
-4 &lt; Vary: Access-Control-Request-Method
-4 &lt; Vary: Access-Control-Request-Headers
-4 &lt; X-Content-Type-Options: nosniff
-4 &lt; X-XSS-Protection: 0
-4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-4 &lt; Pragma: no-cache
-4 &lt; Expires: 0
-4 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Only PENDING requests can be cancelled.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:14.911477258&quot;,&quot;path&quot;:&quot;/api/v1/leaves/19&quot;,&quot;errorCode&quot;:&quot;LEAVE_NOT_PENDING&quot;}
-
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>oFintra Karate Tests</td>
-      <td>02 Sep 2026, 13:34</td>
+      <td>02 Sep 2026, 13:38</td>
     </tr>
   </tbody>
 </table>
@@ -127,18 +127,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">zenity/ofintra/features/users/PAWK-572.feature</td>
-          <td      class="passed"    >12</td>
+          <td      class="passed"    >56</td>
           <td      class="failed"    >4</td>
-          <td     class="skipped"   >37</td>
+          <td     class="skipped"   >33</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">53</td>
+          <td class="total">93</td>
 
           <td >0</td>
           <td  class="failed"    >2</td>
           <td class="total">2</td>
 
-          <td class="duration" data-value="1802486782">1.802</td>
+          <td class="duration" data-value="5703708790">5.703</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.920</span>
+  <span class="lead-duration duration">2.846</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -250,34 +250,34 @@ $(document).ready(function() {
           <a>Doc string</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>13:34:06.510 karate..env system property was: null 
-13:34:06.511 &#10003; Loaded: BASE_URL 
-13:34:06.511 &#10003; Loaded: ADMIN_EMAIL 
-13:34:06.511 &#10003; Loaded: ADMIN_PASSWORD 
-13:34:06.511 &#10003; Loaded: ADMIN_ID 
-13:34:06.511 &#10003; Loaded: MANAGER_EMAIL 
-13:34:06.511 &#10003; Loaded: MANAGER_PASSWORD 
-13:34:06.511 &#10003; Loaded: MANAGER_ID 
-13:34:06.511 &#10003; Loaded: COLLAB_EMAIL 
-13:34:06.511 &#10003; Loaded: COLLAB_PASSWORD 
-13:34:06.511 &#10003; Loaded: COLLAB_ID 
-13:34:06.511 &#10003; Loaded: BLOCKED_EMAIL 
-13:34:06.511 &#10003; Loaded: BLOCKED_PASSWORD 
-13:34:06.511 &#10003; Loaded: BLOCKED_ID 
-13:34:06.511 &#10003; Loaded: ARCHIVED_EMAIL 
-13:34:06.511 &#10003; Loaded: ARCHIVED_PASSWORD 
-13:34:06.512 &#10003; Loaded: ARCHIVED_ID 
-13:34:06.512 &#10003; Loaded: EXPIRED_JWT_TOKEN 
-13:34:06.512 &#10003; ..env file loaded successfully 
-13:34:06.512 ========== Configuration Loaded ========== 
-13:34:06.512 Base URL:          https://api-rec.intranet-pawk.com 
-13:34:06.512 Admin Email:       admin@zenity.com 
-13:34:06.512 Manager Email:     manager@zenity.com 
-13:34:06.512 Collab Email:      collab@zenity.com 
-13:34:06.512 Blocked Email:     collab.bloque@zenity.com 
-13:34:06.512 Archived Email:    collab.archive@zenity.com 
-13:34:06.512 Expired Token:     NOT SET 
-13:34:06.512 ========================================== 
+        <pre>13:38:25.674 karate..env system property was: null 
+13:38:25.675 &#10003; Loaded: BASE_URL 
+13:38:25.675 &#10003; Loaded: ADMIN_EMAIL 
+13:38:25.675 &#10003; Loaded: ADMIN_PASSWORD 
+13:38:25.675 &#10003; Loaded: ADMIN_ID 
+13:38:25.675 &#10003; Loaded: MANAGER_EMAIL 
+13:38:25.675 &#10003; Loaded: MANAGER_PASSWORD 
+13:38:25.675 &#10003; Loaded: MANAGER_ID 
+13:38:25.675 &#10003; Loaded: COLLAB_EMAIL 
+13:38:25.675 &#10003; Loaded: COLLAB_PASSWORD 
+13:38:25.675 &#10003; Loaded: COLLAB_ID 
+13:38:25.675 &#10003; Loaded: BLOCKED_EMAIL 
+13:38:25.675 &#10003; Loaded: BLOCKED_PASSWORD 
+13:38:25.675 &#10003; Loaded: BLOCKED_ID 
+13:38:25.675 &#10003; Loaded: ARCHIVED_EMAIL 
+13:38:25.675 &#10003; Loaded: ARCHIVED_PASSWORD 
+13:38:25.675 &#10003; Loaded: ARCHIVED_ID 
+13:38:25.675 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+13:38:25.675 &#10003; ..env file loaded successfully 
+13:38:25.675 ========== Configuration Loaded ========== 
+13:38:25.675 Base URL:          https://api-rec.intranet-pawk.com 
+13:38:25.675 Admin Email:       admin@zenity.com 
+13:38:25.675 Manager Email:     manager@zenity.com 
+13:38:25.675 Collab Email:      collab@zenity.com 
+13:38:25.675 Blocked Email:     collab.bloque@zenity.com 
+13:38:25.675 Archived Email:    collab.archive@zenity.com 
+13:38:25.675 Expired Token:     NOT SET 
+13:38:25.675 ========================================== 
 </pre>
       </div>
     </div>
@@ -293,11 +293,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-* failed">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def admin      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(adminEmail)', password: '#(adminPassword)' }</span>
 
-  <span class="lead-duration duration">0.461</span>
+  <span class="lead-duration duration">0.471</span>
 
 </div>
 
@@ -306,19 +306,476 @@ $(document).ready(function() {
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>status</a>
+
+
+
+
+
+
+
+
+
+
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>status code was: 403, expected: 200, response time in milliseconds: 457, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:06.896443972&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
-classpath:zenity/ofintra/common/login-helper.feature:9
-classpath:zenity/ofintra/features/users/PAWK-572.feature:5</pre>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.467</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>13:38:25.679 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
+
+13:38:26.146 response time in milliseconds: 467
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:38:26 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6ImMwYzg1M2VmLWY3ZmYtNDQ1MS1hYzQyLTkzYzExNTU1ZGMwOCIsImlhdCI6MTc4ODM1NjMwNiwiZXhwIjoxNzg4MzU3MjA2fQ.1kqpgVCf1GC1hsA8_1STjTuyc5hTC0qyHaIR5vgizng&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiZTJlN2MxZGEtZGJlMy00N2YwLWJkNTUtYWI4NjMxMjY2YjhjIiwiaWF0IjoxNzg4MzU2MzA2LCJleHAiOjE3ODg5NjExMDZ9.BhSxVB-9cbwFr1_epEV7KWMKFQPtGp-11b-tlvDxggI&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:38:26.083349771&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:38:26.088095057&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager    = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">0.478</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.474</span>
+
+</div>
+
+
+
+
+
 
 
 
@@ -329,12 +786,227 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5</pre>
           <a>Doc string</a>
       </div>
       <div id="msg-5" class="collapse collapsable-details">
-        <pre>13:34:06.974 classpath:zenity/ofintra/features/users/PAWK-572.feature:5
-* def admin      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(adminEmail)', password: '#(adminPassword)' }
-status code was: 403, expected: 200, response time in milliseconds: 457, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:06.896443972&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+        <pre>13:38:26.150 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+13:38:26.624 response time in milliseconds: 474
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:38:26 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiNWU3Njg5ZTktNmM2OS00NDdmLTgxNDUtNWZkYzlhNmVhZjk3IiwiaWF0IjoxNzg4MzU2MzA2LCJleHAiOjE3ODgzNTcyMDZ9.dhegUYW9qU23gbob6JBZenNt9lkxibOEtgpzZeJuO94&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiIyNWU5ODJhNC1lMzA0LTRiNzQtYmMzNS1hMTg0ZWFkZGJmOTkiLCJpYXQiOjE3ODgzNTYzMDYsImV4cCI6MTc4ODk2MTEwNn0.zCHk-E5ifRzmuiG2MfWkSO34jECDl-ATrVOvXYOOl50&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:38:26.560709963&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:38:26.566268454&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collab     = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
+
+  <span class="lead-duration duration">0.478</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>status</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>status code was: 401, expected: 200, response time in milliseconds: 473, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Email ou mot de passe incorrect.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:27.045695952&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;INVALID_CREDENTIALS&quot;}
 classpath:zenity/ofintra/common/login-helper.feature:9
-classpath:zenity/ofintra/features/users/PAWK-572.feature:5
+classpath:zenity/ofintra/features/users/PAWK-572.feature:7</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-7">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-7" class="collapse collapsable-details">
+        <pre>13:38:27.104 classpath:zenity/ofintra/features/users/PAWK-572.feature:7
+* def collab     = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }
+status code was: 401, expected: 200, response time in milliseconds: 473, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Email ou mot de passe incorrect.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:27.045695952&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;INVALID_CREDENTIALS&quot;}
+classpath:zenity/ofintra/common/login-helper.feature:9
+classpath:zenity/ofintra/features/users/PAWK-572.feature:7
 </pre>
       </div>
     </div>
@@ -462,7 +1134,7 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.458</span>
+  <span class="lead-duration duration">0.474</span>
 
 </div>
 
@@ -476,24 +1148,24 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
           <a>Doc string</a>
       </div>
-      <div id="msg-6" class="collapse collapsable-details">
-        <pre>13:34:06.516 request:
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>13:38:26.630 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 54
+1 &gt; Content-Length: 56
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
+{&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-13:34:06.973 response time in milliseconds: 457
-1 &lt; 403
+13:38:27.103 response time in milliseconds: 473
+1 &lt; 401
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:34:06 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:38:27 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -506,7 +1178,7 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:06.896443972&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Email ou mot de passe incorrect.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:27.045695952&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;INVALID_CREDENTIALS&quot;}
 
 </pre>
       </div>
@@ -538,12 +1210,12 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
           <a>status</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details  in ">
-        <pre>status code was: 403, expected: 200, response time in milliseconds: 457, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:06.896443972&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>status code was: 401, expected: 200, response time in milliseconds: 473, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Email ou mot de passe incorrect.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:27.045695952&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;INVALID_CREDENTIALS&quot;}
 classpath:zenity/ofintra/common/login-helper.feature:9</pre>
       </div>
     </div>
@@ -554,14 +1226,14 @@ classpath:zenity/ofintra/common/login-helper.feature:9</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
           <a>Doc string</a>
       </div>
-      <div id="msg-8" class="collapse collapsable-details">
-        <pre>13:34:06.974 classpath:zenity/ofintra/common/login-helper.feature:9
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>13:38:27.104 classpath:zenity/ofintra/common/login-helper.feature:9
 Then status 200
-status code was: 403, expected: 200, response time in milliseconds: 457, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:06.896443972&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+status code was: 401, expected: 200, response time in milliseconds: 473, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Email ou mot de passe incorrect.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:27.045695952&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;INVALID_CREDENTIALS&quot;}
 classpath:zenity/ofintra/common/login-helper.feature:9
 </pre>
       </div>
@@ -662,60 +1334,6 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 <div class="brief step-name-&amp;gt; * skipped">
   <span class="keyword indention">&gt; *</span>
   <span class="name">def userId       = response.data.user.id</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">def manager    = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">def collab     = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -843,7 +1461,7 @@ classpath:zenity/ofintra/common/login-helper.feature:9
   <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-9">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -856,14 +1474,14 @@ classpath:zenity/ofintra/common/login-helper.feature:9
   </span>
   <div class="description indention"></div>
 
-  <div id="element-9" class="collapse collapsable-details  in ">
+  <div id="element-11" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -875,7 +1493,7 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   </div>
 
-  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention"># Precondition: L'utilisateur existe et est actif</div>
 
@@ -1139,10 +1757,10 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 </div>
 
 
-  <span class="lead-duration duration">0.881</span>
+  <span class="lead-duration duration">2.857</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-11">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-13">
 
 <div class="brief failed">
   <span class="keyword indention">Background</span>
@@ -1155,14 +1773,14 @@ classpath:zenity/ofintra/common/login-helper.feature:9
   </span>
   <div class="description indention"></div>
 
-  <div id="element-11" class="collapse collapsable-details  in ">
+  <div id="element-13" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-12">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-14">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1174,7 +1792,7 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   </div>
 
-  <div id="steps-12" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-14" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -1196,38 +1814,38 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
           <a>Doc string</a>
       </div>
-      <div id="msg-13" class="collapse collapsable-details">
-        <pre>13:34:06.979 karate..env system property was: null 
-13:34:06.980 &#10003; Loaded: BASE_URL 
-13:34:06.980 &#10003; Loaded: ADMIN_EMAIL 
-13:34:06.980 &#10003; Loaded: ADMIN_PASSWORD 
-13:34:06.980 &#10003; Loaded: ADMIN_ID 
-13:34:06.980 &#10003; Loaded: MANAGER_EMAIL 
-13:34:06.980 &#10003; Loaded: MANAGER_PASSWORD 
-13:34:06.980 &#10003; Loaded: MANAGER_ID 
-13:34:06.980 &#10003; Loaded: COLLAB_EMAIL 
-13:34:06.980 &#10003; Loaded: COLLAB_PASSWORD 
-13:34:06.980 &#10003; Loaded: COLLAB_ID 
-13:34:06.980 &#10003; Loaded: BLOCKED_EMAIL 
-13:34:06.980 &#10003; Loaded: BLOCKED_PASSWORD 
-13:34:06.980 &#10003; Loaded: BLOCKED_ID 
-13:34:06.980 &#10003; Loaded: ARCHIVED_EMAIL 
-13:34:06.980 &#10003; Loaded: ARCHIVED_PASSWORD 
-13:34:06.980 &#10003; Loaded: ARCHIVED_ID 
-13:34:06.980 &#10003; Loaded: EXPIRED_JWT_TOKEN 
-13:34:06.980 &#10003; ..env file loaded successfully 
-13:34:06.981 ========== Configuration Loaded ========== 
-13:34:06.981 Base URL:          https://api-rec.intranet-pawk.com 
-13:34:06.981 Admin Email:       admin@zenity.com 
-13:34:06.981 Manager Email:     manager@zenity.com 
-13:34:06.981 Collab Email:      collab@zenity.com 
-13:34:06.981 Blocked Email:     collab.bloque@zenity.com 
-13:34:06.981 Archived Email:    collab.archive@zenity.com 
-13:34:06.981 Expired Token:     NOT SET 
-13:34:06.981 ========================================== 
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>13:38:27.106 karate..env system property was: null 
+13:38:27.106 &#10003; Loaded: BASE_URL 
+13:38:27.106 &#10003; Loaded: ADMIN_EMAIL 
+13:38:27.106 &#10003; Loaded: ADMIN_PASSWORD 
+13:38:27.106 &#10003; Loaded: ADMIN_ID 
+13:38:27.107 &#10003; Loaded: MANAGER_EMAIL 
+13:38:27.107 &#10003; Loaded: MANAGER_PASSWORD 
+13:38:27.107 &#10003; Loaded: MANAGER_ID 
+13:38:27.107 &#10003; Loaded: COLLAB_EMAIL 
+13:38:27.107 &#10003; Loaded: COLLAB_PASSWORD 
+13:38:27.107 &#10003; Loaded: COLLAB_ID 
+13:38:27.107 &#10003; Loaded: BLOCKED_EMAIL 
+13:38:27.107 &#10003; Loaded: BLOCKED_PASSWORD 
+13:38:27.107 &#10003; Loaded: BLOCKED_ID 
+13:38:27.107 &#10003; Loaded: ARCHIVED_EMAIL 
+13:38:27.107 &#10003; Loaded: ARCHIVED_PASSWORD 
+13:38:27.107 &#10003; Loaded: ARCHIVED_ID 
+13:38:27.107 &#10003; Loaded: EXPIRED_JWT_TOKEN 
+13:38:27.107 &#10003; ..env file loaded successfully 
+13:38:27.107 ========== Configuration Loaded ========== 
+13:38:27.107 Base URL:          https://api-rec.intranet-pawk.com 
+13:38:27.107 Admin Email:       admin@zenity.com 
+13:38:27.107 Manager Email:     manager@zenity.com 
+13:38:27.107 Collab Email:      collab@zenity.com 
+13:38:27.107 Blocked Email:     collab.bloque@zenity.com 
+13:38:27.107 Archived Email:    collab.archive@zenity.com 
+13:38:27.107 Expired Token:     NOT SET 
+13:38:27.107 ========================================== 
 </pre>
       </div>
     </div>
@@ -1243,11 +1861,683 @@ classpath:zenity/ofintra/common/login-helper.feature:9
       <div class="step">
 
 
-<div class="brief step-name-* failed">
+<div class="brief step-name-* passed">
   <span class="keyword indention">*</span>
   <span class="name">def admin      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(adminEmail)', password: '#(adminPassword)' }</span>
 
-  <span class="lead-duration duration">0.442</span>
+  <span class="lead-duration duration">0.474</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.472</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>13:38:27.110 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
+
+13:38:27.581 response time in milliseconds: 471
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:38:27 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJyb2xlIjoiQWRtaW5pc3RyYXRvciIsImp0aSI6IjBjNjk3Njg2LThmYmItNDBiNy1hMDVkLWUyNmMyYzRmOWQyMyIsImlhdCI6MTc4ODM1NjMwNywiZXhwIjoxNzg4MzU3MjA3fQ.LZyhv6iDrVgecc4vMt8RfGVXrAvfAxTAGBtls6CQnMM&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB6ZW5pdHkuY29tIiwidXNlcklkIjoxLCJ0b2tlblR5cGUiOiJyZWZyZXNoIiwianRpIjoiY2RjNzc3ZWMtMDk5ZC00MDE4LWE1M2ItZmE5MmZkNTRhNzNiIiwiaWF0IjoxNzg4MzU2MzA3LCJleHAiOjE3ODg5NjExMDd9.Mx432SojdmUdQBMMVZiXu1dvme3WTtnJkZsiDUkErZs&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:38:27.518265286&quot;,&quot;roleName&quot;:&quot;Administrator&quot;,&quot;roleType&quot;:&quot;ADMINISTRATOR&quot;,&quot;firstName&quot;:&quot;Admin&quot;,&quot;lastName&quot;:&quot;System&quot;,&quot;trigramme&quot;:&quot;ASY&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000001&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2019-01-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1985-03-15&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:38:27.523174593&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">def manager    = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
+
+  <span class="lead-duration duration">0.478</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name- passed">
+  <span class="keyword indention"></span>
+  <span class="name">zenity/ofintra/common/login-helper.feature</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Given passed">
+  <span class="keyword indention">&gt; Given</span>
+  <span class="name">url baseUrl</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">path '/api/v1/auth/login'</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">request { email: '#(email)', password: '#(password)' }</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; When passed">
+  <span class="keyword indention">&gt; When</span>
+  <span class="name">method post</span>
+
+  <span class="lead-duration duration">0.474</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-17">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-17" class="collapse collapsable-details">
+        <pre>13:38:27.585 request:
+1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 58
+1 &gt; Host: api-rec.intranet-pawk.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
+
+13:38:28.059 response time in milliseconds: 474
+1 &lt; 200
+1 &lt; Server: openresty
+1 &lt; Date: Wed, 02 Sep 2026 13:38:28 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Vary: Origin
+1 &lt; Vary: Access-Control-Request-Method
+1 &lt; Vary: Access-Control-Request-Headers
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-XSS-Protection: 0
+1 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; Pragma: no-cache
+1 &lt; Expires: 0
+1 &lt; X-Frame-Options: DENY
+1 &lt; X-Served-By: api-rec.intranet-pawk.com
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiMTAxNTBiMmYtODM0OS00MTU1LWJkY2YtNjU5NDg2MmNjYTQ4IiwiaWF0IjoxNzg4MzU2MzA3LCJleHAiOjE3ODgzNTcyMDd9.UJJy0h1GVLuvTAngeg9mSZfqvRq_VozFkNgWeM-lA2g&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiJmNzYwNDY4OS02M2Q1LTQ4OTctODc1Mi1lNzM3YmY4NzM2ODIiLCJpYXQiOjE3ODgzNTYzMDcsImV4cCI6MTc4ODk2MTEwN30.sMmx0PbbgPHoaoKpxQISC7mRp9RWydAPmPZO48Teh6s&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:38:27.994262629&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:38:28.001461661&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; Then passed">
+  <span class="keyword indention">&gt; Then</span>
+  <span class="name">status 200</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; And passed">
+  <span class="keyword indention">&gt; And</span>
+  <span class="name">match response.data  == read('classpath:zenity/ofintra/common/data/response/auth-success-schema.json')</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def accessToken  = response.data.accessToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def refreshToken = response.data.refreshToken</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-&amp;gt; * passed">
+  <span class="keyword indention">&gt; *</span>
+  <span class="name">def userId       = response.data.user.id</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* failed">
+  <span class="keyword indention">*</span>
+  <span class="name">def collab     = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
+
+  <span class="lead-duration duration">0.479</span>
 
 </div>
 
@@ -1258,14 +2548,14 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-14">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-18">
           <a>status</a>
       </div>
-      <div id="msg-14" class="collapse collapsable-details  in ">
-        <pre>status code was: 403, expected: 200, response time in milliseconds: 437, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:07.351045185&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+      <div id="msg-18" class="collapse collapsable-details  in ">
+        <pre>status code was: 403, expected: 200, response time in milliseconds: 475, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:28.481960018&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 classpath:zenity/ofintra/common/login-helper.feature:9
-classpath:zenity/ofintra/features/users/PAWK-572.feature:5</pre>
+classpath:zenity/ofintra/features/users/PAWK-572.feature:7</pre>
       </div>
     </div>
   </div>
@@ -1275,16 +2565,16 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-19">
           <a>Doc string</a>
       </div>
-      <div id="msg-15" class="collapse collapsable-details">
-        <pre>13:34:07.424 classpath:zenity/ofintra/features/users/PAWK-572.feature:5
-* def admin      = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(adminEmail)', password: '#(adminPassword)' }
-status code was: 403, expected: 200, response time in milliseconds: 437, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:07.351045185&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+      <div id="msg-19" class="collapse collapsable-details">
+        <pre>13:38:28.540 classpath:zenity/ofintra/features/users/PAWK-572.feature:7
+* def collab     = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }
+status code was: 403, expected: 200, response time in milliseconds: 475, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:28.481960018&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 classpath:zenity/ofintra/common/login-helper.feature:9
-classpath:zenity/ofintra/features/users/PAWK-572.feature:5
+classpath:zenity/ofintra/features/users/PAWK-572.feature:7
 </pre>
       </div>
     </div>
@@ -1412,7 +2702,7 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
   <span class="keyword indention">&gt; When</span>
   <span class="name">method post</span>
 
-  <span class="lead-duration duration">0.438</span>
+  <span class="lead-duration duration">0.475</span>
 
 </div>
 
@@ -1426,24 +2716,24 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-20">
           <a>Doc string</a>
       </div>
-      <div id="msg-16" class="collapse collapsable-details">
-        <pre>13:34:06.986 request:
+      <div id="msg-20" class="collapse collapsable-details">
+        <pre>13:38:28.064 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 54
+1 &gt; Content-Length: 56
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;email&quot;:&quot;admin@zenity.com&quot;,&quot;password&quot;:&quot;Admin@123456&quot;}
+{&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-13:34:07.424 response time in milliseconds: 437
+13:38:28.540 response time in milliseconds: 475
 1 &lt; 403
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:34:07 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:38:28 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1456,7 +2746,7 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
 1 &lt; Pragma: no-cache
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:07.351045185&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:28.481960018&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 
 </pre>
       </div>
@@ -1488,12 +2778,12 @@ classpath:zenity/ofintra/features/users/PAWK-572.feature:5
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-17">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-21">
           <a>status</a>
       </div>
-      <div id="msg-17" class="collapse collapsable-details  in ">
-        <pre>status code was: 403, expected: 200, response time in milliseconds: 437, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:07.351045185&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+      <div id="msg-21" class="collapse collapsable-details  in ">
+        <pre>status code was: 403, expected: 200, response time in milliseconds: 475, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:28.481960018&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 classpath:zenity/ofintra/common/login-helper.feature:9</pre>
       </div>
     </div>
@@ -1504,14 +2794,14 @@ classpath:zenity/ofintra/common/login-helper.feature:9</pre>
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-22">
           <a>Doc string</a>
       </div>
-      <div id="msg-18" class="collapse collapsable-details">
-        <pre>13:34:07.424 classpath:zenity/ofintra/common/login-helper.feature:9
+      <div id="msg-22" class="collapse collapsable-details">
+        <pre>13:38:28.540 classpath:zenity/ofintra/common/login-helper.feature:9
 Then status 200
-status code was: 403, expected: 200, response time in milliseconds: 437, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:34:07.351045185&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
+status code was: 403, expected: 200, response time in milliseconds: 475, url: https://api-rec.intranet-pawk.com/api/v1/auth/login, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Votre compte est temporairement bloqu&eacute; suite &agrave; plusieurs tentatives de connexion &eacute;chou&eacute;es. Veuillez contacter le service RH.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:38:28.481960018&quot;,&quot;path&quot;:&quot;/api/v1/auth/login&quot;,&quot;errorCode&quot;:&quot;ACCOUNT_BLOCKED&quot;}
 classpath:zenity/ofintra/common/login-helper.feature:9
 </pre>
       </div>
@@ -1612,60 +2902,6 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 <div class="brief step-name-&amp;gt; * skipped">
   <span class="keyword indention">&gt; *</span>
   <span class="name">def userId       = response.data.user.id</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">def manager    = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(managerEmail)', password: '#(managerPassword)' }</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-* skipped">
-  <span class="keyword indention">*</span>
-  <span class="name">def collab     = call read('classpath:zenity/ofintra/common/login-helper.feature') { email: '#(collabEmail)', password: '#(collabPassword)' }</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -1793,7 +3029,7 @@ classpath:zenity/ofintra/common/login-helper.feature:9
   <span class="lead-duration duration">0.000</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-19">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-23">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -1806,14 +3042,14 @@ classpath:zenity/ofintra/common/login-helper.feature:9
   </span>
   <div class="description indention"></div>
 
-  <div id="element-19" class="collapse collapsable-details  in ">
+  <div id="element-23" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-20">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-24">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -1825,7 +3061,7 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   </div>
 
-  <div id="steps-20" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-24" class="inner-level collapse collapsable-details  in ">
       <div class="step">
           <div class="comment indention"># Create another manager for testing</div>
 
@@ -1875,10 +3111,10 @@ classpath:zenity/ofintra/common/login-helper.feature:9
 
   <div class="inner-level">
     <div class="docstring indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-21">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-25">
           <a>Doc string</a>
       </div>
-      <div id="msg-21" class="collapse collapsable-details">
+      <div id="msg-25" class="collapse collapsable-details">
         <pre>function(prefix) {
   return prefix + '.' + java.lang.System.currentTimeMillis() + '@zenity.com';
 }</pre>

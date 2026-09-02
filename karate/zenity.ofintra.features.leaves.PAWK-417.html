@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"0e642d18-ddb9-488b-8310-92fc9a4e0143",karate_version:"1.4.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"87370b8e-f699-43aa-a8b5-a537430fc3db",karate_version:"1.4.1",karate_meta:null});
   }
 });
 </script>
@@ -45,8 +45,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -56,12 +56,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-09-02 01:33:14 PM</div>
+    <div>2026-09-02 01:36:09 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:14]"><span>[1:14]</span> <span>PAWK-417 - Le manager approuve une demande PENDING</span></a>
           </div>
         </div>
@@ -87,8 +87,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>2887</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2330</span>
             </div>
           </div>
           <div class="step-row">
@@ -120,34 +120,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">13:33:12.085 karate..env system property was: null 
-13:33:12.087 ✓ Loaded: BASE_URL 
-13:33:12.088 ✓ Loaded: ADMIN_EMAIL 
-13:33:12.088 ✓ Loaded: ADMIN_PASSWORD 
-13:33:12.088 ✓ Loaded: ADMIN_ID 
-13:33:12.088 ✓ Loaded: MANAGER_EMAIL 
-13:33:12.088 ✓ Loaded: MANAGER_PASSWORD 
-13:33:12.089 ✓ Loaded: MANAGER_ID 
-13:33:12.089 ✓ Loaded: COLLAB_EMAIL 
-13:33:12.090 ✓ Loaded: COLLAB_PASSWORD 
-13:33:12.091 ✓ Loaded: COLLAB_ID 
-13:33:12.091 ✓ Loaded: BLOCKED_EMAIL 
-13:33:12.091 ✓ Loaded: BLOCKED_PASSWORD 
-13:33:12.091 ✓ Loaded: BLOCKED_ID 
-13:33:12.091 ✓ Loaded: ARCHIVED_EMAIL 
-13:33:12.091 ✓ Loaded: ARCHIVED_PASSWORD 
-13:33:12.091 ✓ Loaded: ARCHIVED_ID 
-13:33:12.091 ✓ Loaded: EXPIRED_JWT_TOKEN 
-13:33:12.091 ✓ ..env file loaded successfully 
-13:33:12.094 ========== Configuration Loaded ========== 
-13:33:12.094 Base URL:          https://api-rec.intranet-pawk.com 
-13:33:12.095 Admin Email:       admin@zenity.com 
-13:33:12.095 Manager Email:     manager@zenity.com 
-13:33:12.095 Collab Email:      collab@zenity.com 
-13:33:12.095 Blocked Email:     collab.bloque@zenity.com 
-13:33:12.095 Archived Email:    collab.archive@zenity.com 
-13:33:12.095 Expired Token:     NOT SET 
-13:33:12.095 ========================================== 
+  <div class="preformatted" data-parent="0.4">13:36:07.385 karate..env system property was: null 
+13:36:07.389 ✓ Loaded: BASE_URL 
+13:36:07.389 ✓ Loaded: ADMIN_EMAIL 
+13:36:07.389 ✓ Loaded: ADMIN_PASSWORD 
+13:36:07.389 ✓ Loaded: ADMIN_ID 
+13:36:07.389 ✓ Loaded: MANAGER_EMAIL 
+13:36:07.389 ✓ Loaded: MANAGER_PASSWORD 
+13:36:07.389 ✓ Loaded: MANAGER_ID 
+13:36:07.389 ✓ Loaded: COLLAB_EMAIL 
+13:36:07.390 ✓ Loaded: COLLAB_PASSWORD 
+13:36:07.390 ✓ Loaded: COLLAB_ID 
+13:36:07.390 ✓ Loaded: BLOCKED_EMAIL 
+13:36:07.390 ✓ Loaded: BLOCKED_PASSWORD 
+13:36:07.390 ✓ Loaded: BLOCKED_ID 
+13:36:07.390 ✓ Loaded: ARCHIVED_EMAIL 
+13:36:07.390 ✓ Loaded: ARCHIVED_PASSWORD 
+13:36:07.390 ✓ Loaded: ARCHIVED_ID 
+13:36:07.390 ✓ Loaded: EXPIRED_JWT_TOKEN 
+13:36:07.390 ✓ ..env file loaded successfully 
+13:36:07.391 ========== Configuration Loaded ========== 
+13:36:07.391 Base URL:          https://api-rec.intranet-pawk.com 
+13:36:07.391 Admin Email:       admin@zenity.com 
+13:36:07.391 Manager Email:     manager@zenity.com 
+13:36:07.391 Collab Email:      collab@zenity.com 
+13:36:07.391 Blocked Email:     collab.bloque@zenity.com 
+13:36:07.391 Archived Email:    collab.archive@zenity.com 
+13:36:07.391 Expired Token:     NOT SET 
+13:36:07.391 ========================================== 
 </div>   
 
   
@@ -167,7 +167,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def manager      = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(managerEmail)&#39;, password: &#39;#(managerPassword)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">532</div>
+    <div class="time-cell passed">490</div>
   </div>
 
    
@@ -186,7 +186,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">523</div>
+      <div class="time-cell passed">484</div>
     </div>
     <div>
       <div><div>
@@ -286,7 +286,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">520</div>
+    <div class="time-cell passed">482</div>
   </div>
 
    
@@ -295,7 +295,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.5.0.call.0.8">13:33:12.110 request:
+  <div class="preformatted" data-parent="0.5.0.call.0.8">13:36:07.398 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 58
@@ -305,10 +305,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;password&quot;:&quot;Manager@123456&quot;}
 
-13:33:12.627 response time in milliseconds: 516
+13:36:07.879 response time in milliseconds: 480
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:33:12 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:36:07 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -322,7 +322,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiZjhhMmM3ZWYtMzY5NS00ODJlLTlkZGItMTg2YTk3NWIwMGJlIiwiaWF0IjoxNzg4MzU1OTkyLCJleHAiOjE3ODgzNTY4OTJ9.vEcHVHUZtWphQmLWZgr71oGqAfms5TVQjQGXRkXpKX0&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiIxOGM3ZDk0Ny01NjgwLTQyYzItODkzNS1jNmI1ZGU3ZTM1M2EiLCJpYXQiOjE3ODgzNTU5OTIsImV4cCI6MTc4ODk2MDc5Mn0.syd5oFuTLHfiFbbmp6i9otvAva68DRARldPwuxMTlc4&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:33:12.547281522&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:33:12.552843215&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYzc2OWM1YmUtMDJkMS00YjhlLTkyYzYtNDY0NTgzOWViZDBmIiwiaWF0IjoxNzg4MzU2MTY3LCJleHAiOjE3ODgzNTcwNjd9.K2BaV1oVF8q6wiIH0mMm1QvPu3-2eCZPrd0vOTQ_kcY&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInRva2VuVHlwZSI6InJlZnJlc2giLCJqdGkiOiIwYWJjNDI3NC1jOTM4LTRmODAtOTA0ZS1jNWZjNDMyMTEyYWQiLCJpYXQiOjE3ODgzNTYxNjcsImV4cCI6MTc4ODk2MDk2N30.d1EYSKkVbdsDKCFmyv-Y-hqZOh6MIvjDODjUnbEzB28&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;manager@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:36:07.814837046&quot;,&quot;roleName&quot;:&quot;Manager&quot;,&quot;roleType&quot;:&quot;MANAGER&quot;,&quot;firstName&quot;:&quot;Thomas&quot;,&quot;lastName&quot;:&quot;Martin&quot;,&quot;trigramme&quot;:&quot;TMA&quot;,&quot;gender&quot;:&quot;M&quot;,&quot;phoneNumber&quot;:&quot;+33600000002&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2021-06-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1988-07-22&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:36:07.821086798&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -488,7 +488,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def collab       = call read(&#39;classpath:zenity/ofintra/common/login-helper.feature&#39;) { email: &#39;#(collabEmail)&#39;,  password: &#39;#(collabPassword)&#39;  }</span>
       </div>
     </div>
-    <div class="time-cell passed">530</div>
+    <div class="time-cell passed">485</div>
   </div>
 
    
@@ -507,7 +507,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <div class="step-indent"></div>
         <div class="step-cell passed">zenity.ofintra.common.login-helper</div>
       </div>
-      <div class="time-cell passed">524</div>
+      <div class="time-cell passed">479</div>
     </div>
     <div>
       <div><div>
@@ -607,7 +607,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">522</div>
+    <div class="time-cell passed">478</div>
   </div>
 
    
@@ -616,7 +616,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.6.0.call.0.8">13:33:12.636 request:
+  <div class="preformatted" data-parent="0.6.0.call.0.8">13:36:07.888 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 56
@@ -626,10 +626,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;password&quot;:&quot;Collab@123456&quot;}
 
-13:33:13.157 response time in milliseconds: 521
+13:36:08.365 response time in milliseconds: 476
 1 &lt; 200
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:33:13 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:36:08 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -643,7 +643,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijk0OGYzYmIwLWM3MTEtNGU4OS1hMGQyLTEzZGZjYmQ4YWFiMCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4MzU2ODkzfQ.Pxg9JcNU5T06G-SpOE4aN8PaxPpQrj8vyHHmAZKAYR8&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjY3OTMzMTFkLWVmZDUtNDVjOS1hYjg5LTU4YzljNzJjNWE5OCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4OTYwNzkzfQ.fi3qp2xob_qQP5k5nsAhvsT7gvn9z0sZl3WVVbb--ns&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:33:13.078260913&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:33:13.083426811&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
+{&quot;success&quot;:true,&quot;message&quot;:&quot;Authentication successful&quot;,&quot;data&quot;:{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImIxMGNlNjJlLTczNjgtNDRlMi05MGI2LTI0YTg3NTQ1Yzg1YiIsImlhdCI6MTc4ODM1NjE2OCwiZXhwIjoxNzg4MzU3MDY4fQ.6RZlu1wLxw8-gZMtwkEOpu_08wiFTFLWWgyxU4DftIc&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6MywidG9rZW5UeXBlIjoicmVmcmVzaCIsImp0aSI6IjUxZDJhM2U4LTE2N2EtNDg3Yi1iZjdmLWYxZmY3MDdjYTc5NiIsImlhdCI6MTc4ODM1NjE2OCwiZXhwIjoxNzg4OTYwOTY4fQ.QZy0l6AmI6yADIl7gpSs9p_p0KuZG421pq2aKtoDq5w&quot;,&quot;expiresIn&quot;:900000,&quot;tokenType&quot;:&quot;Bearer&quot;,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;collab@zenity.com&quot;,&quot;status&quot;:&quot;ACTIVE&quot;,&quot;lastLoginDate&quot;:&quot;2026-09-02T13:36:08.301019704&quot;,&quot;roleName&quot;:&quot;Collaborator&quot;,&quot;roleType&quot;:&quot;COLLABORATOR&quot;,&quot;firstName&quot;:&quot;Sophie&quot;,&quot;lastName&quot;:&quot;Bernard&quot;,&quot;trigramme&quot;:&quot;SBE&quot;,&quot;gender&quot;:&quot;F&quot;,&quot;phoneNumber&quot;:&quot;+33600000003&quot;,&quot;nationalId&quot;:null,&quot;startDate&quot;:&quot;2022-09-01&quot;,&quot;contractType&quot;:&quot;CDI&quot;,&quot;birthDate&quot;:&quot;1995-11-30&quot;,&quot;emergencyContactName&quot;:null,&quot;emergencyContactPhone&quot;:null,&quot;emergencyContactName2&quot;:null,&quot;emergencyContactPhone2&quot;:null,&quot;profilePhotoUrl&quot;:null,&quot;locationMapUrl&quot;:null,&quot;address&quot;:null}},&quot;timestamp&quot;:&quot;2026-09-02T13:36:08.306519276&quot;,&quot;path&quot;:null,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -748,7 +748,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def refreshToken = response.data.refreshToken</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -865,7 +865,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>def baseDay      = 1100 + Math.floor((java.lang.System.currentTimeMillis() % 100000) / 100)</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -949,7 +949,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1005,7 +1005,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { type: &#39;UNPAID_LEAVE&#39;, startDate: &#39;#(futureStart)&#39;, endDate: &#39;#(futureEnd)&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1033,7 +1033,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">458</div>
+    <div class="time-cell passed">406</div>
   </div>
 
    
@@ -1042,21 +1042,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.18">13:33:13.170 request:
+  <div class="preformatted" data-parent="0.18">13:36:08.371 request:
 1 &gt; POST https://api-rec.intranet-pawk.com/api/v1/leaves
-1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijk0OGYzYmIwLWM3MTEtNGU4OS1hMGQyLTEzZGZjYmQ4YWFiMCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4MzU2ODkzfQ.Pxg9JcNU5T06G-SpOE4aN8PaxPpQrj8vyHHmAZKAYR8
+1 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImIxMGNlNjJlLTczNjgtNDRlMi05MGI2LTI0YTg3NTQ1Yzg1YiIsImlhdCI6MTc4ODM1NjE2OCwiZXhwIjoxNzg4MzU3MDY4fQ.6RZlu1wLxw8-gZMtwkEOpu_08wiFTFLWWgyxU4DftIc
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 71
 1 &gt; Host: api-rec.intranet-pawk.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 1 &gt; Accept-Encoding: gzip,deflate
-{&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2032-03-25&quot;,&quot;endDate&quot;:&quot;2032-03-29&quot;}
+{&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-07-21&quot;,&quot;endDate&quot;:&quot;2031-07-25&quot;}
 
-13:33:13.626 response time in milliseconds: 456
+13:36:08.776 response time in milliseconds: 402
 1 &lt; 201
 1 &lt; Server: openresty
-1 &lt; Date: Wed, 02 Sep 2026 13:33:13 GMT
+1 &lt; Date: Wed, 02 Sep 2026 13:36:08 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -1070,7 +1070,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; Expires: 0
 1 &lt; X-Frame-Options: DENY
 1 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:19,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2032-03-25&quot;,&quot;endDate&quot;:&quot;2032-03-29&quot;,&quot;durationInDays&quot;:3,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-09-02T13:33:13.539239209&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null,&quot;attachments&quot;:[]}
+{&quot;id&quot;:7,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2031-07-21&quot;,&quot;endDate&quot;:&quot;2031-07-25&quot;,&quot;durationInDays&quot;:5,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;PENDING&quot;,&quot;processingComment&quot;:null,&quot;createdAt&quot;:&quot;2026-09-02T13:36:08.703933054&quot;,&quot;processedBy&quot;:null,&quot;processedAt&quot;:null,&quot;attachments&quot;:[]}
 
 </div>   
 
@@ -1175,7 +1175,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + managerToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -1203,7 +1203,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method put</span>
       </div>
     </div>
-    <div class="time-cell passed">456</div>
+    <div class="time-cell passed">400</div>
   </div>
 
    
@@ -1212,19 +1212,19 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.24">13:33:13.629 request:
-2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/leaves/19/approve
-2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiZjhhMmM3ZWYtMzY5NS00ODJlLTlkZGItMTg2YTk3NWIwMGJlIiwiaWF0IjoxNzg4MzU1OTkyLCJleHAiOjE3ODgzNTY4OTJ9.vEcHVHUZtWphQmLWZgr71oGqAfms5TVQjQGXRkXpKX0
+  <div class="preformatted" data-parent="0.24">13:36:08.779 request:
+2 &gt; PUT https://api-rec.intranet-pawk.com/api/v1/leaves/7/approve
+2 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtYW5hZ2VyQHplbml0eS5jb20iLCJ1c2VySWQiOjIsInJvbGUiOiJNYW5hZ2VyIiwianRpIjoiYzc2OWM1YmUtMDJkMS00YjhlLTkyYzYtNDY0NTgzOWViZDBmIiwiaWF0IjoxNzg4MzU2MTY3LCJleHAiOjE3ODgzNTcwNjd9.K2BaV1oVF8q6wiIH0mMm1QvPu3-2eCZPrd0vOTQ_kcY
 2 &gt; Host: api-rec.intranet-pawk.com
 2 &gt; Connection: Keep-Alive
 2 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 2 &gt; Accept-Encoding: gzip,deflate
 
 
-13:33:14.083 response time in milliseconds: 454
+13:36:09.178 response time in milliseconds: 398
 2 &lt; 204
 2 &lt; Server: openresty
-2 &lt; Date: Wed, 02 Sep 2026 13:33:14 GMT
+2 &lt; Date: Wed, 02 Sep 2026 13:36:09 GMT
 2 &lt; Connection: keep-alive
 2 &lt; Vary: Origin
 2 &lt; Vary: Access-Control-Request-Method
@@ -1285,7 +1285,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/&#39; + leaveId</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -1341,7 +1341,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">454</div>
+    <div class="time-cell passed">539</div>
   </div>
 
    
@@ -1350,21 +1350,21 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">13:33:14.085 request:
-3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/19
-3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijk0OGYzYmIwLWM3MTEtNGU4OS1hMGQyLTEzZGZjYmQ4YWFiMCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4MzU2ODkzfQ.Pxg9JcNU5T06G-SpOE4aN8PaxPpQrj8vyHHmAZKAYR8
+  <div class="preformatted" data-parent="0.29">13:36:09.179 request:
+3 &gt; GET https://api-rec.intranet-pawk.com/api/v1/leaves/7
+3 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6ImIxMGNlNjJlLTczNjgtNDRlMi05MGI2LTI0YTg3NTQ1Yzg1YiIsImlhdCI6MTc4ODM1NjE2OCwiZXhwIjoxNzg4MzU3MDY4fQ.6RZlu1wLxw8-gZMtwkEOpu_08wiFTFLWWgyxU4DftIc
 3 &gt; Host: api-rec.intranet-pawk.com
 3 &gt; Connection: Keep-Alive
 3 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
 3 &gt; Accept-Encoding: gzip,deflate
 
 
-13:33:14.539 response time in milliseconds: 453
-3 &lt; 200
+13:36:09.718 response time in milliseconds: 538
+3 &lt; 401
 3 &lt; Server: openresty
-3 &lt; Date: Wed, 02 Sep 2026 13:33:14 GMT
+3 &lt; Date: Wed, 02 Sep 2026 13:36:09 GMT
 3 &lt; Content-Type: application/json
-3 &lt; Transfer-Encoding: chunked
+3 &lt; Content-Length: 190
 3 &lt; Connection: keep-alive
 3 &lt; Vary: Origin
 3 &lt; Vary: Access-Control-Request-Method
@@ -1375,8 +1375,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 3 &lt; Pragma: no-cache
 3 &lt; Expires: 0
 3 &lt; X-Frame-Options: DENY
-3 &lt; X-Served-By: api-rec.intranet-pawk.com
-{&quot;id&quot;:19,&quot;userId&quot;:3,&quot;type&quot;:&quot;UNPAID_LEAVE&quot;,&quot;startDate&quot;:&quot;2032-03-25&quot;,&quot;endDate&quot;:&quot;2032-03-29&quot;,&quot;durationInDays&quot;:3.0,&quot;reason&quot;:null,&quot;proofDocumentPath&quot;:null,&quot;status&quot;:&quot;APPROVED&quot;,&quot;processingComment&quot;:&quot;Request approved&quot;,&quot;createdAt&quot;:&quot;2026-09-02T13:33:13.539239&quot;,&quot;processedBy&quot;:&quot;Thomas Martin&quot;,&quot;processedAt&quot;:&quot;2026-09-02T13:33:14.001344&quot;,&quot;attachments&quot;:[]}
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Authentication required. Please provide a valid access token.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:36:09.660358384&quot;,&quot;path&quot;:&quot;/api/v1/leaves/7&quot;,&quot;errorCode&quot;:null}
 
 </div>   
 
@@ -1391,13 +1390,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.30">
-      <div class="step-ref passed">30</div>
+      <div class="step-ref failed">30</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">5</div>
   </div>
 
    
@@ -1406,7 +1405,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.30">13:36:09.723 classpath:zenity/ofintra/features/leaves/PAWK-417.feature:30
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 538, url: https://api-rec.intranet-pawk.com/api/v1/leaves/7, response: 
+{&quot;success&quot;:false,&quot;message&quot;:&quot;Authentication required. Please provide a valid access token.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:36:09.660358384&quot;,&quot;path&quot;:&quot;/api/v1/leaves/7&quot;,&quot;errorCode&quot;:null}
+classpath:zenity/ofintra/features/leaves/PAWK-417.feature:30
+</div>   
 
   
 
@@ -1419,13 +1423,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.31">
-      <div class="step-ref passed">31</div>
+      <div class="step-ref skipped">31</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.status      == &#39;APPROVED&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1447,13 +1451,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.32">
-      <div class="step-ref passed">32</div>
+      <div class="step-ref skipped">32</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.processedBy == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1475,13 +1479,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.33">
-      <div class="step-ref passed">33</div>
+      <div class="step-ref skipped">33</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>match response.processedAt == &#39;#string&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1510,13 +1514,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.36">
-      <div class="step-ref passed">36</div>
+      <div class="step-ref skipped">36</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>Given</span>&nbsp;<span>path &#39;/api/v1/leaves/&#39; + leaveId</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1538,13 +1542,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.37">
-      <div class="step-ref passed">37</div>
+      <div class="step-ref skipped">37</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + collabToken</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1566,13 +1570,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.38">
-      <div class="step-ref passed">38</div>
+      <div class="step-ref skipped">38</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>method delete</span>
       </div>
     </div>
-    <div class="time-cell passed">445</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1581,34 +1585,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.38">13:33:14.541 request:
-4 &gt; DELETE https://api-rec.intranet-pawk.com/api/v1/leaves/19
-4 &gt; Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjb2xsYWJAemVuaXR5LmNvbSIsInVzZXJJZCI6Mywicm9sZSI6IkNvbGxhYm9yYXRvciIsImp0aSI6Ijk0OGYzYmIwLWM3MTEtNGU4OS1hMGQyLTEzZGZjYmQ4YWFiMCIsImlhdCI6MTc4ODM1NTk5MywiZXhwIjoxNzg4MzU2ODkzfQ.Pxg9JcNU5T06G-SpOE4aN8PaxPpQrj8vyHHmAZKAYR8
-4 &gt; Host: api-rec.intranet-pawk.com
-4 &gt; Connection: Keep-Alive
-4 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20.1)
-4 &gt; Accept-Encoding: gzip,deflate
-
-
-13:33:14.985 response time in milliseconds: 444
-4 &lt; 400
-4 &lt; Server: openresty
-4 &lt; Date: Wed, 02 Sep 2026 13:33:14 GMT
-4 &lt; Content-Type: application/json
-4 &lt; Transfer-Encoding: chunked
-4 &lt; Connection: keep-alive
-4 &lt; Vary: Origin
-4 &lt; Vary: Access-Control-Request-Method
-4 &lt; Vary: Access-Control-Request-Headers
-4 &lt; X-Content-Type-Options: nosniff
-4 &lt; X-XSS-Protection: 0
-4 &lt; Cache-Control: no-cache, no-store, max-age=0, must-revalidate
-4 &lt; Pragma: no-cache
-4 &lt; Expires: 0
-4 &lt; X-Frame-Options: DENY
-{&quot;success&quot;:false,&quot;message&quot;:&quot;Only PENDING requests can be cancelled.&quot;,&quot;data&quot;:null,&quot;timestamp&quot;:&quot;2026-09-02T13:33:14.911477258&quot;,&quot;path&quot;:&quot;/api/v1/leaves/19&quot;,&quot;errorCode&quot;:&quot;LEAVE_NOT_PENDING&quot;}
-
-</div>   
+     
 
   
 
